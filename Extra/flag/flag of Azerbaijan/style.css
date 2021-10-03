@@ -1,0 +1,38 @@
+/* flag of Azerbaijan */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flag,
+.moon,
+.star {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.flag {
+  left: 0;
+  width: 500px;
+  height: 100px;
+  background-color: #ef3340;
+  border-top: 100px solid #00b5e2;
+  border-bottom: 100px solid #509e2f;
+}
+
+.moon {
+  left: 0;
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  box-shadow: -10px 0 0 7px #fff;
+}
+
+.star {
+  left: 73px;
+  width: 50px;
+  height: 50px;
+}
