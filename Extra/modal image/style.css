@@ -1,0 +1,96 @@
+/* Image modal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgba(175, 166, 38, 0.521);
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 5rem;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #c9c7c7;
+  margin: 2rem 2rem 0;
+}
+
+.img {
+  margin: 2rem;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img:hover {
+  opacity: 0.6;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.692);
+  overflow: hidden;
+}
+
+.modal-content {
+  margin: 5rem auto auto;
+  display: block;
+  width: 80vw;
+  max-width: 700px;
+  animation-name: move;
+  animation-duration: 0.5s;
+  overflow: hidden;
+}
+
+@keyframes move {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 3.5rem;
+  font-size: 6rem;
+  font-weight: bold;
+  transition: 0.3s;
+  color: rgb(255, 250, 250);
+}
+
+.close:hover {
+  color: hsl(0, 0%, 73%);
+  cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width: 710px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 4.5px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 2px;
+  }
+}
