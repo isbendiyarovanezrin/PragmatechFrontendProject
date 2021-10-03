@@ -1,0 +1,252 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+em,
+img,
+q,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* function */
+.fontSize-5 {
+  font-size: 5px;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+.fontSize-15 {
+  font-size: 15px;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.fontSize-25 {
+  font-size: 25px;
+}
+
+.fontSize-30 {
+  font-size: 30px;
+}
+
+.fontSize-35 {
+  font-size: 35px;
+}
+
+body {
+  background-color: #fff;
+}
+
+p {
+  color: #ec0a0a;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 1px lightgray;
+}
+
+/* each */
+.fontSize-5 {
+  font-size: 5px;
+}
+
+.fontSize-10 {
+  font-size: 10px;
+}
+
+.fontSize-15 {
+  font-size: 15px;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.fontSize-25 {
+  font-size: 25px;
+}
+
+.fontSize-30 {
+  font-size: 30px;
+}
+
+.fontSize-35 {
+  font-size: 35px;
+}
+
+.fontSize-40 {
+  font-size: 40px;
+}
+
+.fontSize-45 {
+  font-size: 45px;
+}
+
+.fontSize-50 {
+  font-size: 50px;
+}
+
+/* for */
+.font-size-5 {
+  font-size: 5px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-35 {
+  font-size: 35px;
+}
+
+.font-size-40 {
+  font-size: 40px;
+}
+
+.font-size-45 {
+  font-size: 45px;
+}
+
+.font-size-50 {
+  font-size: 50px;
+}
+
+/* while */
+.fontSize50 {
+  font-size: 50px;
+}
+
+.fontSize45 {
+  font-size: 45px;
+}
+
+.fontSize40 {
+  font-size: 40px;
+}
+
+.fontSize35 {
+  font-size: 35px;
+}
+
+.fontSize30 {
+  font-size: 30px;
+}
+
+.fontSize25 {
+  font-size: 25px;
+}
+
+.fontSize20 {
+  font-size: 20px;
+}
+
+.fontSize15 {
+  font-size: 15px;
+}
+
+.fontSize10 {
+  font-size: 10px;
+}
+
+.fontSize5 {
+  font-size: 5px;
+}
+/*# sourceMappingURL=main.css.map */

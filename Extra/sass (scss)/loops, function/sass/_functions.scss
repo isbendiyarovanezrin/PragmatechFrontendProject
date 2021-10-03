@@ -1,0 +1,10 @@
+/* function */
+@function Process($size) {
+  @return #{$size * 5}px;
+}
+
+@for $value from 1 through 7 {
+  .fontSize-#{$value*5} {
+    font-size: Process($value);
+  }
+}
