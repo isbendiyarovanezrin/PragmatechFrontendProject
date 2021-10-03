@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>CSS Dropdown</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- content -->
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li class="dropdown">
+            <a href="#">Widgets</a>
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-a">Big Widgets</a>
+              <a href="#" class="dropdown-a">Bigger Widgets</a>
+              <a href="#" class="dropdown-a">Huge Widgets</a>
+            </div>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
