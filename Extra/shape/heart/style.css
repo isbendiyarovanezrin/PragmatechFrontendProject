@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #ff0000;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(45deg) scale(0, 0);
+  }
+
+  to {
+    transform: rotate(45deg) scale(1.1, 1.1);
+  }
+}
+
+#heart::before,
+#heart::after {
+  width: 100px;
+  height: 100px;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  background-color: inherit;
+}
+
+#heart::before {
+  top: -50%;
+  left: 0;
+}
+
+#heart::after {
+  top: 0;
+  left: -50%;
+}
