@@ -1,0 +1,62 @@
+/* pagination */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url(img/woolly-mc.png);
+  background-color: hsl(182, 25%, 50%);
+  background-blend-mode: soft-light;
+  overflow: hidden;
+  font-family: cursive;
+}
+
+.pagination-section {
+  margin: 3rem auto;
+  text-align: center;
+  width: 45rem;
+  height: 19rem;
+  background-color: hsl(182, 25%, 50%);
+  border: 10px solid transparent;
+  border-image: repeating-linear-gradient(40deg, #609d9f, #609d9f, #9cb6a7 28px)
+    22;
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 3rem;
+  color: hsl(0deg 0% 0% / 76%);
+}
+
+.pagination a {
+  font-size: 2rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 0.911);
+  border: 1px solid hsl(0, 0%, 87%);
+  transition: background-color 0.2s;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: hsl(0, 0%, 87%);
+}
+
+.pagination a.active {
+  background-color: rgb(46 99 102);
+  color: hsl(0, 0%, 96%);
+  border: 1px solid rgb(46 99 102);
+}
+
+/* media queries */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+}
