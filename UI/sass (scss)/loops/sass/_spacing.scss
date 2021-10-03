@@ -1,0 +1,65 @@
+// each
+$sizes: 0, 5, 10, 15, 20;
+@each $size in $sizes {
+  .padding-#{$size} {
+    padding: #{$size}px;
+  }
+  .padding-top-#{$size} {
+    padding-top: #{$size}px;
+  }
+  .padding-bottom-#{$size} {
+    padding-bottom: #{$size}px;
+  }
+  .padding-left-#{$size} {
+    padding-left: #{$size}px;
+  }
+  .padding-right-#{$size} {
+    padding-right: #{$size}px;
+  }
+  .padding-x-#{$size} {
+    padding: 0px, #{$size}px;
+  }
+  .padding-y-#{$size} {
+    padding: #{$size}px, 0px;
+  }
+  .margin-#{$size} {
+    margin: #{$size}px;
+  }
+  .margin-top-#{$size} {
+    margin-top: #{$size}px;
+  }
+  .margin-bottom-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+  .margin-left-#{$size} {
+    margin-left: #{$size}px;
+  }
+  .margin-right-#{$size} {
+    margin-right: #{$size}px;
+  }
+  .margin-x-#{$size} {
+    margin: 0px, #{$size}px;
+  }
+  .margin-y-#{$size} {
+    margin: #{$size}px, 0px;
+  }
+}
+
+// for ilə də yazmaq olar (nümunə)
+@for $value from 1 through 10 {
+  $value: $value * 5;
+  .padding-#{$value} {
+    padding: #{$value}px;
+  }
+}
+
+// while ilə də yazmaq olar (nümunə)
+$n: 10;
+$size: 5px;
+@while $n>0 {
+  $test: $n * 5;
+  .padding-#{$test} {
+    padding: $size * $n;
+  }
+  $n: $n - 1;
+}
