@@ -1,0 +1,162 @@
+/* testimonial page */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: whitesmoke;
+  color: #212529;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h5 {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  color: #3f5c77;
+  font-size: 3rem;
+  word-spacing: 0.2rem;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
+}
+
+h5 {
+  font-weight: 700;
+  line-height: 0.8;
+}
+
+p {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.col {
+  margin-left: 15px;
+  border-radius: 20px;
+  width: 19vw;
+}
+
+.bg-pink {
+  background-color: #ffbfbf;
+}
+
+.bg-orange {
+  background-color: #ffddab;
+}
+
+.bg-green {
+  background-color: #b3e9cb;
+}
+
+.bg-blue {
+  background-color: #99ceff;
+}
+
+.info {
+  font-size: 1.2rem;
+  margin: 4px auto 14px;
+  width: 53vw;
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 50%;
+  margin: 0px auto;
+  width: 11vw;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  margin: 10px 0px 0px;
+  text-align: center;
+}
+
+.card-body {
+  padding: 0.7rem 0.7rem;
+}
+
+.card-text:last-child {
+  margin-bottom: 0.7rem;
+}
+
+.card-img-top {
+  object-fit: contain;
+}
+
+.img::before {
+  content: url(images/left-quotes-sign.png);
+  opacity: 0.7;
+  filter: contrast(0.8);
+}
+
+.img::after {
+  content: url(images/right-quotes-symbol.png);
+  opacity: 0.7;
+  filter: contrast(0.8);
+}
+
+/* media queries */
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 2.6rem !important;
+  }
+
+  .info {
+    width: 60vw;
+  }
+
+  .row-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 15px;
+    margin: 0 !important;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .col {
+    width: 45vw;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .row-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0 !important;
+  }
+
+  .col {
+    width: 70vw;
+    margin: 0px auto;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+}
