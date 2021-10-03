@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Video</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/Без названия.png" />
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome link -->
+    <script
+      src="https://kit.fontawesome.com/92b3bd44e2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main content -->
+    <div class="container">
+      <div
+        class="
+          overflow-hidden
+          position-absolute
+          top-50
+          start-50
+          translate-middle
+        "
+      >
+        <video
+          id="video"
+          width="550px"
+          preload="auto"
+          poster="img/istockphoto-1257951336-170667a.jpg"
+          controls
+          loop
+        >
+          <source src="video/pexels-sevie-7125268.mp4" type="video/mp4" />
+          <source src="video/pexels-sevie-7125268.ogg" type="video/ogg" />
+          Your browser does not support HTML video.
+        </video>
+      </div>
+      <div class="position-absolute top-0 start-50 translate-middle-x mt-4">
+        <button type="button" class="btn btn-warning" onclick="playPause()">
+          Play/Pause
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-big"
+          onclick="makeBig()"
+        >
+          Big
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-normal"
+          onclick="makeNormal()"
+        >
+          Normal
+        </button>
+        <button
+          type="button"
+          class="btn btn-warning btn-small"
+          onclick="makeSmall()"
+        >
+          Small
+        </button>
+        <button
+          type="button"
+          onclick="turnOff()"
+          class="lightbulb mt-6 ms-2"
+          title="Click the light bulb to turn off the light."
+        >
+          <i class="fas fa-lightbulb"></i>
+        </button>
+        <button
+          type="button"
+          onclick="turnOn()"
+          class="lightbulb mt-6 ms-2 success"
+          title="Click the light bulb to turn on the light."
+        >
+          <i class="far fa-lightbulb"></i>
+        </button>
+      </div>
+      <p class="position-absolute bottom-0 start-50 translate-middle-x">
+        Video by
+        <a
+          href="https://www.pexels.com/video/rain-falling-on-glass-window-7125268/"
+        >
+          Pexels.
+        </a>
+      </p>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS link -->
+    <script src="app.js"></script>
+  </body>
+</html>

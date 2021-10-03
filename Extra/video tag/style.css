@@ -1,0 +1,66 @@
+/* Video page */
+body {
+  background-color: #ffc10766;
+}
+
+::selection {
+  color: whitesmoke;
+  background-color: gray;
+}
+
+a:visited {
+  color: brown;
+}
+
+a:link {
+  color: #a17a02;
+}
+
+a:hover {
+  text-shadow: 0.1px 0.1px 0.1px gray;
+  color: #ffc107;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+video {
+  max-width: 100%;
+  min-width: 250px;
+  height: auto;
+  object-fit: cover;
+  border: 5px double rgba(165, 42, 42, 0.897);
+}
+
+video[poster] {
+  object-fit: cover;
+}
+
+.lightbulb {
+  font-size: 30px;
+  color: rgb(20, 17, 17);
+  border: none;
+  background-color: transparent;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  .btn-big {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .btn-small {
+    display: none;
+  }
+
+  .btn-normal {
+    display: none;
+  }
+
+  .btn {
+    margin: 2px;
+  }
+}
