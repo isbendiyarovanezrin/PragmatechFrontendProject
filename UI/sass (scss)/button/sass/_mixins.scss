@@ -1,0 +1,10 @@
+@mixin button-size($btn-padding, $btn-font-size, $btn-border-radius) {
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  border-radius: $btn-border-radius;
+}
+
+@mixin transition($transition-duration, $transition-timing-function) {
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}

@@ -1,0 +1,39 @@
+.btn {
+  margin: 1rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  user-select: none;
+  align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: $btn-color;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  border: $btn-border-width solid transparent;
+  @include button-size(3rem, 1.8rem, 6rem);
+  &:hover {
+    @include transition(0.7s, linear);
+  }
+}
+
+.btn-pink {
+  background-color: #ffc0cb;
+  border: $btn-border-width solid #006effa8;
+  &:hover {
+    background-color: #006effa8;
+    border: $btn-border-width solid pink;
+  }
+}
+
+.btn-blue {
+  background-color: #006effa8;
+  border: $btn-border-width solid pink;
+  color: white;
+  &:hover {
+    background-color: pink;
+    border: $btn-border-width solid #006effa8;
+  }
+}

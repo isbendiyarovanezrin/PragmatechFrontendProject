@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.btn {
+  margin: 1rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 0.1rem;
+  border: 0.3rem solid transparent;
+  padding: 3rem;
+  font-size: 1.8rem;
+  border-radius: 6rem;
+}
+
+.btn:hover {
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.btn-pink {
+  background-color: #ffc0cb;
+  border: 0.3rem solid #006effa8;
+}
+
+.btn-pink:hover {
+  background-color: #006effa8;
+  border: 0.3rem solid pink;
+}
+
+.btn-blue {
+  background-color: #006effa8;
+  border: 0.3rem solid pink;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: pink;
+  border: 0.3rem solid #006effa8;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.red {
+  background-color: rgba(255, 30, 0, 0.877);
+}
+/*# sourceMappingURL=style.css.map */
