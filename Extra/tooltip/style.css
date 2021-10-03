@@ -1,0 +1,73 @@
+/* tooltip */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url(img/woolly-mc.png);
+  background-color: rgba(5, 83, 29, 0.753);
+  background-blend-mode: soft-light;
+  background-repeat: repeat;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  background-color: #112d09;
+  border-radius: 0.7rem;
+  margin-top: 10rem;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+
+a,
+.tooltip-text {
+  text-decoration: none;
+  color: #ff0808;
+  font-family: cursive;
+  font-size: 4rem;
+}
+
+.tooltip-text {
+  position: absolute;
+  visibility: hidden;
+  background-color: #112d09;
+  border-radius: 3rem 3rem 3rem 0;
+  padding: 1rem;
+  width: 40rem;
+  margin-left: 1.1rem;
+  bottom: 7.8rem;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+/* media queries */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  html {
+    font-size: 4px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 3px !important;
+  }
+}
