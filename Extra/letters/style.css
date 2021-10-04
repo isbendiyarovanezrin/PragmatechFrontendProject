@@ -1,0 +1,87 @@
+/* letters */
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  overflow: hidden;
+  background: linear-gradient(#3fa655, #ebf8e1, #d4f63c);
+}
+
+h1 {
+  position: absolute;
+  top: 4rem;
+  font-size: 4rem;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 2px 2px 3px #c9c7c7;
+}
+
+.triangle {
+  position: relative;
+  border-radius: 4px;
+  height: 0px;
+  width: 0px;
+  border: 80px solid transparent;
+  border-top-color: rgb(35, 153, 60);
+  background: rgb(16, 146, 12);
+}
+
+.triangle::after,
+.triangle::before {
+  content: "";
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  border: 90px solid transparent;
+  position: absolute;
+  border-top-color: rgb(35, 153, 60);
+}
+
+.triangle::after {
+  background-color: rgb(100, 146, 19);
+  top: -0.9rem;
+  left: 2.1rem;
+}
+
+.triangle::before {
+  background-color: rgb(59, 102, 30);
+  right: -1.1rem;
+  top: 0.9rem;
+  z-index: 1;
+}
+
+.round {
+  border-radius: 50%;
+  background-color: rgb(6 44 6 / 87%);
+  width: 0.6rem;
+  height: 0.6rem;
+  z-index: 10;
+  position: relative;
+  right: 5.3rem;
+  bottom: 0.3rem;
+}
+
+.round:after,
+.round:before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  border-radius: inherit;
+  background-color: inherit;
+  z-index: inherit;
+}
+
+.round:before {
+  right: 4.5rem;
+  top: 6.7rem;
+}
+.round:after {
+  left: 7.8rem;
+  top: 4.9rem;
+}
