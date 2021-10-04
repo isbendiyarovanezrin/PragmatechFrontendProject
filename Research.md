@@ -5,13 +5,13 @@
 Responsiv saytlar üçün biz `px`-dən yox, `em` və `rem`-dən istifadə etməliyik. Çünki `px` ölçü vahidindən istifadə edərkən media sorğuları yazanda `px`-dən istifadə etdiyimiz çox teqə yenidən ölçü verməli oluruq, amma `em` və `rem` ilə sadəcə `body` ya da `html` teqinə ölçü verməyimiz bəs edir. `em` ölçü vahidi `body` teqinə verdiyimiz şrift ölçüsünü əsas götürür. Yəni əgər ölçü vermişiksə. `Body` teqinə şrift ölçüsü verməmişiksə özünün valideyn elementinin şrift ölçüsünü əsas götürür. Məsələn, html-də `span` teqi `div` teqinin (`div` teqinə 10px şrift ölçüsü verək) içində yazılıbsa, `span` teqi (`span` teqinə 3em şrift ölçüsü verək) valideyn elementinin (yəni `div` teqinin) şrift ölçüsünü əsas götürəcək (beləliklə, `span` teqinin şrift ölçüsü 30px olacaq (3em = 3 x 10px)).<br>
 _Nümunə:_
 
-```
+```css
 body {
-   font-size: 20px;
+  font-size: 20px;
 }
 
 p {
-   font-size: 2em;  /* 2em = 2 x 20px = 40px */
+  font-size: 2em; /* 2em = 2 x 20px = 40px */
 }
 ```
 
@@ -19,10 +19,10 @@ p {
 
 _Başqa bir nümunəyə baxaq:_
 
-```
+```css
 h4 {
-   font-size: 11px;
-   padding-bottom: 3em; /* 3em = 3 x 11px = 33px */
+  font-size: 11px;
+  padding-bottom: 3em; /* 3em = 3 x 11px = 33px */
 }
 ```
 
@@ -32,13 +32,13 @@ Burada `body` teqinə şrift ölçüsü verilmədiyi üçün `em` `h4`-ə verdiy
 
 _Nümunə:_
 
-```
+```css
 html {
-   font-size: 30px;
+  font-size: 30px;
 }
 
 h1 {
-   font-size: 4rem; /* 4rem= 4 x 30px = 120px */
+  font-size: 4rem; /* 4rem= 4 x 30px = 120px */
 }
 ```
 
@@ -63,7 +63,7 @@ Qısa olaraq desək `background-origin` `background-image` ilə təyin olunan fo
 `::selection` selektoru istifadəçi saytdakı hansısa elementi seçərkən həmin elementin necə görünəcəyini təyin edir. Bir neçə CSS parametri tətbiq edə bilir: `::selection` selektor: `color`, `background`, `cursor` və `outline`.<br>
 _Məsələn:_
 
-```
+```css
 ::selection {
   color: black;
   background: yellow;
@@ -71,6 +71,8 @@ _Məsələn:_
 ```
 
 Bu zaman istifadəçinin seçdiyi mətn (kopyalamaq üçün və s.) sarı arxa fonlu qara yazı olacaq (əgər mətn seçibsə).
+<br>
+<br>
 
 ## :heavy_check_mark: Sual 4
 
@@ -78,172 +80,172 @@ Bu zaman istifadəçinin seçdiyi mətn (kopyalamaq üçün və s.) sarı arxa f
 
 1. `h1`
 
-```
+```css
 h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 ```
 
 2.  `h2`
 
-```
-    h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }
+```css
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 ```
 
 3.  `h3`
 
-```
-    h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }
+```css
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 ```
 
 4.  `h4` <br>
     Şrift ölçüsü 1em-dir, ona görə də yazmağa ehtiyac yoxdur.
 
-```
-    h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }
+```css
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 ```
 
 5.  `h5`
 
-```
-    h5 {
-    display: block;
-    font-size: 0.83em;
-    margin-block-start: 1.67em;
-    margin-block-end: 1.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }
+```css
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 ```
 
 6.  `h6`
 
-```
-    h6 {
-    display: block;
-    font-size: 0.67em;
-    margin-block-start: 2.33em;
-    margin-block-end: 2.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    }
+```css
+h6 {
+  display: block;
+  font-size: 0.67em;
+  margin-block-start: 2.33em;
+  margin-block-end: 2.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 ```
 
 7. `div`
 
-```
-    div {
-    display: block;
-    }
+```css
+div {
+  display: block;
+}
 ```
 
 8. `a`
 
-```
-    a {
-    color: (internal value);
-    cursor: pointer;
-    text-decoration: underline;
-    }
+```css
+a {
+  color: (internal value);
+  cursor: pointer;
+  text-decoration: underline;
+}
 ```
 
 9. `button` <br>
    Fərqli brauzerlər button üçün fərqli ilkin dəyərlərdən istifadə edir. Məsələn, Chrome brauzerindəki button'un ilkin dəyərləri aşağıdakı kimidir.
 
-```
-   button {
-   appearance: auto;
-   -webkit-writing-mode: horizontal-tb !important;
-   text-rendering: auto;
-   color: -internal-light-dark(black, white);
-   letter-spacing: normal;
-   word-spacing: normal;
-   line-height: normal;
-   text-transform: none;
-   text-indent: 0px;
-   text-shadow: none;
-   display: inline-block;
-   text-align: center;
-   align-items: flex-start;
-   cursor: default;
-   box-sizing: border-box;
-   background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
-   margin: 0em;
-   padding: 1px 6px;
-   border-width: 2px;
-   border-style: outset;
-   border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-   border-image: initial;
-   }
+```css
+button {
+  appearance: auto;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  margin: 0em;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
 ```
 
 10. `ul`
 
-```
-   ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    }
+```css
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 ```
 
 11. `li`
 
-```
-   li {
-   display: list-item;
-   }
+```css
+li {
+  display: list-item;
+}
 ```
 
 12. `section`
 
-```
-   section {
-   display: block;
-   }
+```css
+section {
+  display: block;
+}
 ```
 
 13. `img`
 
-```
-    img {
-    display: inline-block;
-    }
+```css
+img {
+  display: inline-block;
+}
 ```
 
 14. `span` <br>
