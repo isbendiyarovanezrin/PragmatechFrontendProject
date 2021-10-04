@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 10px;
+}
+
+.banner {
+  display: grid;
+  grid-template: repeat(1, auto) / repeat(4, auto);
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner__item {
+  margin: 0 0.5em;
+}
