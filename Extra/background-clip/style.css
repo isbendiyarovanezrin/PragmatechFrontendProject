@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: rgb(234 208 224 / 39%);
+}
+
+.text {
+  font-size: 18em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url(img/photo-1579783900882-c0d3dad7b119.jpg);
+  background-position: -72% -91%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #e580dd33;
+  letter-spacing: 0.1em;
+}
+
+.text::selection {
+  background-color: rgba(255, 182, 193, 0.5);
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 3px;
+  }
+}
