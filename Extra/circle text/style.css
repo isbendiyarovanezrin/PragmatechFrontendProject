@@ -1,0 +1,49 @@
+body {
+  overflow: hidden;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.753);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h2 {
+  font-size: 3.1em;
+  animation: rotateText 6s linear infinite;
+  text-shadow: 1px 1px 1px lightgray;
+  font-family: consolas;
+  text-transform: uppercase;
+  font-weight: 500;
+  user-select: none;
+  color: hsla(0, 0%, 0%, 0.973);
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  position: absolute;
+  filter: brightness(1) contrast(1.6);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 7px;
+  }
+}
