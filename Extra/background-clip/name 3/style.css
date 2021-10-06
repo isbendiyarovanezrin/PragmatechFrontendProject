@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: rgb(0 18 29);
+}
+
+.name {
+  font-size: 27em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  background-image: url(img/pexels-photo-4035587.jpeg);
+  background-position: 145% -1%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #288eb512;
+  filter: contrast(110%) brightness(108%) drop-shadow(1px 1px 1px lightgray);
+  font-family: "Creepster", cursive;
+}
+
+.name::selection {
+  background-color: rgb(67 46 98 / 50%);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    font-size: 4px;
+  }
+
+  .name {
+    background-position: 1% -1%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    font-size: 2px;
+  }
+
+  .name {
+    background-position: 84% 21%;
+  }
+}
