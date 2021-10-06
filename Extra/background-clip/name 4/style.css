@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: hsl(203, 100%, 6%);
+}
+
+.name {
+  font-size: 20em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  background-image: url(img/pexels-photo-3454270.jpeg);
+  background-position: 10% 64%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: hsla(187, 36%, 14%, 0.231);
+  filter: contrast(110%) brightness(110%)
+    drop-shadow(1px 1px 1px hsla(0, 0%, 50%, 0.788));
+  font-family: "Rampart One", cursive;
+}
+
+.name::selection {
+  background-color: hsl(203deg 60% 34% / 16%);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 2.7px;
+  }
+}
