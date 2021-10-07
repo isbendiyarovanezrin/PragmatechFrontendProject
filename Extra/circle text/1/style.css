@@ -14,7 +14,7 @@ body {
 
 h2 {
   font-size: 3.1em;
-  animation: rotateText 6s linear infinite;
+  animation: rotateText 5s linear infinite;
   text-shadow: 1px 1px 1px lightgray;
   font-family: consolas;
   text-transform: uppercase;
