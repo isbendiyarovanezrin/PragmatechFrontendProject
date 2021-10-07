@@ -1,0 +1,39 @@
+body {
+  overflow: hidden;
+  font-size: 10px;
+  background: rgb(187 165 147 / 16%);
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 3.3em;
+  text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.493);
+  font-family: "Sofia";
+  user-select: none;
+  color: hsl(0deg 0% 0%);
+  font-weight: 100;
+  user-select: none;
+  margin-bottom: 7.6em;
+}
+
+img {
+  object-fit: cover;
+  width: 26em;
+  height: 29em;
+  position: absolute;
+  filter: sepia(60%) contrast(60%) brightness(130%);
+  border-radius: 50%;
+  border: 1px groove rgba(166, 43, 43, 0.507);
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 6px;
+  }
+}
