@@ -1,0 +1,12 @@
+// Global stylesheet where we will import all other stylesheets
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/reset";
+
+@import "layout/header";
+@import "layout/grid";
+
+@import "components/dropdown";
+
+@import "pages/home";

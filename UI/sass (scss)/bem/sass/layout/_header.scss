@@ -1,0 +1,47 @@
+// header
+.info__lang,
+.header__info,
+.header__info__right {
+  display: flex;
+}
+
+.header__info {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $spacing-3;
+
+  .info__tel {
+    margin-left: $spacing-3;
+
+    .tel__img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &__right {
+    margin-right: $spacing-2;
+
+    .info__lang {
+      margin: 0 $spacing-8;
+
+      &__item {
+        position: relative;
+        margin-right: $spacing-8;
+
+        .fas {
+          font-size: $font-size-2;
+        }
+      }
+    }
+  }
+  a {
+    color: $text-color;
+    font-size: $font-size-3;
+
+    &:hover {
+      color: $hover-color;
+      @include transition(color, 0.4s, ease);
+    }
+  }
+}

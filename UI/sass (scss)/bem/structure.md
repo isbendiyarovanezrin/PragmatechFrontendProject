@@ -1,0 +1,7 @@
+- header (#header)
+  - info (.header\_\_info)
+    - left (.header**info**left)
+      - tel (.info\_\_tel)
+    - right (.header**info**right)
+      - lang (.info\_\_lang)
+      - login (.info\_\_login)

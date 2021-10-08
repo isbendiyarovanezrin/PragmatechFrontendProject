@@ -1,0 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: none;
+  font-family: $font-family;
+}
+
+.container {
+  margin: $spacing-0 auto;
+}
