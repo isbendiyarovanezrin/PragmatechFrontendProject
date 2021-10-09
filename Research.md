@@ -251,6 +251,7 @@ img {
 14. `span` <br>
     İlkin CSS xüsusiyyəti yoxdur.
     <br>
+    <br>
 
 ## :heavy_check_mark: Sual 5
 
