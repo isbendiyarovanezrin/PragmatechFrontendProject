@@ -250,3 +250,53 @@ img {
 
 14. `span` <br>
     İlkin CSS xüsusiyyəti yoxdur.
+    <br>
+
+## :heavy_check_mark: Sual 5
+
+#### CSS-in `filter` xüsusiyyəti nədir və necə istifadə olunur?<br>
+
+CSS `filter` xüsusiyyəti CSS3 ilə birlikdə gəlib və HTML elementlərinə (əsasən şəkillərə) fotoşopa bənzəyən vizual effektlər (paqlaqlıq, bulanıqlıq, şəffaflıq və s. kimi) tətbiq edir. Beləliklə, tək sətir CSS kodu ilə şəkilləri daha gözəl hala gətirə bilirik. Məsələn, grayscale effektini yoxlayaq.
+<br><br>
+![filter grayscale effekti](https://user-images.githubusercontent.com/86655646/136672356-9f6aa1b7-2c93-4a48-bad4-9dc895badbee.gif)
+<br><br>
+Başqa filterləri də yoxlaya bilərik.
+<br><br>
+![css filter](https://user-images.githubusercontent.com/86655646/136672438-8f421b12-b5d8-466d-9d94-c05ae76e6de7.gif)
+<br><br>
+Birdən çox filteri aşağıdakı kimi bir-birinin ardınca yazmaq olar.
+
+```css
+img {
+  filter: grayscale(0.4) blur(15px) contrast(150%) brightness(90%);
+}
+```
+
+<br>
+
+## :heavy_check_mark: Sual 6
+
+#### CSS-də `text-indent` xüsusiyyəti nədir və nə zaman istifadə olunur?<br>
+
+Bu xüsusiyyət mətnlərin ilk sətrinin abzas məsafəsini (sətrin əvvəlindəki girinti) təyin edir. Aşağıdakı gifdən də gördüyünüz kimi abzas məsafəsini rahatlıqla `text-indent` ilə vermək olur.
+<br><br>
+![text-indent](https://user-images.githubusercontent.com/86655646/136673783-deffd2dd-5626-4159-be4d-8f40fc8791ab.gif)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 7
+
+#### CSS-in `user-select` xüsusiyyəti nədir və nə zaman istifadə olunur?<br>
+
+Bu xüsusiyyət elementin mətninin seçilib-seçilməyəcəyini təyin edir. Veb brauzerlərdə bəzi mətnlərin üstünə iki dəfə basanda həmin mətn seçilir. Məsələn, `user-select` xüsusiyyəti bunun qarşısını almaq üçün istifadə oluna bilər.
+
+```css
+div {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 və IE 11 */
+  user-select: none; /* Standart sintaksis */
+}
+```
+
+Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn, aşağıdakı kimi olmayacaq.<br><br>
+![user-select](https://user-images.githubusercontent.com/86655646/136674113-8aac1daa-7b31-43d7-a98d-ea1e143f2c40.png)
