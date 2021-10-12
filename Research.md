@@ -301,3 +301,11 @@ div {
 
 Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn, aşağıdakı kimi olmayacaq.<br><br>
 ![user-select](https://user-images.githubusercontent.com/86655646/136674113-8aac1daa-7b31-43d7-a98d-ea1e143f2c40.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 8
+
+#### HTML teqlərinin bəzilərinin sonluğu var, bəzilərinin yoxdur. Bunun səbəbi nədir?<br>
+
+Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `link`, `br`, `img`, `hr`, `input`, `wbr` və s. kimi teqləri misal göstərmək olar. Bu teqlərin sonluğa ehtiyacı yoxdur, çünki məzmununa baxanda nə olduğu bəlli olur, yəni məzmunu bəlli olur. Ona görə də sonluq yazmağa ehtiyac qalmır. Məsələn, `div` teqini götürsək onun məzmunu bəlli deyil, yəni içində hər şey ola bilər, yazı da ola bilər, başqa müxtəlif teqlər də ola bilər, heç nə olmaya da bilər. Tutaq ki, içində yazı var və biz `div` teqinin sonluğunu yazmamışıq, yəni `</div>` yazmamışıq. Onda biz necə bilə-bilərik ki, bu yazı harada bitəcək və s. Sonunu, bitdiyini bildirmək üçün `div` teqini bağlamalıyıq. İnspect edib koda baxanda da rahatlıq olur o zaman (başlanğıcını və sonunu biləndə). Misal üçün `br` teqində isə belə deyil, onu bağlasaq da eyni funksiyanı yerinə yetirir, bağlamasaq da, baxan kimi bilinir ki, `br` teqi nə üçün yazılıb və s. `img` teqinin məzmunu bəllidir. Ona baxan kimi nə üçün səhifədə olduğunu bilmək olur. **"self-closing"** teqlər adətən səhifədə tək dayanır. Ümid edirəm ki, fikrimi düzgün ifadə edə bilmişəm.
