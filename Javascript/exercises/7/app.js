@@ -18,4 +18,8 @@ for (let i = 0; i < arr.length; i++) {
   word = arr[i];
   arr[i] = word.replaceAll(/a/gi, "o");
 }
-document.write(arr);
+document.write(arr + "<br>");
+
+// Massivdəki sondan 3 sözü ekrana yazdırın
+lastWord = arr.slice(-3);
+document.write(lastWord + "<br>");
