@@ -1,6 +1,6 @@
-// Massivdəki sözlərin hər birinin hərf sayını ekrana çap edin
 let arr = ["Aysel", "Guler", "Samir", "Kamil", "Ayla", "Ali", "Mehemmed"];
 
+// Massivdəki sözlərin hər birinin hərf sayını ekrana çap edin
 for (let i = 0; i < arr.length; i++) {
   word = arr[i];
   document.write(word.length + "<br>");
