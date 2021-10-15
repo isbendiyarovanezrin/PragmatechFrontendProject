@@ -9,6 +9,13 @@ for (let i = 0; i < arr.length; i++) {
 //Massiv daxilindəki sözlərdə olan "e" hərflərini "ə" ilə əvəz edin
 for (let i = 0; i < arr.length; i++) {
   word = arr[i];
-  arr[i] = word.replaceAll("e", "ə");
+  arr[i] = word.replaceAll(/e/gi, "ə");
+}
+document.write(arr + "<br>");
+
+//Massiv daxilindəki sözlərdə olan "a" hərflərini "o" ilə əvəz edin
+for (let i = 0; i < arr.length; i++) {
+  word = arr[i];
+  arr[i] = word.replaceAll(/a/gi, "o");
 }
 document.write(arr);
