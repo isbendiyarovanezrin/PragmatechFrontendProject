@@ -23,3 +23,15 @@ document.write(arr + "<br>");
 // Massivdəki sondan 3 sözü ekrana yazdırın
 lastWord = arr.slice(-3);
 document.write(lastWord + "<br>");
+
+// Massivdə başdan birinci sözü ekrana yazdırın
+firstWord = arr.slice(0)[0];
+document.write(firstWord + "<br>");
+
+// Massivdə başdan ikinci sözü ekrana yazdırın
+secondWord = arr.slice(1)[0];
+document.write(secondWord + "<br>");
+
+// Massivdəki ilk iki sözdən başqa qalan bütün sözləri ekrana yazdırın
+_words = arr.splice(2);
+document.write(_words);
