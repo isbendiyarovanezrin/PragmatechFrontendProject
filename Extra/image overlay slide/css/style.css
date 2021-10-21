@@ -1,0 +1,118 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: rgba(146, 200, 221, 0.829);
+}
+
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.box {
+  position: relative;
+  margin: 0.7rem;
+  overflow: hidden;
+}
+
+.text {
+  width: 100%;
+  color: rgb(200, 214, 233);
+  font-size: 2.5rem;
+  text-align: center;
+  position: absolute;
+}
+
+.text-top {
+  transform: translateY(-27px);
+  top: 55%;
+}
+
+.text-bottom {
+  transform: translateY(-5px);
+  top: 49%;
+}
+
+.text-right {
+  transform: translateX(0px);
+  left: 1%;
+  top: 45%;
+}
+
+.text-left {
+  left: 25%;
+  transform: translateX(-69px);
+  top: 45%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: lightseagreen;
+  transition: 0.5s ease;
+}
+
+.overlay-top {
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 100%;
+  width: 100%;
+  height: 0;
+}
+
+.overlay-bottom {
+  right: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 0;
+}
+
+.overlay-right {
+  right: 0;
+  width: 0;
+  top: 0;
+  height: 100%;
+}
+
+.overlay-left {
+  left: 0;
+  width: 0;
+  top: 0;
+  right: 100%;
+  width: 0;
+  height: 100%;
+}
+
+.box:hover .overlay-top {
+  height: 100%;
+}
+
+.box:hover .overlay-bottom {
+  height: 100%;
+}
+
+.box:hover .overlay-right {
+  width: 100%;
+}
+
+.box:hover .overlay-left {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .text {
+    display: none;
+  }
+}
