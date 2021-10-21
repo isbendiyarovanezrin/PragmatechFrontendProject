@@ -1,0 +1,59 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: mintcream;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1200px;
+}
+
+.card {
+  margin: 3rem;
+  box-shadow: 1px 4px 16px lightgrey;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card__title {
+  font-size: 2.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.card__subtitle {
+  font-size: 1.6rem;
+}
+
+.card__header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f5f5f57c;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 3px;
+  }
+}
