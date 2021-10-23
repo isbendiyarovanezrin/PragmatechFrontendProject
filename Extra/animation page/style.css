@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  background-image: url(img/Untitled.png);
+  background-position: 800% 100%;
+  animation: move 2s linear infinite;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4em;
+  color: #2f3676;
+  text-align: center;
+}
+
+.header {
+  margin: 1.1em;
+}
+
+@keyframes move {
+  to {
+    background-position: 0% 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 6px;
+  }
+}
