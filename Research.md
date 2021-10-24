@@ -309,3 +309,14 @@ Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn,
 #### HTML teqlərinin bəzilərinin sonluğu var, bəzilərinin yoxdur. Bunun səbəbi nədir?<br>
 
 Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `link`, `br`, `img`, `hr`, `input`, `wbr` və s. kimi teqləri misal göstərmək olar. Bu teqlərin sonluğa ehtiyacı yoxdur, çünki məzmununa baxanda nə olduğu bəlli olur, yəni məzmunu bəlli olur. Ona görə də sonluq yazmağa ehtiyac qalmır. Məsələn, `div` teqini götürsək onun məzmunu bəlli deyil, yəni içində hər şey ola bilər, yazı da ola bilər, başqa müxtəlif teqlər də ola bilər, heç nə olmaya da bilər. Tutaq ki, içində yazı var və biz `div` teqinin sonluğunu yazmamışıq, yəni `</div>` yazmamışıq. Onda biz necə bilə-bilərik ki, bu yazı harada bitəcək və s. Sonunu, bitdiyini bildirmək üçün `div` teqini bağlamalıyıq. İnspect edib koda baxanda da rahatlıq olur o zaman (başlanğıcını və sonunu biləndə). Misal üçün `br` teqində isə belə deyil, onu bağlasaq da eyni funksiyanı yerinə yetirir, bağlamasaq da, baxan kimi bilinir ki, `br` teqi nə üçün yazılıb və s. `img` teqinin məzmunu bəllidir. Ona baxan kimi nə üçün səhifədə olduğunu bilmək olur. **"self-closing"** teqlər adətən səhifədə tək dayanır. Ümid edirəm ki, fikrimi düzgün ifadə edə bilmişəm.
+<br>
+<br>
+
+## :heavy_check_mark: Sual 9
+
+#### HTML `abbr` teqi nə üçün istifadə olunur?<br>
+
+`abbr` bir sözün və ya söz qruplarının qısaldılmış halını göstərmək üçün istifadə olunur. `title` atributunun köməyi ilə isə maus kursoru həmin sözün üstünə gələndə sözün açılışı görünür.
+Məsələn, <br>
+
+![abbr teq](https://i.postimg.cc/0jbxQhnt/abbr.gif)
