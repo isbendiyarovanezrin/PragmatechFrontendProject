@@ -1,0 +1,40 @@
+img {
+  margin: 0 auto;
+}
+
+.img {
+  width: 50% !important;
+}
+
+@media screen and (max-width: 765px) {
+  .demo-img {
+    width: 60% !important;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  footer {
+    padding-top: 0px !important;
+  }
+
+  .features-bottom {
+    padding-bottom: 0;
+  }
+
+  .features-top {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo {
+    display: none;
+  }
+
+  .signup-btn,
+  li {
+    font-size: 10px;
+  }
+}
