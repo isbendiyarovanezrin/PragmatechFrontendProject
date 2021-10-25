@@ -112,7 +112,7 @@ img {
 }
 
 .nav__item .nav__link {
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: #7d7987;
 }
 
@@ -194,9 +194,6 @@ img {
 }
 
 @media screen and (max-width: 595px) {
-  html {
-    font-size: 4px;
-  }
   .wrapper {
     padding: 5rem 0;
   }

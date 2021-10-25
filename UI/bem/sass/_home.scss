@@ -19,7 +19,7 @@ img {
 .nav__item {
   margin-left: 2rem;
   .nav__link {
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: $secondary-clr;
     &--active {
       color: $primary-clr;
@@ -102,10 +102,6 @@ img {
 }
 
 @media screen and (max-width: 595px) {
-  html {
-    font-size: 4px;
-  }
-
   .wrapper {
     padding: 5rem 0;
   }
