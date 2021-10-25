@@ -1,13 +1,19 @@
 let names = ["Zohrab", "Qurbani", "Iskender", "Nezrin", "Ferid", "Huseyn"];
 
 // daxilinde "o" herfi olan telebelerin adlarini bir arraya yigin
+let newArr = [];
 let findLetter = names.filter((name) => name.match(/[o]/gi));
-document.write(`${findLetter}<br>`);
+newArr.push(findLetter);
+console.log(newArr);
 
 // adinin uzunlugu 5-den boyuk olan telebelerin adlarini bir arraya yigin
+let NewArr = [];
 let lenNames = names.filter((name) => name.length > 5);
-document.write(`${lenNames}<br>`);
+NewArr.push(lenNames);
+console.log(NewArr);
 
 // telebe adlarinin boyuk herfle yazilmis versiyasinin oldugu array yaradin
-let uppercased = names.map((name) => name.toUpperCase());
-document.write(uppercased);
+let _newArr = [];
+let _uppercase = names.map((name) => name.toUpperCase());
+_newArr.push(_uppercase);
+console.log(_newArr);
