@@ -340,3 +340,13 @@ Məsələn: <br>
 `address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq:<br>
 
 ![address teqi](https://user-images.githubusercontent.com/86655646/138770823-69942173-7c3b-4ef5-be42-13c5a19eed50.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 12
+
+#### `q` teqindən nə üçün istifadə olunur?<br>
+
+`q` teqi qısa sitatları yazmaq üçün istifadə olunur və bu zaman brauzerlər sitatın hər iki tərəfinə dırnaq işarəsi qoyur. Nümunə:<br>
+
+![q teqinin istifadəsi](https://user-images.githubusercontent.com/86655646/138775635-c2d6f6df-5cb9-453b-8bd7-c6a53df28fa0.png)
