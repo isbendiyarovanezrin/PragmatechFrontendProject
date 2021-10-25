@@ -320,3 +320,13 @@ Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `li
 Məsələn, <br>
 
 ![abbr teq](https://i.postimg.cc/0jbxQhnt/abbr.gif)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 10
+
+#### `cite` teqindən nə üçün istifadə olunur?<br>
+
+`cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq.<br>
+
+![cite teqi](https://user-images.githubusercontent.com/86655646/138767408-f9dfb5e2-4bdf-4eb8-af7c-3e28fcab1e00.png)
