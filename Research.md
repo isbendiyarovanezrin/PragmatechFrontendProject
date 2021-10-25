@@ -317,7 +317,7 @@ Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `li
 #### HTML `abbr` teqi nə üçün istifadə olunur?<br>
 
 `abbr` bir sözün və ya söz qruplarının qısaldılmış halını göstərmək üçün istifadə olunur. `title` atributunun köməyi ilə isə maus kursoru həmin sözün üstünə gələndə sözün açılışı görünür.
-Məsələn, <br>
+Məsələn: <br>
 
 ![abbr teq](https://i.postimg.cc/0jbxQhnt/abbr.gif)
 <br>
@@ -327,14 +327,16 @@ Məsələn, <br>
 
 #### `cite` teqindən nə üçün istifadə olunur?<br>
 
-`cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq.<br>
+`cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq:<br>
 
 ![cite teqi](https://user-images.githubusercontent.com/86655646/138767408-f9dfb5e2-4bdf-4eb8-af7c-3e28fcab1e00.png)
+<br>
+<br>
 
 ## :heavy_check_mark: Sual 11
 
 #### `address` teqindən nə üçün istifadə olunur?<br>
 
-`address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq.<br>
+`address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq:<br>
 
 ![address teqi](https://user-images.githubusercontent.com/86655646/138770823-69942173-7c3b-4ef5-be42-13c5a19eed50.png)
