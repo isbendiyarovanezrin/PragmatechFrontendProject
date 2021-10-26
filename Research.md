@@ -360,3 +360,13 @@ Məsələn: <br>
 `blockquote` teqindən başqa mənbədən sitat gətirilən hissəni yazmaq üçün istifadə olunur. Brauzerlər adətən bu hissəni abzasdan yazdırırlar. Burada `cite` teqinin içində isə sitatın mənbəyinin URl-sini yazırıq. Nümunə:<br>
 
 ![blockquote teqi](https://user-images.githubusercontent.com/86655646/138810854-80fe69bf-fe06-46b0-b2bb-9d12c5258510.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 14
+
+#### `mark` teqindən nə üçün istifadə olunur?<br>
+
+`mark` teqi mətnin bir hissəsini vurğulanmaq və ya işarələnmək üçün istifadə olunur. `mark` teqinin əsas məqsədi bu teqin içində yazılan sözü və ya cümləni sarı arxa fonla istifadəçiyə göstərməkdir. Nümunə:<br>
+
+![mark teqi](https://user-images.githubusercontent.com/86655646/138814747-68775786-fbef-4e5d-8407-124150de47aa.png)
