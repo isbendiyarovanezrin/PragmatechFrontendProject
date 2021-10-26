@@ -370,3 +370,13 @@ Məsələn: <br>
 `mark` teqi mətnin bir hissəsini vurğulanmaq və ya işarələnmək üçün istifadə olunur. `mark` teqinin əsas məqsədi bu teqin içində yazılan sözü və ya cümləni sarı arxa fonla istifadəçiyə göstərməkdir. Nümunə:<br>
 
 ![mark teqi](https://user-images.githubusercontent.com/86655646/138814747-68775786-fbef-4e5d-8407-124150de47aa.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 15
+
+#### `bdi` teqindən nə üçün istifadə olunur?<br>
+
+BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fərqli istiqamətdə başlayan mətni ayırır. Məsələn, ərəb dili sağdan sola yazılan bir dildir. Saytınızda ərəb dilində sağdan sola yazılan yazılar ola bilər. Dilin və sözün quruluşunu qorumaq üçün bu sözləri saytımızda istifadə etdiyimiz dil quruluşundan təcrid etməliyik. Bunun üçün isə həmin sözləri `bdi` teqinin içində yazmalıyıq. Nümunə:<br>
+
+![bdi](https://user-images.githubusercontent.com/86655646/138816560-8d218900-1e73-4772-9da1-3e27de7094fa.png)
