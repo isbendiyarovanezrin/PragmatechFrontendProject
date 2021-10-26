@@ -350,3 +350,13 @@ Məsələn: <br>
 `q` teqi qısa sitatları yazmaq üçün istifadə olunur və bu zaman brauzerlər sitatın hər iki tərəfinə dırnaq işarəsi qoyur. Nümunə:<br>
 
 ![q teqinin istifadəsi](https://user-images.githubusercontent.com/86655646/138775635-c2d6f6df-5cb9-453b-8bd7-c6a53df28fa0.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 13
+
+#### `blockquote` teqindən nə üçün istifadə olunur?<br>
+
+`blockquote` teqindən başqa mənbədən sitat gətirilən hissəni yazmaq üçün istifadə olunur. Brauzerlər adətən bu hissəni abzasdan yazdırırlar. Burada `cite` teqinin içində isə sitatın mənbəyinin URl-sini yazırıq. Nümunə:<br>
+
+![blockquote teqi](https://user-images.githubusercontent.com/86655646/138810854-80fe69bf-fe06-46b0-b2bb-9d12c5258510.png)
