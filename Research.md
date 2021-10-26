@@ -380,3 +380,13 @@ Məsələn: <br>
 BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fərqli istiqamətdə başlayan mətni ayırır. Məsələn, ərəb dili sağdan sola yazılan bir dildir. Saytınızda ərəb dilində sağdan sola yazılan yazılar ola bilər. Dilin və sözün quruluşunu qorumaq üçün bu sözləri saytımızda istifadə etdiyimiz dil quruluşundan təcrid etməliyik. Bunun üçün isə həmin sözləri `bdi` teqinin içində yazmalıyıq. Nümunə:<br>
 
 ![bdi](https://user-images.githubusercontent.com/86655646/138816560-8d218900-1e73-4772-9da1-3e27de7094fa.png)
+<br>
+<br>
+
+## :heavy_check_mark: Sual 16
+
+#### `optgroup` teqindən nə üçün istifadə olunur?<br>
+
+`optgroup` teqi `select` (açılan siyahı) teqində əlaqəli seçimləri qruplaşdırmaq üçün istifadə olunur. Bu zaman `optgroup` teqinin içində `option` teqi yazılır. Uzun bir seçim siyahınız varsa, əlaqəli seçimləri qruplaşdırmaq istifadəçinin istədiyi seçimi tapmasını asanlaşdıra bilər. Nümunə:<br>
+
+![optgroup teqi](https://user-images.githubusercontent.com/86655646/138837020-54b6b5da-fbea-476f-bc4d-d1d348f64fec.png)
