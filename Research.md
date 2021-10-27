@@ -408,3 +408,14 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 <img src="https://user-images.githubusercontent.com/86655646/139131028-b9b8a918-6dab-4603-9980-aa0dfc4e506d.png">
 <img src="https://user-images.githubusercontent.com/86655646/139131421-0e24c94d-5e9e-4fcd-a506-d7edd717ce3b.png">
 </div>
+<br>
+<br>
+
+## :heavy_check_mark: Sual 18
+
+#### `text-decoration-color` xüsusiyyəti nə işə yarayır?<br>
+
+`text-decoration-color` xüsusiyyəti `text-decoration` (məsələn, `text-decoration: underline` verildikdə mətnin altından xətt çəkilir) verilən mətndə xəttin rəngini təyin edir. Nümunə:<br>
+<img width="65%" src="https://user-images.githubusercontent.com/86655646/139156735-2da0a73a-7a4c-4259-ae7b-2bbd51860aa9.png">
+<img width="65%" src="https://user-images.githubusercontent.com/86655646/139156752-57b17231-128f-4c93-b992-4492aede397c.png">
+<img src="https://user-images.githubusercontent.com/86655646/139156701-dd12624f-2275-480d-8e63-403032941d6c.png">
