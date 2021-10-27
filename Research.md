@@ -390,3 +390,19 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 `optgroup` teqi `select` (açılan siyahı) teqində əlaqəli seçimləri qruplaşdırmaq üçün istifadə olunur. Bu zaman `optgroup` teqinin içində `option` teqi yazılır. Uzun bir seçim siyahınız varsa, əlaqəli seçimləri qruplaşdırmaq istifadəçinin istədiyi seçimi tapmasını asanlaşdıra bilər. Nümunə:<br>
 
 ![optgroup teqi](https://user-images.githubusercontent.com/86655646/138837020-54b6b5da-fbea-476f-bc4d-d1d348f64fec.png)
+<br>
+<br>
+
+#### `::marker` selektoru necə istifadə olunur?<br>
+
+`::marker` selektoru siyahı elementlərinin qabağında olan işarələri müəyyən edir. Nümunə:<br>
+
+<div align="center">
+   <img width="47%" src="https://user-images.githubusercontent.com/86655646/139129209-d403906e-81b8-4327-92d0-6521bcc748c1.png">
+   <img width="47%" src="https://user-images.githubusercontent.com/86655646/139129973-d64066b4-b8a1-4e61-b549-30a87e2a93f4.png">
+</div>
+   
+<div align="center">
+<img src="https://user-images.githubusercontent.com/86655646/139131028-b9b8a918-6dab-4603-9980-aa0dfc4e506d.png">
+<img src="https://user-images.githubusercontent.com/86655646/139131421-0e24c94d-5e9e-4fcd-a506-d7edd717ce3b.png">
+</div>
