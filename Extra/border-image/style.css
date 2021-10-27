@@ -1,0 +1,40 @@
+.border-one {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  font-size: 1.2rem;
+  border: 10px solid transparent;
+  border-image: url(img/icons8-fish-scales-pattern-50.png) 30% round;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.border-two {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 30px solid transparent;
+  border-image: url(img/brain-solid.svg) 25% round;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.border-three {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 30px solid transparent;
+  border-image: linear-gradient(red, blue) 40% round;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
