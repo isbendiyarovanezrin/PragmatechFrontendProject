@@ -1,0 +1,19 @@
+.item {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.item1 {
+  color: hsl(270, 50%, 40%);
+  text-decoration-color: hsl(146, 50%, 36%);
+}
+
+.item2 {
+  color: rgba(240, 89, 159, 0.918);
+  text-decoration-color: rgba(0, 128, 128, 0.726);
+}
+
+.item3 {
+  color: #ff6347;
+  text-decoration-color: #162cf3a1;
+}
