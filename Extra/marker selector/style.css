@@ -11,7 +11,7 @@ ol li::marker {
   font-weight: 600;
 }
 
-.heart ol li::marker {
+.heart ul li::marker {
   content: "🧡";
   margin: 5rem;
 }
