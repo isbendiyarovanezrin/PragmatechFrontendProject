@@ -1,0 +1,21 @@
+ul li::marker {
+  color: hsla(0, 100%, 50%, 0.952);
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: fantasy;
+}
+
+ol li::marker {
+  color: hsla(236, 100%, 50%, 0.959);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.heart ol li::marker {
+  content: "🧡";
+  margin: 5rem;
+}
+
+.star ul li::marker {
+  content: "⭐";
+}
