@@ -393,6 +393,8 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 <br>
 <br>
 
+## :heavy_check_mark: Sual 17
+
 #### `::marker` selektoru necə istifadə olunur?<br>
 
 `::marker` selektoru siyahı elementlərinin qabağında olan işarələri müəyyən edir. Nümunə:<br>
