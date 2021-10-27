@@ -1,0 +1,17 @@
+.square ul {
+  list-style-image: url(img/sqpurple.gif);
+}
+
+.circle ul {
+  list-style-image: url(img/circle-regular.svg);
+}
+
+ul li {
+  font-weight: 800;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  text-transform: lowercase;
+  text-shadow: 1px 1px 1px gray;
+  text-indent: 2px;
+}
