@@ -1,0 +1,13 @@
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 1px hsla(0, 0%, 50%, 0.897);
+}
+
+#result {
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
