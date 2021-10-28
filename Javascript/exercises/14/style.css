@@ -1,0 +1,25 @@
+.box {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background-color: rgba(255, 99, 71, 0.918);
+  border: 2px solid #000;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+}
+
+#create {
+  width: 90px;
+  height: 30px;
+  font-size: 1rem;
+  background-color: rgba(95, 158, 160, 0.664);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+#create:hover {
+  box-shadow: 1px 1px 1px gray;
+}
