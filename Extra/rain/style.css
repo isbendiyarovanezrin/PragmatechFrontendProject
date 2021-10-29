@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+div {
+  background: url(img/photo-1556807044-eaf2e0eecb6d.jpg) bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  animation: filter 2s linear infinite;
+}
+
+@keyframes filter {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+div::after {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4;
+  position: absolute;
+  animation: rain 1.7s linear infinite;
+  background-image: url(img/2-27979_rain-png-image-monochrome-monochrome-transparent-png.png);
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 6% 100%;
+  }
+}
