@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito";
+  overflow: hidden;
+}
+
+.text {
+  right: 150px;
+  top: 150px;
+  position: relative;
+}
+
+.text p {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+span {
+  background-color: #658059;
+}
+
+.hero-img {
+  clip-path: circle(50% at 27% 53%);
+  width: 100%;
+}
+
+::selection {
+  background-color: mediumseagreen;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1000px) {
+  #hero-section {
+    display: none;
+  }
+
+  body::before {
+    content: "Telefondan baxmayın! :)";
+    background-color: mediumseagreen;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
