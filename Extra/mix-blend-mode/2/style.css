@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.paper,
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.paper {
+  mix-blend-mode: difference;
+  background: center / cover no-repeat
+    url(img/white-ripped-paper-black-background_125540-804.jpg);
+}
+
+.img {
+  background: center / cover no-repeat url(img/men.jpg);
+  animation: filter 2s linear infinite;
+}
+
+@keyframes filter {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
