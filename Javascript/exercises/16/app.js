@@ -14,3 +14,8 @@ function uppercase() {
 function showAlert() {
   alert("Formu boş buraxmaq olmaz!");
 }
+
+// onreset Event
+function Reset() {
+  alert("Formda olan hər şey silindi.");
+}
