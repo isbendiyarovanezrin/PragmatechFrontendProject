@@ -19,3 +19,8 @@ function showAlert() {
 function Reset() {
   alert("Formda olan hər şey silindi.");
 }
+
+// onselect Event
+function selectText() {
+  alert("Bu hissə artıq seçilib!");
+}

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Events</title>
   </head>
+  <style>
+    ::selection {
+      color: #fff;
+      background-color: blueviolet;
+    }
+  </style>
   <body>
     <!-- oninput Event  -->
     <input type="text" id="text" oninput="myFunction()" />
@@ -37,6 +43,11 @@
         <input type="reset" value="Sıfırlayın" />
       </fieldset>
     </form>
+
+    <br />
+
+    <!-- onselect Event -->
+    Mətn: <input type="text" onselect="selectText()" />
 
     <script src="app.js"></script>
   </body>
