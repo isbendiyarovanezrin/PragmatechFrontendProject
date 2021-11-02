@@ -17,6 +17,15 @@
     <label for="name">Soyadınızı daxil edin: </label>
     <input type="text" id="surname" onblur="uppercase()" />
 
+    <br />
+    <br />
+
+    <!-- oninvalid Event -->
+    <form>
+      <input type="text" oninvalid="showAlert()" required />
+      <input type="submit" value="Göndər" />
+    </form>
+
     <script src="app.js"></script>
   </body>
 </html>

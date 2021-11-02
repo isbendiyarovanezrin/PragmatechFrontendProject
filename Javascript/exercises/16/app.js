@@ -9,3 +9,8 @@ function uppercase() {
   let surname = document.getElementById("surname");
   surname.value = surname.value.toUpperCase();
 }
+
+// oninvalid Event
+function showAlert() {
+  alert("Formu boş buraxmaq olmaz!");
+}
