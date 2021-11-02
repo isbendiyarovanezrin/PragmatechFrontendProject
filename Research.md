@@ -419,3 +419,35 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 <img width="65%" src="https://user-images.githubusercontent.com/86655646/139156735-2da0a73a-7a4c-4259-ae7b-2bbd51860aa9.png">
 <img width="65%" src="https://user-images.githubusercontent.com/86655646/139156752-57b17231-128f-4c93-b992-4492aede397c.png">
 <img src="https://user-images.githubusercontent.com/86655646/139156701-dd12624f-2275-480d-8e63-403032941d6c.png">
+<br>
+<br>
+
+## :heavy_check_mark: Sual 19
+
+#### JavaScriptdə `null` və `undefined` arasında hansı fərqlər var?<br>
+
+`null` dəyərin yoxluğunu ifadə edən JavaScriptə xas primitiv məlumat tipidir və `typeof` operatorundan istifadə edəndə `object` döndürür. Nümunə:
+
+```js
+let testLet = null;
+alert(testLet); // null göstərəcək
+alert(typeof testLet); // object göstərəcək
+```
+
+`undefined` JavaScriptdə dəyişənin olduğunu, lakin helə də dəyər təyin edilmədiyini bildirir və `typeof` operatorundan istifadə etsək də `undefined` döndürür. Nümunə:
+
+```js
+let testLet;
+alert(testLet); // undefined göstərəcək
+alert(typeof testLet); // undefined göstərəcək
+```
+
+Aşağıdakı qarşılaşdırmalara da göz gəzdirək.
+
+```js
+null === undefined; // false
+null == undefined; // true
+null === null; // true
+null == null; // true
+!null; // true
+```
