@@ -30,3 +30,12 @@ function textChange() {
   let text = document.getElementById("mySelect").value;
   document.getElementById("demo").innerHTML = `Bunu seçdin: ${text}`;
 }
+
+// onfocus Event
+function textFocus() {
+  document.getElementById("input").style.backgroundColor = "yellow";
+}
+
+function textBlur() {
+  document.getElementById("input").style.backgroundColor = "white";
+}
