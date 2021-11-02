@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Events</title>
+  </head>
+  <body>
+    <!-- oninput Event  -->
+    <input type="text" id="text" oninput="myFunction()" />
+    <p id="sametext"></p>
+
+    <br />
+
+    <!-- onblur Event -->
+    <label for="name">Soyadınızı daxil edin: </label>
+    <input type="text" id="surname" onblur="uppercase()" />
+
+    <script src="app.js"></script>
+  </body>
+</html>
