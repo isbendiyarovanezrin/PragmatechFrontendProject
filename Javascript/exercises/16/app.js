@@ -24,3 +24,9 @@ function Reset() {
 function selectText() {
   alert("Bu hissə artıq seçilib!");
 }
+
+// onchange Event
+function textChange() {
+  let text = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = `Bunu seçdin: ${text}`;
+}

@@ -49,6 +49,25 @@
     <!-- onselect Event -->
     Mətn: <input type="text" onselect="selectText()" />
 
+    <br />
+    <br />
+
+    <!-- onchange Event -->
+    <select id="mySelect" onchange="textChange()">
+      <optgroup label="yay meyvələri">
+        <option value="qarpuz">qarpuz</option>
+        <option value="yemiş">yemiş</option>
+        <option value="çiyələk">çiyələk</option>
+      </optgroup>
+      <optgroup label="qış meyvələri">
+        <option value="portağal">portağal</option>
+        <option value="kivi">kivi</option>
+        <option value="nar">nar</option>
+      </optgroup>
+    </select>
+
+    <p id="demo"></p>
+
     <script src="app.js"></script>
   </body>
 </html>
