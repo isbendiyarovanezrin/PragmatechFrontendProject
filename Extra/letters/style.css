@@ -16,9 +16,9 @@ body {
 h1 {
   position: absolute;
   top: 4rem;
-  font-size: 4rem;
-  font-family: "Sofia", sans-serif;
+  font: 4rem "Sofia", sans-serif;
   text-shadow: 2px 2px 3px #c9c7c7;
+  user-select: none;
 }
 
 .triangle {
@@ -28,7 +28,7 @@ h1 {
   width: 0px;
   border: 80px solid transparent;
   border-top-color: rgb(35, 153, 60);
-  background: rgb(16, 146, 12);
+  background-color: rgb(16, 146, 12);
 }
 
 .triangle::after,
