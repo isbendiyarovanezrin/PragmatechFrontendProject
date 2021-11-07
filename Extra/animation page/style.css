@@ -6,8 +6,7 @@
 
 body {
   font-size: 10px;
-  background-image: url(img/Untitled.png);
-  background-position: 800% 100%;
+  background: url(img/people.png) 800% 100%;
   animation: move 2s linear infinite;
 }
 
