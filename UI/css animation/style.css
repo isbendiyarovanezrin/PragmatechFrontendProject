@@ -28,7 +28,7 @@ body {
 
 /* colors */
 .tn-box-color-1 {
-  background: #ffe691;
+  background-color: #ffe691;
   border: 1px solid #f6db7b;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .tn-box-color-2 {
-  background: #99ffb1;
+  background-color: #99ffb1;
   border: 1px solid #7ce294;
 }
 .tn-box-color-2 p {
@@ -45,7 +45,7 @@ body {
 }
 
 .tn-box-color-3 {
-  background: #dd9aff;
+  background-color: #dd9aff;
   border: 1px solid #b367db;
 }
 .tn-box-color-3 p {
@@ -123,12 +123,10 @@ button.fire {
   border: 1px solid #42859b;
   border-radius: 4px;
   letter-spacing: 0.1px;
-  font-weight: bold;
-  font-size: 1.8rem;
   box-shadow: 0 1px 1px rgb(0 0 0 / 11%);
   text-shadow: 0 1px 1px rgb(0 0 0 / 31%);
-  background: linear-gradient(to top, #6fafc4 0%, #498ea5 100%);
-  font-family: monospace;
+  background-image: linear-gradient(to top, #6fafc4 0%, #498ea5 100%);
+  font: bold 1.8rem monospace;
 }
 
 input.fire-check:hover + button.fire {
@@ -136,18 +134,17 @@ input.fire-check:hover + button.fire {
 }
 
 input.fire-check:checked + button.fire {
-  color: #377a89;
-  border-color: #3e839b;
+  color: #3e839b;
   background: #94cde0;
   text-shadow: 0px 1px 1px rgb(255 255 255 / 45%);
   box-shadow: 0px 1px 1px rgb(255 255 255 / 55%);
-  border-width: 2px;
+  border: 1px solid #4991a9;
 }
 
 .tn-progress {
   width: 0;
   height: 0.4rem;
-  background: rgb(255 255 255 / 54%);
+  background-color: rgb(255 255 255 / 54%);
   position: absolute;
   border-radius: 3px;
   box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
