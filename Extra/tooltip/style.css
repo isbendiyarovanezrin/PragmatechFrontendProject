@@ -12,11 +12,9 @@ html {
 }
 
 body {
-  background-image: url(img/woolly-mc.png);
-  background-color: rgba(5, 83, 29, 0.753);
-  background-blend-mode: soft-light;
-  background-repeat: repeat;
   overflow: hidden;
+  background: url(img/sheep.png) repeat rgba(5, 83, 29, 0.753);
+  background-blend-mode: soft-light;
 }
 
 .tooltip {
@@ -24,17 +22,15 @@ body {
   display: inline-block;
   background-color: #112d09;
   border-radius: 0.7rem;
-  margin-top: 10rem;
-  margin-left: 2rem;
   padding: 1rem;
+  margin: 10rem 0 0 2rem;
 }
 
 a,
 .tooltip-text {
   text-decoration: none;
   color: #ff0808;
-  font-family: cursive;
-  font-size: 4rem;
+  font: 4rem cursive;
 }
 
 .tooltip-text {
