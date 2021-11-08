@@ -11,8 +11,7 @@ html {
 }
 
 body {
-  background-image: url(img/woolly-mc.png);
-  background-color: hsl(182, 25%, 50%);
+  background: url(img/sheep.png) hsl(182, 25%, 50%);
   background-blend-mode: soft-light;
   overflow: hidden;
   font-family: cursive;
