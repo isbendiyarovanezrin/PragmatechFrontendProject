@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- favicon -->
-    <link rel="icon" href="image/icons8-css-80.png" />
+    <link rel="icon" href="image/favicon.png" />
     <!-- styles -->
     <link rel="stylesheet" href=https://stitches.hyperyolo.com/output.css >
     <link rel="stylesheet"
@@ -30,16 +30,17 @@
         mx-auto
         container
         overflow-hidden
+        pr-1
       "
     >
-      <a href="/" class="block text-left flex nav-logo">
+      <div class="block text-left flex logo nav-logo">
         <img
-          src="image/icons8-technology-64.png"
+          src="image/logo.png"
           class="h-10 sm:h-10 rounded-full"
           alt="logo"
         />
         <p class="pt-2">BestApp</p>
-      </a>
+      </div>
       <ul class="text-sm text-gray-700 list-none p-0 flex items-center">
         <li>
           <a
@@ -52,8 +53,9 @@
               hover:text-gray-700
               no-underline
             "
-            >Products</a
           >
+            Products
+          </a>
         </li>
         <li>
           <a
@@ -66,8 +68,9 @@
               hover:text-gray-700
               no-underline
             "
-            >Pricing</a
           >
+            Pricing
+          </a>
         </li>
         <li class="pr-2">
           <a
@@ -80,8 +83,9 @@
               hover:text-gray-700
               no-underline
             "
-            >FAQs</a
           >
+            FAQs
+          </a>
         </li>
         <li class="pl-2 border-l">
           <a
@@ -94,8 +98,9 @@
               hover:text-gray-700
               no-underline
             "
-            >Log In</a
           >
+            Log In
+          </a>
         </li>
         <button
           class="
@@ -107,7 +112,7 @@
             px-3
             rounded
             border-2 border-black
-            hover:border-black hover:bg-gray-400
+            hover:border-black hover:bg-gray-400 hover:text-gray-900
           "
         >
           Sign Up
@@ -117,14 +122,14 @@
     <!-- navbar end -->
 
     <!-- hero section start -->
-    <section class="bg-gray-300 font-sans">
+    <section class="bg-gray-300 font-sans px-2">
       <div class="container m-auto flex flex-col md:flex-row max-w-xl">
         <div
           class="flex flex-col w-full lg:w-1/2 justify-center items-start py-8"
         >
-          <label for="tagline" class="uppercase tracking-loose"
-            >best app ever</label
-          >
+          <label for="tagline" class="uppercase tracking-loose">
+            best app ever
+          </label>
           <h1 class="my-4 font-normal">Our Work Flow</h1>
           <p class="leading-normal mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id mollitia
@@ -154,7 +159,7 @@
         </div>
         <div class="w-full lg:w-1/3 lg:py-6">
           <img
-            src="https://stitches.hyperyolo.com/images/demo-devices.png"
+            src="image/demo-devices.png"
             alt="demo devices"
             class="w-full demo-img"
           />
@@ -179,11 +184,7 @@
       "
     >
       <div class="w-full lg:w-1/3">
-        <img
-          src="https://stitches.hyperyolo.com/images/demo-phone.png"
-          alt="phone image"
-          class="img"
-        />
+        <img src="image/demo-phone.png" alt="phone image" class="img" />
       </div>
       <div
         class="
@@ -201,8 +202,9 @@
         <label
           for="tagline"
           class="uppercase tracking-wide text-gray-700 font-bold"
-          >best app ever</label
         >
+          best app ever
+        </label>
         <h1 class="my-4 font-normal">Our Work Flow</h1>
         <p class="leading-normal mb-4 text-gray-700">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi
@@ -247,8 +249,9 @@
         <label
           for="tagline"
           class="uppercase tracking-wide text-gray-700 font-bold"
-          >best app ever</label
         >
+          best app ever
+        </label>
         <h1 class="my-4 font-normal">Our Work Flow</h1>
         <p class="leading-normal mb-4 text-gray-700">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt
@@ -261,11 +264,7 @@
         </p>
       </div>
       <div class="w-full lg:w-1/3">
-        <img
-          src="https://stitches.hyperyolo.com/images/demo-phone.png"
-          alt="phone image"
-          class="img"
-        />
+        <img src="image/demo-phone.png" alt="phone image" class="img" />
       </div>
     </section>
     <!-- features section end -->
@@ -285,14 +284,10 @@
           md:text-left
         "
       >
-        <a href="#" class="block mr-4 w-full md:w-1/4 logo">
-          <img
-            src="image/icons8-technology-64.png"
-            class="w-28 -ml-8 md:ml-0"
-            alt="logo"
-          />
+        <div class="block mr-4 w-full md:w-1/4 logo footer-logo">
+          <img src="image/logo.png" class="w-28 -ml-8 md:ml-0" alt="logo" />
           <p class="pl-1">BestApp</p>
-        </a>
+        </div>
         <div class="w-full text-gray-900 mt-6 md:mt-0 leading-normal">
           <h4 class="py-2 uppercase font-bold tracking-wide">About US</h4>
           <p>
@@ -339,8 +334,9 @@
                 no-underline
               "
               href="#"
-              ><i class="fab fa-github-alt"></i
-            ></a>
+            >
+              <i class="fab fa-github-alt"></i>
+            </a>
             <a
               class="
                 block
@@ -352,8 +348,9 @@
                 no-underline
               "
               href="#"
-              ><i class="fab fa-slack"></i
-            ></a>
+            >
+              <i class="fab fa-slack"></i>
+            </a>
             <a
               class="
                 block
@@ -364,8 +361,9 @@
                 no-underline
               "
               href="#"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
           </div>
         </div>
       </div>

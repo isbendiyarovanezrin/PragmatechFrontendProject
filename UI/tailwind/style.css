@@ -6,12 +6,16 @@ img {
   width: 50% !important;
 }
 
+.logo {
+  user-select: none;
+}
+
 @media screen and (max-width: 765px) {
   .demo-img {
     width: 60% !important;
   }
 
-  .logo {
+  .footer-logo {
     display: none;
   }
 
