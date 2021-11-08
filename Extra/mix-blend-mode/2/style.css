@@ -17,8 +17,7 @@ body {
 
 .paper {
   mix-blend-mode: difference;
-  background: center / cover no-repeat
-    url(img/white-ripped-paper-black-background_125540-804.jpg);
+  background: center / cover no-repeat url(img/paper.jpg);
 }
 
 .img {
