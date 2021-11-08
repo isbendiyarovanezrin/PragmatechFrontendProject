@@ -15,18 +15,14 @@ body {
 
 .name {
   margin: 0 auto;
-  font-size: 17em;
   text-transform: uppercase;
-  font-weight: 900;
-  background-image: url(img/pexels-photo-3454270.jpeg);
-  background-position: 100% 28%;
-  background-repeat: repeat;
+  font: 900 17em "Major Mono Display", monospace;
+  background: url(img/tree.jpeg) 100% 28% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: hsla(187, 36%, 14%, 0.231);
   filter: contrast(113%) brightness(115%)
     drop-shadow(1px 1px 1px hsla(0, 0%, 50%, 0.788));
-  font-family: "Major Mono Display", monospace;
 }
 
 .name::selection {

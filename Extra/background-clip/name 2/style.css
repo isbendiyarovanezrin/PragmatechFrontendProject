@@ -14,12 +14,8 @@ body {
 }
 
 .text {
-  font-size: 18em;
-  font-weight: 900;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-image: url(img/photo-1579783900882-c0d3dad7b119.jpg);
-  background-position: 87% 65%;
-  background-repeat: repeat;
+  font: 900 18em Georgia, "Times New Roman", Times, serif;
+  background: url(img/flowers.jpg) 87% 65% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #e580dd1f;

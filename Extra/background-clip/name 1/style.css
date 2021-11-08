@@ -10,25 +10,21 @@ body {
   justify-content: center;
   overflow: hidden;
   font-size: 10px;
-  background-color: rgb(234 208 224 / 39%);
+  background-color: #ead0e063;
 }
 
 .text {
-  font-size: 18em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: 900;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  background-image: url(img/photo-1579783900882-c0d3dad7b119.jpg);
-  background-position: -72% -91%;
-  background-repeat: repeat;
+  font: 900 18em Georgia, "Times New Roman", Times, serif;
+  background: url(img/flowers.jpg) -72% -91% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #e580dd33;
-  letter-spacing: 0.1em;
 }
 
 .text::selection {
-  background-color: rgba(255, 182, 193, 0.5);
+  background-color: #ffb6c180;
 }
 
 @media screen and (max-width: 760px) {

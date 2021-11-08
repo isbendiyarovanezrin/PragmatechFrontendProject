@@ -15,17 +15,14 @@ body {
 
 .name {
   font-size: 27em;
-  text-transform: uppercase;
-  font-weight: 900;
   letter-spacing: 0.1em;
-  background-image: url(img/pexels-photo-4035587.jpeg);
-  background-position: 145% -1%;
-  background-repeat: repeat;
+  text-transform: uppercase;
+  font: 900 27em "Creepster", cursive;
+  background: url(img/sea.jpeg) 145% -1% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #288eb512;
   filter: contrast(110%) brightness(108%) drop-shadow(1px 1px 1px lightgray);
-  font-family: "Creepster", cursive;
 }
 
 .name::selection {
