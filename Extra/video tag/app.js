@@ -1,4 +1,4 @@
-var myVideo = document.getElementById("video");
+let myVideo = document.getElementById("video");
 
 function playPause() {
   if (myVideo.paused) myVideo.play();
