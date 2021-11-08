@@ -12,8 +12,12 @@ p {
 
 * {
   box-sizing: border-box;
-  list-style-type: none;
   user-select: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 html {
