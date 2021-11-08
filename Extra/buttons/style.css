@@ -18,37 +18,36 @@ body {
   height: 3em;
   text-align: center;
   color: #fff;
-  font-size: 2.1em;
-  font-weight: 500;
+  font: 500 2.1em sans-serif;
   border-radius: 50px;
   cursor: pointer;
   position: relative;
-  background-color: rgb(124 213 116);
-  background-image: linear-gradient(
-    rgb(0, 128, 0),
-    rgb(17, 17, 255),
-    rgba(128, 0, 128, 0.89),
-    rgb(12 83 104 / 44%)
-  );
+  background: linear-gradient(
+      rgb(0, 128, 0),
+      rgb(17, 17, 255),
+      rgba(128, 0, 128, 0.89),
+      rgb(12 83 104 / 44%)
+    )
+    rgb(124 213 116);
   background-blend-mode: hue;
   border: 1px solid rgba(128, 0, 128, 0.048);
 }
 
 .btn:hover {
-  box-shadow: 2px 3px 3px lightgrey;
-  border: 1px solid darkgray;
+  box-shadow: 1px 1px 3px rgba(189, 178, 178, 0.719);
+  border: 1px solid rgba(150, 147, 147, 0.658);
   transform: scale(1.01);
   animation: color 1s ease 2;
 }
 
 @keyframes color {
   0% {
-    background-color: rgba(255, 0, 242, 0.171);
+    background-color: rgba(255, 0, 242, 0.205);
   }
   40% {
-    background-color: rgba(0, 238, 255, 0.164);
+    background-color: rgba(0, 238, 255, 0.315);
   }
   100% {
-    background-color: rgba(255, 163, 127, 0.514);
+    background-color: rgba(250, 147, 107, 0.514);
   }
 }
