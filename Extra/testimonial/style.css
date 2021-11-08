@@ -97,9 +97,14 @@ p {
 }
 
 .img::after {
-  content: url(images/right-quotes-symbol.png);
+  content: url(images/right-quotes-sign.png);
   opacity: 0.7;
   filter: contrast(0.8);
+}
+
+::selection {
+  background-color: #288d28a6;
+  color: whitesmoke;
 }
 
 /* media queries */
