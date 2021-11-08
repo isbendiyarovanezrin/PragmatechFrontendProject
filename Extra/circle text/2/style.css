@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
   font-size: 10px;
-  background: rgba(255, 255, 255);
+  background-color: #ffffff;
 }
 
 .container {
@@ -13,15 +13,12 @@ body {
 }
 
 p {
-  font-size: 3.37em;
-  text-shadow: 1px 1px 1px lightgrey;
-  font-family: consolas;
   text-transform: lowercase;
   user-select: none;
-  color: hsl(0deg 0% 0%);
-  animation: rotateText 4s linear infinite;
   letter-spacing: 0.1px;
-  font-weight: 100;
+  font: 100 3.37em consolas;
+  text-shadow: 1px 1px 1px lightgrey;
+  animation: rotateText 4s linear infinite;
 }
 
 @keyframes rotateText {

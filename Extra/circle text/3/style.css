@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
   font-size: 10px;
-  background: rgb(187 165 147 / 16%);
+  background-color: #bba59329;
 }
 
 .container {
@@ -12,24 +12,21 @@ body {
 }
 
 p {
-  font-size: 3.3em;
-  text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.493);
-  font-family: "Sofia";
-  user-select: none;
-  color: hsl(0deg 0% 0%);
-  font-weight: 100;
   user-select: none;
   margin-bottom: 7.6em;
+  font: 100 3.3em "Sofia";
+  text-shadow: 1px 1px 1px #8080807e;
 }
 
 img {
-  object-fit: cover;
   width: 26em;
   height: 29em;
+  user-select: none;
+  object-fit: cover;
   position: absolute;
-  filter: sepia(60%) contrast(60%) brightness(130%);
   border-radius: 50%;
-  border: 1px groove rgba(166, 43, 43, 0.507);
+  border: 1px groove #a62b2b81;
+  filter: sepia(60%) contrast(60%) brightness(130%);
 }
 
 @media screen and (max-width: 450px) {
