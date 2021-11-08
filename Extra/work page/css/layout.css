@@ -1,15 +1,15 @@
-.row {
+.row,
+.navbar,
+ul {
   display: flex;
 }
 
 .navbar {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 ul {
-  display: flex;
   flex-direction: row;
 }
 

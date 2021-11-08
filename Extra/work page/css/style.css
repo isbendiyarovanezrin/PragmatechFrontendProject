@@ -72,15 +72,19 @@ p {
   html {
     font-size: 8px;
   }
+
   h1 {
     font-size: 2rem;
   }
+
   .nav-li {
     padding-bottom: 1.5rem;
   }
+
   .nav-img {
     display: none;
   }
+
   .navbar {
     display: flex;
     justify-content: center;
