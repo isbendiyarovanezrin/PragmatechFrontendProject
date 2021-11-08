@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: mintcream;
+  background-color: #f5fffa;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,12 +17,13 @@ body {
 
 .card {
   margin: 3rem;
-  box-shadow: 1px 4px 16px lightgrey;
+  box-shadow: 1px 4px 16px #d3d3d3;
 }
 
 img {
   width: 100%;
   height: auto;
+  user-select: none;
 }
 
 .card__title {
@@ -38,6 +39,11 @@ img {
   text-align: center;
   padding: 2rem;
   background-color: #f5f5f57c;
+}
+
+::selection {
+  background-color: #587d38;
+  color: #f5faf7;
 }
 
 @media screen and (max-width: 1000px) {
