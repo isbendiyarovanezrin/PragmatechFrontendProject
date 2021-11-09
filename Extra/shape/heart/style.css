@@ -1,14 +1,16 @@
 body {
   margin: 0;
+  font-size: 10px;
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #heart {
-  width: 100px;
-  height: 100px;
+  width: 10em;
+  height: 10em;
   position: relative;
   background-color: #ff0000;
   animation: move 2s infinite;
@@ -26,9 +28,9 @@ body {
 
 #heart::before,
 #heart::after {
-  width: 100px;
-  height: 100px;
   content: "";
+  width: 10em;
+  height: 10em;
   border-radius: 50%;
   position: absolute;
   background-color: inherit;
@@ -42,4 +44,10 @@ body {
 #heart::after {
   top: 0;
   left: -50%;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 6px;
+  }
 }
