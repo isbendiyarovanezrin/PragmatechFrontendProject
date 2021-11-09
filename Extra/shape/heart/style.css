@@ -11,9 +11,7 @@ body {
   height: 100px;
   position: relative;
   background-color: #ff0000;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation: move 2s infinite;
 }
 
 @keyframes move {
