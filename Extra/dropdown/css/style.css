@@ -1,4 +1,3 @@
-/* dropdown */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,15 +13,32 @@ html {
 body {
   font-family: cursive;
   min-width: 280px;
-  background-size: 27px 26px;
   background-blend-mode: darken;
-  background-color: #42beda;
-  background-image: linear-gradient(
-      90deg,
-      rgba(50, 85, 127, 0.5) 50%,
-      transparent 0
-    ),
-    linear-gradient(rgba(50, 85, 127, 0.5) 50%, transparent 0);
+  background: linear-gradient(90deg, rgba(50, 85, 127, 0.5) 50%, transparent 0),
+    linear-gradient(rgba(50, 85, 127, 0.5) 50%, transparent 0) #42beda;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-size: 6px 6px;
+  }
+
+  50% {
+    background-size: 30px 30px;
+  }
+
+  60% {
+    background-size: 20px 20px;
+  }
+
+  80% {
+    background-size: 25px 30px;
+  }
+
+  100% {
+    background-size: 10px 15px;
+  }
 }
 
 ul {
@@ -48,7 +64,7 @@ li {
 
 li:hover,
 .dropdown-a:hover {
-  transition: 1s ease;
+  transition: 0.4s linear;
   background-color: #0000e033;
 }
 
