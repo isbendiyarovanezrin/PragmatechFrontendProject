@@ -1,36 +1,43 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+html {
   font-size: 10px;
-  min-height: 100vh;
-  overflow: hidden;
+}
+
+body {
   display: flex;
+  overflow: hidden;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 #heart {
-  width: 10em;
-  height: 10em;
+  width: 10rem;
+  height: 10rem;
   position: relative;
   background-color: #ff0000;
-  animation: move 2s infinite;
+  animation: rotate 2s infinite;
 }
 
-@keyframes move {
+@keyframes rotate {
   from {
     transform: rotate(45deg) scale(0, 0);
   }
 
   to {
-    transform: rotate(45deg) scale(1.1, 1.1);
+    transform: rotate(45deg) scale(1, 1);
   }
 }
 
 #heart::before,
 #heart::after {
   content: "";
-  width: 10em;
-  height: 10em;
+  width: inherit;
+  height: inherit;
   border-radius: 50%;
   position: absolute;
   background-color: inherit;
@@ -47,7 +54,7 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  html {
     font-size: 6px;
   }
 }
