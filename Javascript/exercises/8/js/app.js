@@ -32,3 +32,13 @@ for (let i = 0; i < ededler.length; i++) {
   type = typeof ededler[i];
   document.write(`${type} `);
 }
+document.write(`<br>`);
+
+// "ededler" massivi daxilində olan bütün ədədləri başqa bir massivə taplayıb ekrana çap elətdirən metod yazın
+let arr = [];
+for (let i = 0; i < ededler.length; i++) {
+  if (typeof ededler[i] === "number") {
+    arr.push(ededler[i]);
+  }
+}
+document.write(arr);
