@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: $font-size-root;
   scroll-behavior: smooth;
 }
 
@@ -8,80 +8,83 @@ body {
 }
 
 .wrapper {
-  padding: 4rem 15rem;
-  margin: 0 auto;
+  padding: $padding-4 $padding-15;
+  margin: $margin-reset auto;
 }
 
 img {
-  width: 100%;
+  @include img-responsive;
 }
 
 .nav__item {
-  margin-left: 2rem;
+  margin-left: $margin-2;
+
   .nav__link {
-    font-size: 2rem;
+    font-size: $font-size-md;
     color: $secondary-clr;
+
     &--active {
       color: $primary-clr;
-      font-weight: bold;
+      font-weight: $font-weight-bold;
     }
   }
 }
 
 .title {
-  font-size: 4rem;
+  font-size: $font-size-xl;
 }
 
 .description {
-  padding: 2.5rem 0;
-  font-size: 2rem;
+  padding: $padding-3 $padding-reset;
+  font-size: $font-size-md;
   color: $secondary-clr;
 }
 
 .logo__caption {
   position: absolute;
-  font-size: 2.4rem;
-  margin-left: 5rem;
-  top: 2.5rem;
-  padding: 2rem 0;
+  font-size: $font-size-lg;
+  margin-left: $margin-5;
+  top: $spacing-3/2;
+  padding: $padding-2 $padding-reset;
 }
 
 .logo__img {
-  width: 4rem;
-  height: 4rem;
-  color: #fff;
-  font-size: 2.5rem;
+  width: $logo-img-width;
+  height: $logo-img-height;
+  color: $white-clr;
+  font-size: $font-size-lg;
   text-align: center;
-  font-weight: 700;
-  padding-top: 0.4rem;
+  font-weight: $font-weight-bold;
+  padding-top: $padding-half;
   position: absolute;
-  top: 4rem;
+  top: $spacing-3;
   background-color: $btn-clr;
-  border-radius: 50%;
+  border-radius: $border-radius-round;
 }
 
 .dots {
-  opacity: 0.5;
-  margin-top: 6rem;
+  opacity: 0.8;
+  margin-top: $margin-6;
   position: absolute;
-  left: 0;
+  left: $spacing-reset;
 }
 
 .hero-section {
-  margin-top: 5rem;
+  margin-top: $margin-5;
+
   &--left {
-    padding: 8rem 11rem 8rem 0;
+    padding: $padding-8 $padding-11 $padding-8 $padding-reset;
   }
 }
 
 .btn {
-  height: 4.5rem;
-  width: 19rem;
-  border-radius: 55px;
+  height: $btn-height;
+  width: $btn-width;
+  border-radius: $border-radius-lg;
   background-color: $btn-clr;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 700;
+  color: $white-clr;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
 }
 
 // media queries
@@ -102,8 +105,12 @@ img {
 }
 
 @media screen and (max-width: 595px) {
+  html {
+    font-size: 4px;
+  }
+
   .wrapper {
-    padding: 5rem 0;
+    padding: $padding-5 $padding-reset;
   }
 
   .row {
@@ -115,18 +122,20 @@ img {
 
   .hero-section--left {
     text-align: center;
-    padding: 4rem 1rem 5rem 1rem;
+    padding: $padding-4 $padding-1 $padding-5 $padding-1;
   }
 
   .nav__list {
     justify-content: center;
+
     .nav__item {
       text-align: center;
-      margin-left: 5rem;
+      margin-left: $margin-5;
       flex-wrap: wrap;
-      margin: 0 auto;
+      margin: $margin-reset auto;
+
       .nav__link {
-        padding: 0 0.6rem;
+        padding: $padding-reset $padding-1;
       }
     }
   }

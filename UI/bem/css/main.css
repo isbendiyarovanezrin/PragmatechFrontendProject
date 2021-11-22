@@ -100,11 +100,12 @@ body {
 
 .wrapper {
   padding: 4rem 15rem;
-  margin: 0 auto;
+  margin: 0rem auto;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .nav__item {
@@ -118,7 +119,7 @@ img {
 
 .nav__item .nav__link--active {
   color: #1f1534;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .title {
@@ -126,7 +127,7 @@ img {
 }
 
 .description {
-  padding: 2.5rem 0;
+  padding: 3rem 0rem;
   font-size: 2rem;
   color: #7d7987;
 }
@@ -135,29 +136,29 @@ img {
   position: absolute;
   font-size: 2.4rem;
   margin-left: 5rem;
-  top: 2.5rem;
-  padding: 2rem 0;
+  top: 1.5rem;
+  padding: 2rem 0rem;
 }
 
 .logo__img {
   width: 4rem;
   height: 4rem;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   text-align: center;
   font-weight: 700;
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   background-color: #458ff6;
   border-radius: 50%;
 }
 
 .dots {
-  opacity: 0.5;
+  opacity: 0.8;
   margin-top: 6rem;
   position: absolute;
-  left: 0;
+  left: 0rem;
 }
 
 .hero-section {
@@ -165,7 +166,7 @@ img {
 }
 
 .hero-section--left {
-  padding: 8rem 11rem 8rem 0;
+  padding: 8rem 11rem 8rem 0rem;
 }
 
 .btn {
@@ -194,8 +195,11 @@ img {
 }
 
 @media screen and (max-width: 595px) {
+  html {
+    font-size: 4px;
+  }
   .wrapper {
-    padding: 5rem 0;
+    padding: 5rem 0rem;
   }
   .row {
     display: -webkit-box;
@@ -226,10 +230,10 @@ img {
     margin-left: 5rem;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 0rem auto;
   }
   .nav__list .nav__item .nav__link {
-    padding: 0 0.6rem;
+    padding: 0rem 1rem;
   }
   .nav--left {
     display: none;
