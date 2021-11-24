@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0b8eb;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#btn {
+  width: 21rem;
+  font-size: 2rem;
+  padding: 1.8rem;
+  margin: 2rem auto;
+  display: block;
+  user-select: none;
+  border-radius: 50px;
+  background-color: #d87093;
+  border: 2px solid #000000be;
+}
+
+#btn:hover {
+  background-color: #f0588bc5;
+  box-shadow: 1px 1px 2px #7788995e;
+}
+
+#modal {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  background-color: #b853a7;
+}
+
+.modal-content {
+  background-color: #f0b8eb;
+  padding: 4rem;
+  margin: 13% auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content h1 {
+  font-size: 4rem;
+}
+
+.modal-content p {
+  padding: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#btn-cancel,
+#btn-delete {
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #e9d4e8;
+  padding: 1.5rem 7rem;
+  border: 2px solid #000000be;
+  margin: 1rem 0.3rem;
+  user-select: none;
+}
+
+#btn-cancel:hover,
+#btn-delete:hover {
+  background-color: #c5b2b2b6;
+}
+
+.clearfix {
+  display: flex;
+}
+
+#close {
+  font-size: 7rem;
+  user-select: none;
+  position: absolute;
+  right: 26rem;
+  top: 7rem;
+}
+
+#close:hover {
+  color: #f0b8eb;
+  transition: 0.4s ease;
+}
+
+::selection {
+  background-color: #d14271;
+  color: #f5f5f5;
+}
+
+@media screen and (max-width: 1150px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  html {
+    font-size: 4px;
+  }
+
+  .clearfix {
+    flex-direction: column;
+  }
+
+  #close {
+    right: 14rem;
+    top: 8rem;
+  }
+}
