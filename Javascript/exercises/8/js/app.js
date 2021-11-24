@@ -41,4 +41,31 @@ for (let i = 0; i < ededler.length; i++) {
     arr.push(ededler[i]);
   }
 }
-document.write(arr);
+document.write(`${arr}<br>`);
+
+// "ededler" massivinin daxilində eyni tipli olan məlumatları ayrı-ayrı massivlər şəklinə gətirən metod yazın
+let n = [];
+let s = [];
+let b = [];
+let o = [];
+let u = [];
+for (let i = 0; i < ededler.length; i++) {
+  if (typeof ededler[i] === "number") {
+    n.push(ededler[i]);
+  } else if (typeof ededler[i] === "string") {
+    s.push(ededler[i]);
+  } else if (typeof ededler[i] === "boolean") {
+    b.push(ededler[i]);
+  } else if (typeof ededler[i] === "object") {
+    o.push(ededler[i]);
+  } else {
+    u.push(ededler[i]);
+  }
+}
+console.log(n, s, b, o, u);
+
+// "ededler" massivinin daxilində olan stringdə neçə sait və samit olduğunu tapın
+let word = str[0];
+const vowel = word.match(/[aıoueəiöü]/gi).length;
+const consonant = word.match(/[pkftşsxçhbqvğdjzygclmnr]/gi).length;
+document.write(`Vowels: ${vowel}, Consonants: ${consonant}`);
