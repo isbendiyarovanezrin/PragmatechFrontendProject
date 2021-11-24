@@ -23,3 +23,16 @@ let _newArr = [];
 let _uppercase = names.map((name) => name.toUpperCase());
 _newArr.push(_uppercase);
 console.log(_newArr);
+
+// massivdəki sözlərin hər birinin hərf sayını ekrana çap edin
+for (let i = 0; i < names.length; i++) {
+  l = names[i].length;
+  document.write(`${l} `);
+}
+
+document.write(`<br>`);
+
+// massivin sondan 2-ci elementinin daxilində neçə sait olduğunu tapın
+let word = names.splice(-2)[0];
+const count = word.match(/[aıoueəiöü]/gi).length;
+document.write(count);
