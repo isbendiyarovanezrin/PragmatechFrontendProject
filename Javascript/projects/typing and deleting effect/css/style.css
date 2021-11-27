@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffe4c4;
+}
+
+p {
+  font: 600 7rem "Roboto Slab", serif;
+}
+
+.blink {
+  margin-left: 1rem;
+  font-size: 7rem;
+  font-weight: 400;
+  user-select: none;
+  animation: blink 0.9s ease infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0.1;
+  }
+}
+
+::selection {
+  background-color: #bb2d45;
+  color: #ffe4c4;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+}
