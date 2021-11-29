@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+.text {
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: fixed;
+  padding: 1.5rem 2rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  background-color: #0c0c0b59;
+  border: 0.6rem solid #000000ea;
+  transform: translate(-9.8rem, -5rem);
+  font: 700 6rem Arial, Helvetica, sans-serif;
+}
+
+.img {
+  height: 50%;
+  background: center/cover no-repeat;
+}
+
+.img-1 {
+  background-image: url(../img/leaf.jpg);
+}
+
+.img-2 {
+  background-image: url(../img/eye.jpg);
+}
+
+.img-3 {
+  background-image: url(../img/flower-1.jpg);
+}
+
+.img-4 {
+  background-image: url(../img/nature.jpg);
+}
+
+.img-5 {
+  background-image: url(../img/flower-2.jpg);
+}
+
+.img-6 {
+  background-image: url(../img/girl.jpg);
+}
+
+.img-7 {
+  background-image: url(../img/flower-3.jpg);
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+}
