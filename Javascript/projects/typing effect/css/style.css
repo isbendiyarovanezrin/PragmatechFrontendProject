@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cccccc81;
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+p {
+  font: 500 1.5rem "Times New Roman", Times, serif;
+}
+
+button {
+  width: 7rem;
+  height: 3rem;
+  margin: 2rem;
+  user-select: none;
+  border: 1px solid #000;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+::selection {
+  background-color: #4a1294;
+  color: #fff;
+}
