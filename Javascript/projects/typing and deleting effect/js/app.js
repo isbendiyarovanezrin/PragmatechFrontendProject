@@ -11,7 +11,7 @@ function typingEffect() {
       deletingEffect();
       return false;
     }
-    timer = setTimeout(loopTyping, 500);
+    timer = setTimeout(loopTyping, 400);
   }
   loopTyping();
 }
@@ -27,7 +27,7 @@ function deletingEffect() {
       typingEffect();
       return false;
     }
-    timer = setTimeout(loopDeleting, 300);
+    timer = setTimeout(loopDeleting, 250);
   }
   loopDeleting();
 }
