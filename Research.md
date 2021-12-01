@@ -2,7 +2,7 @@
 
 #### `em` və `rem` ölçüləndirmə dəyərləri arasında hansı fərqlər var?<br>
 
-Responsiv saytlar üçün biz `px`-dən yox, `em` və `rem`-dən istifadə etməliyik. Çünki `px` ölçü vahidindən istifadə edərkən media sorğuları yazanda `px`-dən istifadə etdiyimiz çox teqə yenidən ölçü verməli oluruq, amma `em` və `rem` ilə sadəcə `body` ya da `html` teqinə ölçü verməyimiz bəs edir. `em` ölçü vahidi `body` teqinə verdiyimiz şrift ölçüsünü əsas götürür. Yəni əgər ölçü vermişiksə. `Body` teqinə şrift ölçüsü verməmişiksə özünün valideyn elementinin şrift ölçüsünü əsas götürür. Məsələn, html-də `span` teqi `div` teqinin (`div` teqinə 10px şrift ölçüsü verək) içində yazılıbsa, `span` teqi (`span` teqinə 3em şrift ölçüsü verək) valideyn elementinin (yəni `div` teqinin) şrift ölçüsünü əsas götürəcək (beləliklə, `span` teqinin şrift ölçüsü 30px olacaq (3em = 3 x 10px)).<br>
+Responsiv saytlar üçün biz `px`-dən yox, `em` və `rem`-dən istifadə etməliyik. Çünki `px` ölçü vahidindən istifadə edərkən media sorğuları yazanda `px`-dən istifadə etdiyimiz çox teqə yenidən ölçü verməli oluruq, amma `em` və `rem` ilə sadəcə `body` ya da `html` teqinə ölçü verməyimiz bəs edir. `em` ölçü vahidi özünün valideyn elementinin şrift ölçüsünü əsas götürür. Əgər valideyn elementinə şrift ölçüsü verilməyibsə onda `body` teqinə verdiyimiz şrift ölçüsünü əsas götürür. Məsələn, html-də `span` teqi `div` teqinin (`div` teqinə 10px şrift ölçüsü verək) içində yazılıbsa, `span` teqi (`span` teqinə 3em şrift ölçüsü verək) valideyn elementinin (yəni `div` teqinin) şrift ölçüsünü əsas götürəcək (beləliklə, `span` teqinin şrift ölçüsü 30px olacaq (3em = 3 x 10px)). `Body` teqinə hər hansısa şrift ölçüsü verməyimiz bunu dəyişməyəcək.<br>
 _Nümunə:_
 
 ```css
@@ -15,7 +15,7 @@ p {
 }
 ```
 
-2em mövcud şriftin 2 qatı mənasına gəlir. Burada `p` teqinin fontu 40px olacaq.
+Burada 2em `body` teqinə verdiyimiz şrift ölçüsünün 2 qatı mənasına gəlir. Ona görə də `p` teqinin fontu 40px olacaq.
 
 _Başqa bir nümunəyə baxaq:_
 
@@ -26,9 +26,9 @@ h4 {
 }
 ```
 
-Burada `body` teqinə şrift ölçüsü verilmədiyi üçün `em` `h4`-ə verdiyimiz ölçünü əsas götürür.
+Burada `em` `h4`-ə verdiyimiz ölçünü əsas götürür.
 
-`rem` isə `body` teqinə yox, `html` teqinə verdiyimiz ölçünü əsas götürür. Amma tək fərqi ondadır ki, `em` teqi kimi özünün valideyn elementinin dəyərini götürmür, yalnız html teqinin (root) ölçüsünü əsas götürür.
+`rem` isə `body` teqinə yox, `html` teqinə verdiyimiz ölçünü əsas götürür. Amma tək fərqi ondadır ki, `em` teqi kimi özünün valideyn elementinin dəyərini götürə bilmir, yalnız html teqinin (root) ölçüsünü əsas götürür.
 
 _Nümunə:_
 
