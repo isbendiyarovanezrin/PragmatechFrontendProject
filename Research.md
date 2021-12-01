@@ -44,7 +44,7 @@ h1 {
 
 Bu halda `h1` teqinin ölçüsü 120px olacaq.
 
-_Qeyd:_ İlkin olaraq `html` və `body` teqlərinin ölçüsü 16px-dir. Yəni heç bir dəyər verməsək bu ölçünü əsas götürəcək (1em = 16px, 1rem = 16px).
+_Qeyd:_ İlkin olaraq `html` və `body` teqlərinin şrift ölçüsü 16px-dir. Yəni heç bir dəyər verməsək bu ölçünü əsas götürəcək (1em = 16px, 1rem = 16px).
 <br>
 <br>
 
