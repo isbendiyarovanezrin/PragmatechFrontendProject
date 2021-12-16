@@ -1,0 +1,8 @@
+{
+  "name": "Nezrin",
+  "age": 99,
+  "pets": [
+    { "animal": "dog", "name": "Ha" },
+    { "animal": "cat", "name": "Hah" }
+  ]
+}
