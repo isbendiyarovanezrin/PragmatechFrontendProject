@@ -54,3 +54,17 @@ user.name = "John";
 user.surname = "Smith";
 user.name = "Pete";
 delete user.name;
+
+// 5
+let n = {};
+let e = {};
+console.log(n == e); // false
+
+// 6
+let object = {
+  name: "Ali",
+  sayName() {
+    console.log(this.name);
+  },
+};
+object.sayName(); // Ali
