@@ -68,3 +68,34 @@ let object = {
   },
 };
 object.sayName(); // Ali
+
+// 7
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+console.log(id1 == id2); // false
+
+let id = Symbol.for("id");
+let idAgain = Symbol.for("id");
+console.log(id == idAgain); // true
+console.log(Symbol.keyFor(id)); // id
+console.log(Symbol.keyFor(idAgain)); // id
+console.log(Symbol.keyFor(id1)); // undefined
+
+// 8
+function sayHello() {
+  console.log(this);
+}
+sayHello();
+
+// 9
+function createUser() {
+  return {
+    name: "Samir",
+    sayHello() {
+      return this;
+    },
+  };
+}
+
+let _user = createUser();
+console.log(_user.sayHello().name);
