@@ -99,3 +99,27 @@ function createUser() {
 
 let _user = createUser();
 console.log(_user.sayHello().name);
+
+// 10
+function sayHi() {
+  console.log(new.target);
+}
+sayHi(); // undefined
+
+function sayHi() {
+  console.log(new.target);
+}
+new sayHi(); // [Function: sayHi]
+
+// 11
+let istifadeci = {};
+console.log(istifadeci.age); // undefined
+// console.log(istifadeci.age.year); // TypeError
+console.log(istifadeci.age ? istifadeci.age.year : undefined); // undefined
+console.log(istifadeci.age && istifadeci.age.year && istifadeci.age.year.day); // undefined
+console.log(istifadeci?.age?.year?.day); // undefined
+console.log(istifadeci?.age); // undefined
+
+// 12
+let _obj = {};
+_obj.admin?.(); // nothing
