@@ -123,3 +123,69 @@ console.log(istifadeci?.age); // undefined
 // 12
 let _obj = {};
 _obj.admin?.(); // nothing
+
+// 13
+let surname = "Aslanov",
+  age = "55";
+
+// const obj = {
+//   surname: surname,
+//   age: age,
+// };
+// console.log(obj.age); // 55
+
+const obj = {
+  surname,
+  age,
+};
+
+console.log(obj.age); // 55
+
+// 14
+let prop1 = "name",
+  prop2 = "age";
+
+const myObj = {
+  [prop1]: "Ali",
+  [prop2]: "3",
+};
+
+console.log(`My name is ${myObj.name}. I'm ${myObj.age} years old.`); // My name is Ali. I'm 3 years old.
+
+// 15
+const _myObj = {
+  author: "Nezrin",
+  city: "Washington",
+};
+
+let { author, city } = _myObj;
+
+console.log(author); // Nezrin
+console.log(city); // Washington
+
+// 16
+let copy = { ..._myObj };
+
+console.log(copy); // { author: 'Nezrin', city: 'Washington' }
+
+let all = { ..._myObj, ...obj, title: "Books" };
+
+console.log(all);
+
+// 17
+const person = {
+  age: 55,
+  name: "Ali",
+  title: "Books",
+  surname: "Aliyev",
+  city: "Washington",
+};
+
+const { title, ...rest } = person;
+console.log(title); // Books
+console.log(rest); // { age: 55, name: 'Ali', surname: 'Aliyev', city: 'Washington' }
+
+// 18
+console.log(Object.keys(person)); // [ 'age', 'name', 'title', 'surname', 'city' ]
+console.log(Object.values(person)); // [ 55, 'Ali', 'Books', 'Aliyev', 'Washington' ]
+console.log(Object.entries(person));
