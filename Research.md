@@ -461,3 +461,5 @@ null == null; // true
 
 `fieldset` formda əlaqəli elementləri qruplaşdırmaq üçün istifadə olunur, `legend` isə `fieldset` üçün başlıq təyin edir. Nümunə:<br><br>
 ![fieldset və legend teqləri](https://user-images.githubusercontent.com/86655646/139834818-4f0bd20b-7b6a-47c3-81dd-769f4a8de175.png)
+
+#### ⬆ [Yuxarıya qayıt](https://github.com/isbendiyarovanezrin/PragmatechFrontendProject/blob/master/Research.md#heavy_check_mark-sual-1)
