@@ -26,6 +26,11 @@ body {
   align-items: center;
 }
 
+::selection {
+  background-color: #3e839b;
+  color: #f5f5f5;
+}
+
 /* colors */
 .tn-box-color-1 {
   background-color: #ffe691;
@@ -40,6 +45,7 @@ body {
   background-color: #99ffb1;
   border: 1px solid #7ce294;
 }
+
 .tn-box-color-2 p {
   color: #2d8241;
 }
@@ -48,6 +54,7 @@ body {
   background-color: #dd9aff;
   border: 1px solid #b367db;
 }
+
 .tn-box-color-3 p {
   color: #69288b;
 }
@@ -59,7 +66,7 @@ h1 {
   font-weight: 400;
   line-height: 3rem;
   margin: 5rem;
-  text-shadow: 1px 1px 1px rgb(255 255 255 / 75%);
+  text-shadow: 1px 1px 1px #ffffffbf;
 }
 
 .header h1 span {
@@ -75,7 +82,7 @@ h1 {
   margin: 1.5rem;
   position: relative;
   border-radius: 4px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.13);
+  box-shadow: 1px 1px 1px #00000021;
 }
 
 p {
@@ -98,10 +105,10 @@ p::before {
   bottom: 3rem;
   left: 1rem;
   border-radius: 50%;
-  color: rgba(255, 255, 255, 0.932);
-  border: 3px solid rgba(255, 255, 255, 0.952);
-  text-shadow: 1px 1px 1px rgb(0 0 0 / 11%);
-  box-shadow: 1px 1px 1px rgb(0 0 0 / 11%);
+  color: #ffffffee;
+  border: 3px solid #fffffff3;
+  text-shadow: 1px 1px 1px #0000001c;
+  box-shadow: 1px 1px 1px #0000001c;
 }
 
 input.fire-check {
@@ -115,6 +122,7 @@ input.fire-check {
 }
 
 button.fire {
+  user-select: none;
   margin-bottom: 1.1rem;
   padding: 1rem 4rem;
   display: inline-block;
@@ -123,31 +131,31 @@ button.fire {
   border: 1px solid #42859b;
   border-radius: 4px;
   letter-spacing: 0.1px;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 11%);
-  text-shadow: 0 1px 1px rgb(0 0 0 / 31%);
+  box-shadow: 0 1px 1px #0000001c;
+  text-shadow: 0 1px 1px #0000004f;
   background-image: linear-gradient(to top, #6fafc4 0%, #498ea5 100%);
   font: bold 1.8rem monospace;
 }
 
 input.fire-check:hover + button.fire {
-  box-shadow: 0 1px 3px rgb(0 0 0 / 45%);
+  box-shadow: 0 1px 3px #00000073;
 }
 
 input.fire-check:checked + button.fire {
   color: #3e839b;
   background: #94cde0;
-  text-shadow: 0px 1px 1px rgb(255 255 255 / 45%);
-  box-shadow: 0px 1px 1px rgb(255 255 255 / 55%);
+  text-shadow: 0px 1px 1px #ffffff73;
+  box-shadow: 0px 1px 1px #ffffff8c;
   border: 1px solid #4991a9;
 }
 
 .tn-progress {
   width: 0;
   height: 0.4rem;
-  background-color: rgb(255 255 255 / 54%);
+  background-color: #ffffff8a;
   position: absolute;
   border-radius: 3px;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  box-shadow: 0 1px 1px #0000000d;
 }
 
 /* fire the animations */
@@ -172,17 +180,21 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   89% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   98% {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 0;
   }
@@ -192,17 +204,21 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   89% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   98% {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 0;
   }
@@ -212,17 +228,21 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   89% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   98% {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 0;
   }
@@ -232,17 +252,21 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   89% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   98% {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 0;
   }
@@ -252,17 +276,21 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
   0% {
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   89% {
     opacity: 1;
     transform: translateY(0px);
   }
+
   98% {
     opacity: 0;
     transform: translateY(-40px);
   }
+
   100% {
     opacity: 0;
   }
@@ -271,55 +299,60 @@ input.fire-check:checked ~ .tn .tn-box .tn-progress {
 @-webkit-keyframes increase {
   0% {
     width: 0%;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: #ffffff3d;
   }
+
   100% {
     width: 98%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: #ffffffee;
   }
 }
 
 @-ms-keyframes increase {
   0% {
     width: 0%;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: #ffffff3d;
   }
+
   100% {
     width: 98%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: #ffffffee;
   }
 }
 
 @-moz-keyframes increase {
   0% {
     width: 0%;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: #ffffff3d;
   }
+
   100% {
     width: 98%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: #ffffffee;
   }
 }
 
 @-o-keyframes increase {
   0% {
     width: 0%;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: #ffffff3d;
   }
+
   100% {
     width: 98%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: #ffffffee;
   }
 }
 
 @keyframes increase {
   0% {
     width: 0%;
-    background-color: rgba(255, 255, 255, 0.24);
+    background-color: #ffffff3d;
   }
+
   100% {
     width: 98%;
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: #ffffffee;
   }
 }
 
@@ -385,6 +418,7 @@ input.fire-check:checked ~ .tn .tn-box:nth-child(3) .tn-progress {
   html {
     font-size: 7px;
   }
+
   h1 {
     font-size: 2.5rem;
   }
