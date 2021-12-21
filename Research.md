@@ -1,8 +1,9 @@
 ## :heavy_check_mark: Sual 1
 
-#### `em` və `rem` ölçüləndirmə dəyərləri arasında hansı fərqlər var?<br>
+#### `em` və `rem` ölçüləndirmə dəyərləri arasında hansı fərqlər var?
 
-Responsiv saytlar üçün biz `px`-dən yox, `em` və `rem`-dən istifadə etməliyik. Çünki `px` ölçü vahidindən istifadə edərkən media sorğuları yazanda `px`-dən istifadə etdiyimiz çox teqə yenidən ölçü verməli oluruq, amma `em` və `rem` ilə sadəcə `body` ya da `html` teqinə ölçü verməyimiz bəs edir. `em` ölçü vahidi özünün valideyn elementinin şrift ölçüsünü əsas götürür. Əgər valideyn elementinə şrift ölçüsü verilməyibsə onda `body` teqinə verdiyimiz şrift ölçüsünü əsas götürür. Məsələn, html-də `span` teqi `div` teqinin (`div` teqinə 10px şrift ölçüsü verək) içində yazılıbsa, `span` teqi (`span` teqinə 3em şrift ölçüsü verək) valideyn elementinin (yəni `div` teqinin) şrift ölçüsünü əsas götürəcək (beləliklə, `span` teqinin şrift ölçüsü 30px olacaq (3em = 3 x 10px)). `Body` teqinə hər hansısa şrift ölçüsü verməyimiz bunu dəyişməyəcək.<br>
+Responsiv saytlar üçün biz `px`-dən yox, `em` və `rem`-dən istifadə etməliyik. Çünki `px` ölçü vahidindən istifadə edərkən media sorğuları yazanda `px`-dən istifadə etdiyimiz çox teqə yenidən ölçü verməli oluruq, amma `em` və `rem` ilə sadəcə `body` ya da `html` teqinə ölçü verməyimiz bəs edir. `em` ölçü vahidi özünün valideyn elementinin şrift ölçüsünü əsas götürür. Əgər valideyn elementinə şrift ölçüsü verilməyibsə onda `body` teqinə verdiyimiz şrift ölçüsünü əsas götürür. Məsələn, html-də `span` teqi `div` teqinin (`div` teqinə 10px şrift ölçüsü verək) içində yazılıbsa, `span` teqi (`span` teqinə 3em şrift ölçüsü verək) valideyn elementinin (yəni `div` teqinin) şrift ölçüsünü əsas götürəcək (beləliklə, `span` teqinin şrift ölçüsü 30px olacaq (3em = 3 x 10px)). `Body` teqinə hər hansısa şrift ölçüsü verməyimiz bunu dəyişməyəcək.
+
 _Nümunə:_
 
 ```css
@@ -50,7 +51,7 @@ _Qeyd:_ İlkin olaraq `html` və `body` teqlərinin şrift ölçüsü 16px-dir. 
 
 ## :heavy_check_mark: Sual 2
 
-#### `Background-origin` və `background-clip` xassələri aralarında hansı fərqlər var?<br>
+#### `Background-origin` və `background-clip` xassələri aralarında hansı fərqlər var?
 
 Qısa olaraq desək `background-origin` `background-image` ilə təyin olunan fon şəklinin haradan başlayacağını təyin edir. İlkin dəyəri `padding-box`-dur. `Background-clip` xassəsi isə fon şəklinin və ya fon rənginin (`background-origin` fon rənginə təsir etmir) həm haradan başlayacağını, həm də harada bitəcəyini təyin edir. İlkin dəyəri `border-box`-dur.
 <br>
@@ -58,10 +59,11 @@ Qısa olaraq desək `background-origin` `background-image` ilə təyin olunan fo
 
 ## :heavy_check_mark: Sual 3
 
-#### `::selection` selektorundan harada istifadə olunur?<br>
+#### `::selection` selektorundan harada istifadə olunur?
 
-`::selection` selektoru istifadəçi saytdakı hansısa elementi seçərkən həmin elementin necə görünəcəyini təyin edir. Bir neçə CSS parametri tətbiq edə bilir: `::selection` selektor: `color`, `background`, `cursor` və `outline`.<br>
-_Məsələn:_
+`::selection` selektoru istifadəçi saytdakı hansısa elementi seçərkən həmin elementin necə görünəcəyini təyin edir. Bir neçə CSS parametri tətbiq edə bilir: `::selection` selektor: `color`, `background`, `cursor` və `outline`.
+
+_Nümunə:_
 
 ```css
 ::selection {
@@ -76,7 +78,7 @@ Bu zaman istifadəçinin seçdiyi mətn (kopyalamaq üçün və s.) sarı arxa f
 
 ## :heavy_check_mark: Sual 4
 
-#### `h1` - `h6`, `div`, `a`, `button`, `ul`, `li`, `section`, `img`, `span` teqlərinin ilkin CSS xüsusiyyətləri nələrdir?<br>
+#### `h1` - `h6`, `div`, `a`, `button`, `ul`, `li`, `section`, `img`, `span` teqlərinin ilkin CSS xüsusiyyətləri nələrdir?
 
 1. `h1`
 
@@ -255,7 +257,7 @@ img {
 
 ## :heavy_check_mark: Sual 5
 
-#### CSS-in `filter` xüsusiyyəti nədir və necə istifadə olunur?<br>
+#### CSS-in `filter` xüsusiyyəti nədir və necə istifadə olunur?
 
 CSS `filter` xüsusiyyəti CSS3 ilə birlikdə gəlib və HTML elementlərinə (əsasən şəkillərə) fotoşopa bənzəyən vizual effektlər (paqlaqlıq, bulanıqlıq, şəffaflıq və s. kimi) tətbiq edir. Beləliklə, tək sətir CSS kodu ilə şəkilləri daha gözəl hala gətirə bilirik. Məsələn, grayscale effektini yoxlayaq.
 <br><br>
@@ -277,7 +279,7 @@ img {
 
 ## :heavy_check_mark: Sual 6
 
-#### CSS-də `text-indent` xüsusiyyəti nədir və nə zaman istifadə olunur?<br>
+#### CSS-də `text-indent` xüsusiyyəti nədir və nə zaman istifadə olunur?
 
 Bu xüsusiyyət mətnlərin ilk sətrinin abzas məsafəsini (sətrin əvvəlindəki girinti) təyin edir. Aşağıdakı gifdən də gördüyünüz kimi abzas məsafəsini rahatlıqla `text-indent` ilə vermək olur.
 <br><br>
@@ -287,7 +289,7 @@ Bu xüsusiyyət mətnlərin ilk sətrinin abzas məsafəsini (sətrin əvvəlind
 
 ## :heavy_check_mark: Sual 7
 
-#### CSS-in `user-select` xüsusiyyəti nədir və nə zaman istifadə olunur?<br>
+#### CSS-in `user-select` xüsusiyyəti nədir və nə zaman istifadə olunur?
 
 Bu xüsusiyyət elementin mətninin seçilib-seçilməyəcəyini təyin edir. Veb brauzerlərdə bəzi mətnlərin üstünə iki dəfə basanda həmin mətn seçilir. Məsələn, `user-select` xüsusiyyəti bunun qarşısını almaq üçün istifadə oluna bilər.
 
@@ -306,7 +308,7 @@ Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn,
 
 ## :heavy_check_mark: Sual 8
 
-#### HTML teqlərinin bəzilərinin sonluğu var, bəzilərinin yoxdur. Bunun səbəbi nədir?<br>
+#### HTML teqlərinin bəzilərinin sonluğu var, bəzilərinin yoxdur. Bunun səbəbi nədir?
 
 Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `link`, `br`, `img`, `hr`, `input`, `wbr` və s. kimi teqləri misal göstərmək olar. Bu teqlərin sonluğa ehtiyacı yoxdur, çünki məzmununa baxanda nə olduğu bəlli olur, yəni məzmunu bəlli olur. Ona görə də sonluq yazmağa ehtiyac qalmır. Məsələn, `div` teqini götürsək onun məzmunu bəlli deyil, yəni içində hər şey ola bilər, yazı da ola bilər, başqa müxtəlif teqlər də ola bilər, heç nə olmaya da bilər. Tutaq ki, içində yazı var və biz `div` teqinin sonluğunu yazmamışıq, yəni `</div>` yazmamışıq. Onda biz necə bilə-bilərik ki, bu yazı harada bitəcək və s. Sonunu, bitdiyini bildirmək üçün `div` teqini bağlamalıyıq. İnspect edib koda baxanda da rahatlıq olur o zaman (başlanğıcını və sonunu biləndə). Misal üçün `br` teqində isə belə deyil, onu bağlasaq da eyni funksiyanı yerinə yetirir, bağlamasaq da, baxan kimi bilinir ki, `br` teqi nə üçün yazılıb və s. `img` teqinin məzmunu bəllidir. Ona baxan kimi nə üçün səhifədə olduğunu bilmək olur. **"self-closing"** teqlər adətən səhifədə tək dayanır. Ümid edirəm ki, fikrimi düzgün ifadə edə bilmişəm.
 <br>
@@ -314,10 +316,11 @@ Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `li
 
 ## :heavy_check_mark: Sual 9
 
-#### HTML `abbr` teqi nə üçün istifadə olunur?<br>
+#### HTML `abbr` teqi nə üçün istifadə olunur?
 
 `abbr` bir sözün və ya söz qruplarının qısaldılmış halını göstərmək üçün istifadə olunur. `title` atributunun köməyi ilə isə maus kursoru həmin sözün üstünə gələndə sözün açılışı görünür.
-Məsələn: <br>
+
+_Nümunə:_
 
 ![abbr teq](https://i.postimg.cc/0jbxQhnt/abbr.gif)
 <br>
@@ -325,9 +328,9 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 10
 
-#### `cite` teqindən nə üçün istifadə olunur?<br>
+#### `cite` teqindən nə üçün istifadə olunur?
 
-`cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq:<br>
+`cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq.
 
 ![cite teqi](https://user-images.githubusercontent.com/86655646/138767408-f9dfb5e2-4bdf-4eb8-af7c-3e28fcab1e00.png)
 <br>
@@ -335,9 +338,9 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 11
 
-#### `address` teqindən nə üçün istifadə olunur?<br>
+#### `address` teqindən nə üçün istifadə olunur?
 
-`address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq:<br>
+`address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq.
 
 ![address teqi](https://user-images.githubusercontent.com/86655646/138770823-69942173-7c3b-4ef5-be42-13c5a19eed50.png)
 <br>
@@ -345,9 +348,11 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 12
 
-#### `q` teqindən nə üçün istifadə olunur?<br>
+#### `q` teqindən nə üçün istifadə olunur?
 
-`q` teqi qısa sitatları yazmaq üçün istifadə olunur və bu zaman brauzerlər sitatın hər iki tərəfinə dırnaq işarəsi qoyur. Nümunə:<br>
+`q` teqi qısa sitatları yazmaq üçün istifadə olunur və bu zaman brauzerlər sitatın hər iki tərəfinə dırnaq işarəsi qoyur.
+
+_Nümunə:_
 
 ![q teqinin istifadəsi](https://user-images.githubusercontent.com/86655646/138775635-c2d6f6df-5cb9-453b-8bd7-c6a53df28fa0.png)
 <br>
@@ -355,9 +360,11 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 13
 
-#### `blockquote` teqindən nə üçün istifadə olunur?<br>
+#### `blockquote` teqindən nə üçün istifadə olunur?
 
-`blockquote` teqindən başqa mənbədən sitat gətirilən hissəni yazmaq üçün istifadə olunur. Brauzerlər adətən bu hissəni abzasdan yazdırırlar. Burada `cite` teqinin içində isə sitatın mənbəyinin URl-sini yazırıq. Nümunə:<br>
+`blockquote` teqindən başqa mənbədən sitat gətirilən hissəni yazmaq üçün istifadə olunur. Brauzerlər adətən bu hissəni abzasdan yazdırırlar. Burada `cite` teqinin içində isə sitatın mənbəyinin URl-sini yazırıq.
+
+_Nümunə:_
 
 ![blockquote teqi](https://user-images.githubusercontent.com/86655646/138810854-80fe69bf-fe06-46b0-b2bb-9d12c5258510.png)
 <br>
@@ -365,9 +372,11 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 14
 
-#### `mark` teqindən nə üçün istifadə olunur?<br>
+#### `mark` teqindən nə üçün istifadə olunur?
 
-`mark` teqi mətnin bir hissəsini vurğulanmaq və ya işarələnmək üçün istifadə olunur. `mark` teqinin əsas məqsədi bu teqin içində yazılan sözü və ya cümləni sarı arxa fonla istifadəçiyə göstərməkdir. Nümunə:<br>
+`mark` teqi mətnin bir hissəsini vurğulanmaq və ya işarələnmək üçün istifadə olunur. `mark` teqinin əsas məqsədi bu teqin içində yazılan sözü və ya cümləni sarı arxa fonla istifadəçiyə göstərməkdir.
+
+_Nümunə:_
 
 ![mark teqi](https://user-images.githubusercontent.com/86655646/138814747-68775786-fbef-4e5d-8407-124150de47aa.png)
 <br>
@@ -375,9 +384,11 @@ Məsələn: <br>
 
 ## :heavy_check_mark: Sual 15
 
-#### `bdi` teqindən nə üçün istifadə olunur?<br>
+#### `bdi` teqindən nə üçün istifadə olunur?
 
-BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fərqli istiqamətdə başlayan mətni ayırır. Məsələn, ərəb dili sağdan sola yazılan bir dildir. Saytınızda ərəb dilində sağdan sola yazılan yazılar ola bilər. Dilin və sözün quruluşunu qorumaq üçün bu sözləri saytımızda istifadə etdiyimiz dil quruluşundan təcrid etməliyik. Bunun üçün isə həmin sözləri `bdi` teqinin içində yazmalıyıq. Nümunə:<br>
+BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fərqli istiqamətdə başlayan mətni ayırır. Məsələn, ərəb dili sağdan sola yazılan bir dildir. Saytınızda ərəb dilində sağdan sola yazılan yazılar ola bilər. Dilin və sözün quruluşunu qorumaq üçün bu sözləri saytımızda istifadə etdiyimiz dil quruluşundan təcrid etməliyik. Bunun üçün isə həmin sözləri `bdi` teqinin içində yazmalıyıq.
+
+_Nümunə:_
 
 ![bdi](https://user-images.githubusercontent.com/86655646/138816560-8d218900-1e73-4772-9da1-3e27de7094fa.png)
 <br>
@@ -385,9 +396,11 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 
 ## :heavy_check_mark: Sual 16
 
-#### `optgroup` teqindən nə üçün istifadə olunur?<br>
+#### `optgroup` teqindən nə üçün istifadə olunur?
 
-`optgroup` teqi `select` (açılan siyahı) teqində əlaqəli seçimləri qruplaşdırmaq üçün istifadə olunur. Bu zaman `optgroup` teqinin içində `option` teqi yazılır. Uzun bir seçim siyahınız varsa, əlaqəli seçimləri qruplaşdırmaq istifadəçinin istədiyi seçimi tapmasını asanlaşdıra bilər. Nümunə:<br>
+`optgroup` teqi `select` (açılan siyahı) teqində əlaqəli seçimləri qruplaşdırmaq üçün istifadə olunur. Bu zaman `optgroup` teqinin içində `option` teqi yazılır. Uzun bir seçim siyahınız varsa, əlaqəli seçimləri qruplaşdırmaq istifadəçinin istədiyi seçimi tapmasını asanlaşdıra bilər.
+
+_Nümunə:_
 
 ![optgroup teqi](https://user-images.githubusercontent.com/86655646/138837020-54b6b5da-fbea-476f-bc4d-d1d348f64fec.png)
 <br>
@@ -395,9 +408,11 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 
 ## :heavy_check_mark: Sual 17
 
-#### `::marker` selektoru necə istifadə olunur?<br>
+#### `::marker` selektoru necə istifadə olunur?
 
-`::marker` selektoru siyahı elementlərinin qabağında olan işarələri müəyyən edir. Nümunə:<br>
+`::marker` selektoru siyahı elementlərinin qabağında olan işarələri müəyyən edir.
+
+_Nümunə:_
 
 <div align="center">
    <img width="47%" src="https://user-images.githubusercontent.com/86655646/139129209-d403906e-81b8-4327-92d0-6521bcc748c1.png">
@@ -413,9 +428,12 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 
 ## :heavy_check_mark: Sual 18
 
-#### `text-decoration-color` xüsusiyyəti nə işə yarayır?<br>
+#### `text-decoration-color` xüsusiyyəti nə işə yarayır?
 
-`text-decoration-color` xüsusiyyəti `text-decoration` (məsələn, `text-decoration: underline` verildikdə mətnin altından xətt çəkilir) verilən mətndə xəttin rəngini təyin edir. Nümunə:<br>
+`text-decoration-color` xüsusiyyəti `text-decoration` (məsələn, `text-decoration: underline` verildikdə mətnin altından xətt çəkilir) verilən mətndə xəttin rəngini təyin edir.
+
+_Nümunə:_
+
 <img width="65%" src="https://user-images.githubusercontent.com/86655646/139156735-2da0a73a-7a4c-4259-ae7b-2bbd51860aa9.png">
 <img width="65%" src="https://user-images.githubusercontent.com/86655646/139156752-57b17231-128f-4c93-b992-4492aede397c.png">
 <img src="https://user-images.githubusercontent.com/86655646/139156701-dd12624f-2275-480d-8e63-403032941d6c.png">
@@ -424,9 +442,11 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 
 ## :heavy_check_mark: Sual 19
 
-#### JavaScriptdə `null` və `undefined` arasında hansı fərqlər var?<br>
+#### JavaScriptdə `null` və `undefined` arasında hansı fərqlər var?
 
-`null` dəyərin yoxluğunu ifadə edən JavaScriptə xas primitiv məlumat tipidir və `typeof` operatorundan istifadə edəndə `object` döndürür. Nümunə:
+`null` dəyərin yoxluğunu ifadə edən JavaScriptə xas primitiv məlumat tipidir və `typeof` operatorundan istifadə edəndə `object` döndürür.
+
+_Nümunə:_
 
 ```js
 let testLet = null;
@@ -434,7 +454,9 @@ alert(testLet); // null göstərəcək
 alert(typeof testLet); // object göstərəcək
 ```
 
-`undefined` JavaScriptdə dəyişənin olduğunu, lakin helə də dəyər təyin edilmədiyini bildirir və `typeof` operatorundan istifadə etsək də `undefined` döndürür. Nümunə:
+`undefined` JavaScriptdə dəyişənin olduğunu, lakin helə də dəyər təyin edilmədiyini bildirir və `typeof` operatorundan istifadə etsək də `undefined` döndürür.
+
+_Nümunə:_
 
 ```js
 let testLet;
@@ -457,9 +479,12 @@ null == null; // true
 
 ## :heavy_check_mark: Sual 20
 
-#### `fieldset` və `legend` teqləri necə istifadə olunur?<br>
+#### `fieldset` və `legend` teqləri necə istifadə olunur?
 
-`fieldset` formda əlaqəli elementləri qruplaşdırmaq üçün istifadə olunur, `legend` isə `fieldset` üçün başlıq təyin edir. Nümunə:<br><br>
+`fieldset` formda əlaqəli elementləri qruplaşdırmaq üçün istifadə olunur, `legend` isə `fieldset` üçün başlıq təyin edir.
+
+_Nümunə:_
+
 ![fieldset və legend teqləri](https://user-images.githubusercontent.com/86655646/139834818-4f0bd20b-7b6a-47c3-81dd-769f4a8de175.png)
 
 #### ⬆ [Yuxarıya qayıt](https://github.com/isbendiyarovanezrin/PragmatechFrontendProject/blob/master/Research.md#heavy_check_mark-sual-1)
