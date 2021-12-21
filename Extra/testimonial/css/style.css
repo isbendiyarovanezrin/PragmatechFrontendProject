@@ -4,10 +4,14 @@ html {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
   color: #212529;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+}
+
+img {
+  user-select: none;
 }
 
 h1,
@@ -91,20 +95,20 @@ p {
 }
 
 .img::before {
-  content: url(images/left-quotes-sign.png);
+  content: url(../images/left-quotes-sign.png);
   opacity: 0.7;
   filter: contrast(0.8);
 }
 
 .img::after {
-  content: url(images/right-quotes-sign.png);
+  content: url(../images/right-quotes-sign.png);
   opacity: 0.7;
   filter: contrast(0.8);
 }
 
 ::selection {
   background-color: #288d28a6;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 /* media queries */
