@@ -1,0 +1,94 @@
+/* variables */
+:root {
+  --primary-color: #212529;
+  --secondary-color: #465e6a;
+  --bg-color: #f8f8f8;
+  --white-color: #fff;
+  --red-color: #da0909;
+  --font-family: Poppins, sans-serif;
+}
+
+/* loader */
+#loadingDiv {
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+}
+
+.loader {
+  width: 11rem;
+  height: 11rem;
+  background: center / contain no-repeat url(../images/loader.gif);
+}
+
+/* common */
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+  font-family: var(--font-family);
+}
+
+.container {
+  padding: 2.5rem 12rem;
+}
+
+::selection {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+/* navbar */
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-right a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+h1 span {
+  color: var(--red-color);
+}
+
+button {
+  display: flex;
+  background-color: transparent;
+}
+
+.number {
+  font-weight: 700;
+}
+
+.shopping-cart-img {
+  width: 4rem;
+}
+
+.arrow-img {
+  width: 2rem;
+}
