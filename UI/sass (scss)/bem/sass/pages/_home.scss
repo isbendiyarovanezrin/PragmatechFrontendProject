@@ -8,5 +8,9 @@ body {
 }
 
 .container {
-  margin: $spacing-0 auto;
+  margin: $size-0 auto;
+}
+
+img {
+  user-select: none;
 }

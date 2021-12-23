@@ -1,9 +1,13 @@
 // dropdown
 .info__dropdown {
+  &:hover .info__dropdown__menu {
+    display: block;
+  }
+
   &__menu {
     display: none;
-    left: -5px;
-    top: 20px;
+    left: -$size-1;
+    top: $size-4;
     z-index: 1;
     position: absolute;
     background-color: $bg-color;
@@ -14,10 +18,10 @@
     );
 
     ul {
-      margin: $spacing-1;
+      margin: $size-1;
 
       li {
-        padding: $spacing-2;
+        padding: $size-2;
         font-size: $font-size-3;
 
         &:hover {
@@ -26,8 +30,4 @@
       }
     }
   }
-}
-
-.info__dropdown:hover .info__dropdown__menu {
-  display: block;
 }

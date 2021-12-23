@@ -8,25 +8,26 @@
 .header__info {
   flex-direction: row;
   justify-content: space-between;
-  padding: $spacing-3;
+  padding: $size-3;
 
   .info__tel {
-    margin-left: $spacing-3;
+    margin-left: $size-3;
 
     .tel__img {
-      width: 15px;
-      height: 15px;
+      width: $size-3;
+      height: $size-3;
     }
   }
+
   &__right {
-    margin-right: $spacing-2;
+    margin-right: $size-2;
 
     .info__lang {
-      margin: 0 $spacing-8;
+      margin: 0 $size-8;
 
       &__item {
         position: relative;
-        margin-right: $spacing-8;
+        margin-right: $size-8;
 
         .fas {
           font-size: $font-size-2;
@@ -34,6 +35,7 @@
       }
     }
   }
+
   a {
     color: $text-color;
     font-size: $font-size-3;
