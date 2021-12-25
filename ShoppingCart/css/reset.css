@@ -14,13 +14,3 @@ ol {
 a {
   text-decoration: none;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-img {
-  height: auto;
-  width: 100%;
-  user-select: none;
-}
