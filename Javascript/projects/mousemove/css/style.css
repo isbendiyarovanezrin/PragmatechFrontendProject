@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+#cursor {
+  position: absolute;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.17rem solid #1b1919d5;
+  background-color: transparent;
+  transition: 0.1s linear;
+}
