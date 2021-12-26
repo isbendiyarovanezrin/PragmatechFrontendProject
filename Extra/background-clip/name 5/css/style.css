@@ -4,45 +4,45 @@
 }
 
 body {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
   overflow: hidden;
   font-size: 10px;
   background-color: hsl(203, 100%, 6%);
 }
 
 .name {
+  margin: 0 auto;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font: 900 20em "Rampart One", cursive;
-  background: url(img/tree.jpeg) 10% 64% repeat;
+  font: 900 17em "Major Mono Display", monospace;
+  background: url(../img/tree.jpeg) 100% 28% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: hsla(187, 36%, 14%, 0.231);
-  filter: contrast(110%) brightness(110%)
+  filter: contrast(113%) brightness(115%)
     drop-shadow(1px 1px 1px hsla(0, 0%, 50%, 0.788));
 }
 
 .name::selection {
-  background-color: hsl(203deg 60% 34% / 16%);
+  background-color: hsl(194deg 23% 37% / 21%);
 }
 
 @media screen and (max-width: 900px) {
   body {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 580px) {
   body {
-    font-size: 4px;
+    font-size: 3px;
   }
 }
 
 @media screen and (max-width: 320px) {
   body {
-    font-size: 2.7px;
+    font-size: 2px;
   }
 }

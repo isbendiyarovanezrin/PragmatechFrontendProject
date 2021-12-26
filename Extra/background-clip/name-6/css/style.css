@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: #cc098163;
+}
+
+.text {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font: 900 18em Georgia, "Times New Roman", Times, serif;
+  background: url(../img/flowers.jpg) -72% -91% repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #e580dd33;
+  animation: fade 4s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+::selection {
+  background-color: #83299e77;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 2px;
+  }
+}

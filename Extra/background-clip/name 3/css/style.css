@@ -18,7 +18,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font: 900 27em "Creepster", cursive;
-  background: url(img/sea.jpeg) 145% -1% repeat;
+  background: url(../img/sea.jpeg) 145% -1% repeat;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #288eb512;

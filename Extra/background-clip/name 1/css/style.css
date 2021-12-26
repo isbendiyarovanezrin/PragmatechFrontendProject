@@ -10,31 +10,31 @@ body {
   justify-content: center;
   overflow: hidden;
   font-size: 10px;
-  background-color: rgb(143 138 177 / 44%);
+  background-color: #ead0e063;
 }
 
 .text {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   font: 900 18em Georgia, "Times New Roman", Times, serif;
-  background: url(img/flowers.jpg) 87% 65% repeat;
+  background: url(../img/flowers.jpg) -72% -91% repeat;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #e580dd1f;
-  letter-spacing: 0.1em;
-  filter: contrast(90%);
+  -webkit-text-fill-color: #e580dd33;
 }
 
 .text::selection {
-  background-color: rgb(67 46 98 / 50%);
+  background-color: #ffb6c180;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 760px) {
   body {
-    font-size: 7px;
+    font-size: 5px;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   body {
-    font-size: 4px;
+    font-size: 3px;
   }
 }
