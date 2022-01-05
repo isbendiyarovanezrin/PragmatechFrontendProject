@@ -46,7 +46,7 @@ h1 {
 Bu halda `h1` teqinin ölçüsü 120px olacaq.
 
 _Qeyd:_ İlkin olaraq `html` və `body` teqlərinin şrift ölçüsü 16px-dir. Yəni heç bir dəyər verməsək bu ölçünü əsas götürəcək (1em = 16px, 1rem = 16px).
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 2
@@ -54,7 +54,7 @@ _Qeyd:_ İlkin olaraq `html` və `body` teqlərinin şrift ölçüsü 16px-dir. 
 #### `Background-origin` və `background-clip` xassələri aralarında hansı fərqlər var?
 
 Qısa olaraq desək `background-origin` `background-image` ilə təyin olunan fon şəklinin haradan başlayacağını təyin edir. İlkin dəyəri `padding-box`-dur. `Background-clip` xassəsi isə fon şəklinin və ya fon rənginin (`background-origin` fon rənginə təsir etmir) həm haradan başlayacağını, həm də harada bitəcəyini təyin edir. İlkin dəyəri `border-box`-dur.
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 3
@@ -73,7 +73,7 @@ _Nümunə:_
 ```
 
 Bu zaman istifadəçinin seçdiyi mətn (kopyalamaq üçün və s.) sarı arxa fonlu qara yazı olacaq (əgər mətn seçibsə).
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 4
@@ -122,7 +122,8 @@ h3 {
 }
 ```
 
-4.  `h4` <br>
+4.  `h4`
+
     Şrift ölçüsü 1em-dir, ona görə də yazmağa ehtiyac yoxdur.
 
 ```css
@@ -182,7 +183,8 @@ a {
 }
 ```
 
-9. `button` <br>
+9. `button`
+
    Fərqli brauzerlər button üçün fərqli ilkin dəyərlərdən istifadə edir. Məsələn, Chrome brauzerindəki button'un ilkin dəyərləri aşağıdakı kimidir.
 
 ```css
@@ -250,23 +252,30 @@ img {
 }
 ```
 
-14. `span` <br>
+14. `span`
+
     İlkin CSS xüsusiyyəti yoxdur.
-    <br>
+
     <br>
 
 ## :heavy_check_mark: Sual 5
 
 #### CSS-in `filter` xüsusiyyəti nədir və necə istifadə olunur?
 
-CSS `filter` xüsusiyyəti CSS3 ilə birlikdə gəlib və HTML elementlərinə (əsasən şəkillərə) fotoşopa bənzəyən vizual effektlər (paqlaqlıq, bulanıqlıq, şəffaflıq və s. kimi) tətbiq edir. Beləliklə, tək sətir CSS kodu ilə şəkilləri daha gözəl hala gətirə bilirik. Məsələn, grayscale effektini yoxlayaq.
-<br><br>
+CSS `filter` xüsusiyyəti CSS3 ilə birlikdə gəlib və HTML elementlərinə (əsasən şəkillərə) fotoşopa bənzəyən vizual effektlər (paqlaqlıq, bulanıqlıq, şəffaflıq və s. kimi) tətbiq edir. Beləliklə, tək sətir CSS kodu ilə şəkilləri daha gözəl hala gətirə bilirik.
+
+Məsələn, grayscale effektini yoxlayaq.
+
 ![filter grayscale effekti](https://user-images.githubusercontent.com/86655646/136672356-9f6aa1b7-2c93-4a48-bad4-9dc895badbee.gif)
-<br><br>
+
+<br>
+
 Başqa filterləri də yoxlaya bilərik.
-<br><br>
+
 ![css filter](https://user-images.githubusercontent.com/86655646/136672438-8f421b12-b5d8-466d-9d94-c05ae76e6de7.gif)
-<br><br>
+
+<br>
+
 Birdən çox filteri aşağıdakı kimi bir-birinin ardınca yazmaq olar.
 
 ```css
@@ -282,9 +291,11 @@ img {
 #### CSS-də `text-indent` xüsusiyyəti nədir və nə zaman istifadə olunur?
 
 Bu xüsusiyyət mətnlərin ilk sətrinin abzas məsafəsini (sətrin əvvəlindəki girinti) təyin edir. Aşağıdakı gifdən də gördüyünüz kimi abzas məsafəsini rahatlıqla `text-indent` ilə vermək olur.
-<br><br>
-![text-indent](https://user-images.githubusercontent.com/86655646/136673783-deffd2dd-5626-4159-be4d-8f40fc8791ab.gif)
+
 <br>
+
+![text-indent](https://user-images.githubusercontent.com/86655646/136673783-deffd2dd-5626-4159-be4d-8f40fc8791ab.gif)
+
 <br>
 
 ## :heavy_check_mark: Sual 7
@@ -301,9 +312,10 @@ div {
 }
 ```
 
-Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn, aşağıdakı kimi olmayacaq.<br><br>
+Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn, aşağıdakı kimi olmayacaq.<br>
+
 ![user-select](https://user-images.githubusercontent.com/86655646/136674113-8aac1daa-7b31-43d7-a98d-ea1e143f2c40.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 8
@@ -311,7 +323,7 @@ Bu zaman div teqinin içində olan mətni seçə bilməyəcəksiniz. Məsələn,
 #### HTML teqlərinin bəzilərinin sonluğu var, bəzilərinin yoxdur. Bunun səbəbi nədir?
 
 Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `link`, `br`, `img`, `hr`, `input`, `wbr` və s. kimi teqləri misal göstərmək olar. Bu teqlərin sonluğa ehtiyacı yoxdur, çünki məzmununa baxanda nə olduğu bəlli olur, yəni məzmunu bəlli olur. Ona görə də sonluq yazmağa ehtiyac qalmır. Məsələn, `div` teqini götürsək onun məzmunu bəlli deyil, yəni içində hər şey ola bilər, yazı da ola bilər, başqa müxtəlif teqlər də ola bilər, heç nə olmaya da bilər. Tutaq ki, içində yazı var və biz `div` teqinin sonluğunu yazmamışıq, yəni `</div>` yazmamışıq. Onda biz necə bilə-bilərik ki, bu yazı harada bitəcək və s. Sonunu, bitdiyini bildirmək üçün `div` teqini bağlamalıyıq. İnspect edib koda baxanda da rahatlıq olur o zaman (başlanğıcını və sonunu biləndə). Misal üçün `br` teqində isə belə deyil, onu bağlasaq da eyni funksiyanı yerinə yetirir, bağlamasaq da, baxan kimi bilinir ki, `br` teqi nə üçün yazılıb və s. `img` teqinin məzmunu bəllidir. Ona baxan kimi nə üçün səhifədə olduğunu bilmək olur. **"self-closing"** teqlər adətən səhifədə tək dayanır. Ümid edirəm ki, fikrimi düzgün ifadə edə bilmişəm.
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 9
@@ -323,7 +335,7 @@ Belə teqlərə **"self-closing"** teqlər deyilir. Nümunə üçün `meta`, `li
 _Nümunə:_
 
 ![abbr teq](https://i.postimg.cc/0jbxQhnt/abbr.gif)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 10
@@ -333,7 +345,7 @@ _Nümunə:_
 `cite` teqi kitabın, filmin, şəklin, mahnının, şeirin və s. yaradıcı işin başlığını təyin etmək üçün istifadə olunur və həmin söz adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə nəzər salaq.
 
 ![cite teqi](https://user-images.githubusercontent.com/86655646/138767408-f9dfb5e2-4bdf-4eb8-af7c-3e28fcab1e00.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 11
@@ -343,7 +355,7 @@ _Nümunə:_
 `address` teqi məqalənin və ya sənədin müəllifi (sahibi) üçün əlaqə məlumatlarını müəyyən edir. Bu əlaqə məlumatlarına e-poçt ünvanı, URL, telefon nömrəsi və s. daxil ola bilər. Həmin sözlər adətən italik yazı tipində yazılır. Məsələn, aşağıdakı nümunəyə baxaq.
 
 ![address teqi](https://user-images.githubusercontent.com/86655646/138770823-69942173-7c3b-4ef5-be42-13c5a19eed50.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 12
@@ -355,7 +367,7 @@ _Nümunə:_
 _Nümunə:_
 
 ![q teqinin istifadəsi](https://user-images.githubusercontent.com/86655646/138775635-c2d6f6df-5cb9-453b-8bd7-c6a53df28fa0.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 13
@@ -367,7 +379,7 @@ _Nümunə:_
 _Nümunə:_
 
 ![blockquote teqi](https://user-images.githubusercontent.com/86655646/138810854-80fe69bf-fe06-46b0-b2bb-9d12c5258510.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 14
@@ -379,7 +391,7 @@ _Nümunə:_
 _Nümunə:_
 
 ![mark teqi](https://user-images.githubusercontent.com/86655646/138814747-68775786-fbef-4e5d-8407-124150de47aa.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 15
@@ -391,7 +403,7 @@ BDİ'nin açılışı Bi-Directional Isolation-dur. `bdi` teqi bir mətndən fə
 _Nümunə:_
 
 ![bdi](https://user-images.githubusercontent.com/86655646/138816560-8d218900-1e73-4772-9da1-3e27de7094fa.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 16
@@ -403,7 +415,7 @@ _Nümunə:_
 _Nümunə:_
 
 ![optgroup teqi](https://user-images.githubusercontent.com/86655646/138837020-54b6b5da-fbea-476f-bc4d-d1d348f64fec.png)
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 17
@@ -415,15 +427,15 @@ _Nümunə:_
 _Nümunə:_
 
 <div align="center">
-   <img width="47%" src="https://user-images.githubusercontent.com/86655646/139129209-d403906e-81b8-4327-92d0-6521bcc748c1.png">
-   <img width="47%" src="https://user-images.githubusercontent.com/86655646/139129973-d64066b4-b8a1-4e61-b549-30a87e2a93f4.png">
+   <img width="400" src="https://user-images.githubusercontent.com/86655646/139129209-d403906e-81b8-4327-92d0-6521bcc748c1.png">
+   <img width="400" src="https://user-images.githubusercontent.com/86655646/139129973-d64066b4-b8a1-4e61-b549-30a87e2a93f4.png">
 </div>
    
 <div align="center">
 <img src="https://user-images.githubusercontent.com/86655646/139131028-b9b8a918-6dab-4603-9980-aa0dfc4e506d.png">
 <img src="https://user-images.githubusercontent.com/86655646/139131421-0e24c94d-5e9e-4fcd-a506-d7edd717ce3b.png">
 </div>
-<br>
+
 <br>
 
 ## :heavy_check_mark: Sual 18
@@ -434,10 +446,10 @@ _Nümunə:_
 
 _Nümunə:_
 
-<img width="65%" src="https://user-images.githubusercontent.com/86655646/139156735-2da0a73a-7a4c-4259-ae7b-2bbd51860aa9.png">
-<img width="65%" src="https://user-images.githubusercontent.com/86655646/139156752-57b17231-128f-4c93-b992-4492aede397c.png">
-<img src="https://user-images.githubusercontent.com/86655646/139156701-dd12624f-2275-480d-8e63-403032941d6c.png">
-<br>
+<img width="400" src="https://user-images.githubusercontent.com/86655646/139156735-2da0a73a-7a4c-4259-ae7b-2bbd51860aa9.png">
+<img width="400" src="https://user-images.githubusercontent.com/86655646/139156752-57b17231-128f-4c93-b992-4492aede397c.png">
+<img width="400" src="https://user-images.githubusercontent.com/86655646/139156701-dd12624f-2275-480d-8e63-403032941d6c.png">
+
 <br>
 
 ## :heavy_check_mark: Sual 19
@@ -474,7 +486,6 @@ null == null; // true
 !null; // true
 ```
 
-<br>
 <br>
 
 ## :heavy_check_mark: Sual 20
