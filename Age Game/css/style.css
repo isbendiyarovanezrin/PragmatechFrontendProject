@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font: 2rem "Karla", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rem;
+}
+
+input {
+  margin: 2rem 0;
+  width: 30rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  text-indent: 1rem;
+  user-select: none;
+  caret-color: #ffc83d;
+}
+
+#btn {
+  width: 18rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 3rem;
+  user-select: none;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: #ffc83d;
+  border: 0.2rem solid #000;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn:hover {
+  background-color: #cecfce;
+  border-color: #7e7575;
+}
+
+#btn:active {
+  transform: scale(0.97);
+}
+
+.title {
+  margin-top: 4rem;
+}
+
+h2 {
+  text-align: end;
+}
+
+::selection {
+  color: #fff;
+  background-color: #000;
+}
+
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 8px;
+  }
+
+  .wrapper {
+    padding: 0 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+
+  .wrapper {
+    padding: 0 8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 5px;
+  }
+
+  .wrapper {
+    padding: 0 4rem;
+  }
+}
