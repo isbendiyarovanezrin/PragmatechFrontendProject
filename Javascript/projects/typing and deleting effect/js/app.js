@@ -1,3 +1,5 @@
+"use strict";
+
 const word = ["Nəzrin"];
 let i = 0;
 let timer;

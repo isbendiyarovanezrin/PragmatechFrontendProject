@@ -1,3 +1,5 @@
+"use strict";
+
 let i = 0;
 let text = "Mən əla yazılıram!";
 

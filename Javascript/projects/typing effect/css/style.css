@@ -30,7 +30,7 @@ button {
   height: 3rem;
   margin: 2rem;
   user-select: none;
-  border: 1px solid #000;
+  border: 0.1rem solid #000;
 }
 
 button:hover {
