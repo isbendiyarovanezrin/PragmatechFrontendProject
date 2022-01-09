@@ -1,3 +1,5 @@
+"use strict";
+
 let btn = document.getElementById("btn");
 let modal = document.getElementById("modal");
 let span = document.getElementById("close");

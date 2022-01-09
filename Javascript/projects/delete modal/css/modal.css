@@ -25,14 +25,16 @@ body {
   margin: 2rem auto;
   display: block;
   user-select: none;
-  border-radius: 50px;
+  border-radius: 5rem;
   background-color: #d87093;
-  border: 2px solid #000000be;
+  border: 0.2rem solid #000000be;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #btn:hover {
   background-color: #f0588bc5;
-  box-shadow: 1px 1px 2px #7788995e;
+  box-shadow: 0.1rem 0.1rem 0.2rem #7788995e;
 }
 
 #modal {
@@ -73,9 +75,11 @@ body {
   font-weight: 600;
   background-color: #e9d4e8;
   padding: 1.5rem 7rem;
-  border: 2px solid #000000be;
+  border: 0.2rem solid #000000be;
   margin: 1rem 0.3rem;
   user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #btn-cancel:hover,
@@ -93,6 +97,7 @@ body {
   position: absolute;
   right: 26rem;
   top: 7rem;
+  cursor: pointer;
 }
 
 #close:hover {
