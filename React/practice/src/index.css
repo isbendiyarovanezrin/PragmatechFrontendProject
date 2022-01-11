@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background-color: #282c34;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.btn:hover {
+  background-color: #1f499e !important;
+}
+
+.btn-primary:hover {
+  border: none !important;
+}
+
+input,
+button {
+  user-select: none;
+}
