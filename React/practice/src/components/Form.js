@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Form extends Component {
   constructor(props) {
@@ -67,5 +68,10 @@ class Form extends Component {
     );
   }
 }
+
+Form.propTypes = {
+  email: PropTypes.string.isRequired,
+  password: PropTypes.string.isRequired,
+};
 
 export default Form;

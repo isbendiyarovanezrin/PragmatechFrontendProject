@@ -1,33 +1,8 @@
 import React, { Component } from "react";
 
 class Table extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      users: [
-        {
-          id: 1,
-          name: "Nezi",
-          surname: "Isbendiyarova",
-        },
-
-        {
-          id: 2,
-          name: "Salman",
-          surname: "Salahov",
-        },
-        {
-          id: 3,
-          name: "Nuriye",
-          surname: "Sahibov",
-        },
-      ],
-    };
-  }
-
   render() {
-    const { users } = this.state;
+    const { users } = this.props;
 
     return (
       <table className="container mt-4 mb-4 table table-dark table-striped table-hover text-center">
