@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isVisible: true,
+    };
+  }
+
   render() {
     const btnStyle = {
       backgroundColor: "#282c34",
       color: "#fff",
     };
+
+    const { isVisible } = this.state;
 
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -42,17 +52,19 @@ class Navbar extends Component {
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                className="nav-link"
-                href="/"
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
-              >
-                Link
-              </a>
-            </li>
+            {isVisible ? (
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="/"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
+                  Link
+                </a>
+              </li>
+            ) : null}
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="wrapper">
       <Navbar />
-      <Form />
+      <Form email="nezi@gamil.com" password="b1i2l3m4i5r6em" />
       <Table />
     </div>
   );
