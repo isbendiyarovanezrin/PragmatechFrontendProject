@@ -35,7 +35,7 @@ class Form extends Component {
             </small>
           </div>
         ) : null}
-        <div className="form-group">
+        <div className="form-group mb-2">
           <label htmlFor="exampleInputPassword1">Password</label>
           <input
             type="password"
@@ -44,7 +44,7 @@ class Form extends Component {
             placeholder={password}
           />
         </div>
-        <div className="form-group form-check">
+        <div className="form-group form-check mb-2">
           <input
             type="checkbox"
             className="form-check-input"

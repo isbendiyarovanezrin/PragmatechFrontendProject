@@ -4,6 +4,8 @@ import Form from "./components/Form";
 import Table from "./components/Table";
 import Clock from "./components/Clock";
 import List from "./components/List";
+import Collapse from "./components/Collapse";
+import Count from "./components/Count";
 
 class App extends Component {
   constructor(props) {
@@ -41,8 +43,7 @@ class App extends Component {
   }
 
   render() {
-    const { users } = this.state;
-    const { list } = this.state;
+    const { users, list } = this.state;
 
     return (
       <div className="wrapper">
@@ -51,6 +52,10 @@ class App extends Component {
         <Form email="nezi@gamil.com" password="b1i2l3m4i5r6em" />
         <Table users={users} />
         <List title="Lists" subtitle="Look down!" list={list} />
+        <Collapse>
+          <List />
+        </Collapse>
+        <Count title="Counter" />
       </div>
     );
   }
