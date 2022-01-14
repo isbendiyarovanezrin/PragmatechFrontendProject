@@ -6,6 +6,7 @@ import Clock from "./components/Clock";
 import List from "./components/List";
 import Collapse from "./components/Collapse";
 import Count from "./components/Count";
+import Second from "./components/Second";
 
 class App extends Component {
   constructor(props) {
@@ -56,6 +57,7 @@ class App extends Component {
           <List />
         </Collapse>
         <Count title="Counter" />
+        <Second />
       </div>
     );
   }
