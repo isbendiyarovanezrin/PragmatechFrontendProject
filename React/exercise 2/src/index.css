@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfbfb;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: #fdfbfb;
+  background-color: #282c34;
+}
+
+img {
+  user-select: none;
+}
