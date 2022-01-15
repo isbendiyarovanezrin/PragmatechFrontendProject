@@ -22,5 +22,15 @@ body {
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: #ff0000;
+}
+
+input {
+  text-indent: 0.3rem;
+  caret-color: #282c34;
+  color: #282c34;
+}
+
+input:focus {
+  background-color: #ffe2e2;
 }

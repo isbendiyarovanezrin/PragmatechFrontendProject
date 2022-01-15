@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Login = () => {
   const [nickname, setNickname] = useState("");
   const [password, setPassword] = useState("");
   const [text, setText] = useState("");
+  const inputEl = useRef(null);
+  const count = useRef(0);
 
   function nameChange(e) {
     setNickname({ nickname: e.target.value });
@@ -14,8 +16,17 @@ const Login = () => {
   }
 
   function submit(e) {
+    inputEl.current.focus();
     e.preventDefault();
   }
+
+  useEffect(() => {
+    alert("Salam, sən!🎈");
+  }, []);
+
+  useEffect(() => {
+    count.current += 1;
+  });
 
   useEffect(() => {
     if (nickname.nickname === "Nebuchadnezzar") {
@@ -42,16 +53,18 @@ const Login = () => {
         className="me-2"
         placeholder="nickname"
         onChange={nameChange}
-      ></input>
+        ref={inputEl}
+      />
       <input
-        name="password"
         type="password"
+        name="password"
         placeholder="password"
         onChange={passwordChange}
-      ></input>
+      />
       <button type="submit" className="btn btn-danger ms-2" onClick={submit}>
         Click me
       </button>
+      <p>Component rerender: {count.current}</p>
       <p>{text}</p>
     </div>
   );
