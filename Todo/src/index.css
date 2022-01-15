@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 20px;
+}
+
 body {
   overflow-x: hidden;
   display: flex;
@@ -48,7 +52,7 @@ body {
 
 .todo {
   background-color: var(--secondary-clr);
-  padding: 5rem;
+  padding: 4.4rem;
   outline: dashed var(--secondary-clr);
   outline-offset: 0.04rem;
 }
