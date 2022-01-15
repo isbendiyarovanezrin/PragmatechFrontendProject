@@ -1,0 +1,125 @@
+:root {
+  --primary-clr: #2c17ec;
+  --secondary-clr: #a8b1bb;
+  --white: #eeeef1;
+  --shadow-clr: #00000054;
+  --font-family: "Karla", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      var(--primary-clr) 20%,
+      var(--primary-clr) 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        var(--primary-clr) 20%,
+        var(--primary-clr) 80%,
+        transparent 80%,
+        transparent
+      )
+      3.125rem 3.125rem,
+    linear-gradient(var(--secondary-clr) 0.5rem, transparent 0.5rem) 0 -0.25rem,
+    linear-gradient(90deg, var(--secondary-clr) 0.5rem, transparent 0.5rem) -0.25rem
+      0,
+    var(--primary-clr);
+  background-size: 6.25rem 6.25rem, 6.25rem 6.25rem, 3.125rem 3.125rem,
+    3.125rem 3.125rem;
+}
+
+.todo {
+  background-color: var(--secondary-clr);
+  padding: 5rem;
+  outline: dashed var(--secondary-clr);
+  outline-offset: 0.04rem;
+}
+
+h1 {
+  color: var(--primary-clr);
+}
+
+input {
+  text-indent: 0.4rem;
+  outline-color: var(--primary-clr);
+  caret-color: var(--primary-clr);
+  color: var(--primary-clr);
+  user-select: none;
+  height: 1.6rem;
+  border-radius: 0.1rem;
+  border: none;
+  height: 1.8rem;
+  padding-bottom: 0.1rem;
+}
+
+button {
+  margin-bottom: 0.17rem;
+  transition: 0.2s ease;
+  user-select: none;
+  background-color: var(--primary-clr) !important;
+  border: 0.1rem solid transparent !important;
+}
+
+button:focus {
+  box-shadow: 0 0 0.1rem var(--shadow-clr) !important;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:hover {
+  color: var(--primary-clr) !important;
+  background-color: var(--secondary-clr) !important;
+  border: 0.1rem solid var(--primary-clr) !important;
+}
+
+ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+li {
+  background-color: var(--primary-clr);
+  outline-color: var(--primary-clr);
+  color: var(--white);
+  text-indent: 0.4rem;
+  padding-bottom: 0.2rem;
+  border-radius: 0.1rem;
+  margin: 0.4rem 0;
+  list-style-position: inside;
+}
+
+li::selection {
+  color: var(--primary-clr);
+  background-color: var(--white);
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--primary-clr);
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
