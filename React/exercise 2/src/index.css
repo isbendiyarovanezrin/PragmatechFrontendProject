@@ -19,3 +19,7 @@ body {
 img {
   user-select: none;
 }
+
+.col-lg-4:first-child {
+  cursor: pointer;
+}

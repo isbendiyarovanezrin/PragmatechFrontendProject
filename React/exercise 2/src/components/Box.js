@@ -1,10 +1,15 @@
-// Çox da səliqəli yazmamışam, sadəcə əsas hissələrə fikir verdim.
+// Çox da tam yazmamışam, sadəcə əsas hissələrə fikir verdim
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Box = (props) => {
   const [isOpen, setOpen] = useState(false);
   const { informations } = props;
+
+  useEffect(() => {
+    const value = prompt("Hello, hello! What's your name?");
+    alert(`Welcome, ${value}!🙃`);
+  }, []);
 
   return (
     <div className="container mt-3 mb-3">
@@ -16,13 +21,10 @@ const Box = (props) => {
               style={{ height: "40%" }}
               key={information.id}
               onClick={() => {
-                setOpen(!isOpen);
+                if (information.id === 1) return setOpen(!isOpen);
               }}
             >
-              <div
-                className="card text-center shadow-sm m-3"
-                style={{ cursor: "pointer" }}
-              >
+              <div className="card text-center shadow-sm m-3">
                 <img
                   src={information.imgSrc}
                   className="card-img-top"
@@ -36,8 +38,7 @@ const Box = (props) => {
                   <p className="card-text text-uppercase">{information.tag}</p>
                 </div>
               </div>
-
-              {isOpen ? (
+              {isOpen && information.id === 1 ? (
                 <div
                   className="text-center shadow-sm bg-dark text-danger p-2"
                   style={{ borderRadius: "4px", cursor: "pointer" }}
