@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Special Elite", cursive;
+  background-image: url(../img/bg.jfif);
+  animation: rotate 1.5s ease;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 2.5rem;
+  font-size: 3rem;
+}
+
+#text {
+  font-size: 7rem;
+  transition: 1s ease;
+}
+
+::selection {
+  color: #f7f7f7;
+  background-color: #080808ec;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+}
