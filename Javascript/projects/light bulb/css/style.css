@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  background-color: #f5f5dcbf;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  user-select: none;
+  cursor: pointer;
+  object-fit: cover;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.title {
+  font: 2rem Karla;
+  margin-bottom: 3rem;
+}
+
+::selection {
+  color: #999999;
+  background-color: #ffff00;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 7px;
+  }
+}
