@@ -51,7 +51,7 @@ class TodoApp extends Component {
             className="me-1"
             autoComplete="off"
             onChange={this.handleChange}
-            placeholder="Title..."
+            placeholder="Create a new todo"
           />
           <button type="submit" className="btn btn-primary ms-1">
             {`Add #${items.length + 1}`}
