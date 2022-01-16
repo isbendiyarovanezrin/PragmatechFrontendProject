@@ -1,0 +1,129 @@
+:root {
+  --font-family: "Karla", sans-serif;
+  --primary-clr: #2d3e96;
+  --secondary-clr: #c47506;
+  --white: #fff;
+  --black: #000;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  padding: 1.3rem;
+  font-family: var(--font-family);
+}
+
+input,
+button,
+img {
+  user-select: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+img.dude {
+  width: 44rem;
+}
+
+img.speech-balloon {
+  width: 33rem;
+  object-fit: contain;
+  margin-left: -9rem;
+  margin-top: -20rem;
+  transform: rotate(10deg);
+}
+
+#input {
+  margin: 3rem 0 1.4rem;
+  padding: 0.9rem;
+  width: 40rem;
+  font-size: 1.6rem;
+  text-indent: 0.5rem;
+  border-radius: 3rem;
+  border: 0.2rem solid var(--primary-clr);
+}
+
+#input:focus {
+  width: 50rem;
+  border-color: var(--secondary-clr);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#btn {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.9rem 2.9rem;
+  background-color: var(--primary-clr);
+  border: 0.2rem solid var(--black);
+  border-radius: 3rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn:active {
+  transform: scale(0.97);
+}
+
+#btn:hover {
+  padding: 0.9rem 5rem;
+  background-color: var(--secondary-clr);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+textarea {
+  resize: none;
+  width: 24rem;
+  height: 22rem;
+  position: absolute;
+  border-radius: 50%;
+  padding: 3.3rem 4rem;
+  margin-left: 43rem;
+  margin-top: -1rem;
+  overflow: hidden;
+  font: 1.6rem var(--font-family);
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--primary-clr);
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 6px;
+  }
+}
