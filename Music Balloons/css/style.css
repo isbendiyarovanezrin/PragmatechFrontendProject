@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url(../img/bg.jfif) center/cover no-repeat #d1a300;
+  background-blend-mode: darken;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 60rem;
+  height: 36rem;
+}
+
+.key {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+  box-shadow: inset 0 0 6rem #141414c5;
+  animation: shadow 4s linear infinite alternate;
+}
+
+@keyframes shadow {
+  50% {
+    box-shadow: inset 8rem 0 6rem #141414b0;
+  }
+
+  100% {
+    box-shadow: inset -8rem 0 6rem #141414b0;
+  }
+}
+
+kbd {
+  font: 3.5rem cursive;
+  color: #010f01;
+}
+
+.playing {
+  transform: scale(0.9);
+  border: 0.1rem solid #25242379;
+  background-image: radial-gradient(ellipse at top, #4efc09, transparent),
+    radial-gradient(ellipse at bottom, #ff9900, transparent);
+  background-position: 50% 20%;
+  background-blend-mode: multiply;
+}
+
+.key:first-child {
+  background-color: #c0500e;
+}
+
+.key:nth-child(2) {
+  background-color: #e5ae00;
+}
+
+.key:nth-child(3) {
+  background-color: #ee8700;
+}
+
+.key:nth-child(4) {
+  background-color: #799100;
+}
+
+.key:nth-child(5) {
+  background-color: #bec100;
+}
+
+.key:nth-child(6) {
+  background-color: #ed7200;
+}
+
+.key:nth-child(7) {
+  background-color: #928f00;
+}
+
+.key:nth-child(8) {
+  background-color: #d1a300;
+}
+
+.key:nth-child(9) {
+  background-color: #df4a00;
+}
+
+.key:nth-child(10) {
+  background-color: #f5a200;
+}
+
+.key:nth-child(11) {
+  background-color: #a4b900;
+}
+
+.key:nth-child(12) {
+  background-color: #bd7c00;
+}
+
+.key:nth-child(13) {
+  background-color: #e26300;
+}
+
+.key:nth-child(14) {
+  background-color: #5f9900;
+}
+
+.key:last-child {
+  background-color: #de6f00;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: #010f01;
+  font: 600 1.2rem monospace, cursive;
+}
+
+::selection {
+  background-color: #e26300;
+}
+
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .keys {
+    width: 40rem;
+    height: auto;
+  }
+}
