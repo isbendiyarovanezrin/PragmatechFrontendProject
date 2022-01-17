@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font: 2.6rem monospace;
+  padding: 2rem 2rem 2rem 4rem;
+  overflow-x: hidden;
+  background-color: #f6e6f6;
+}
+
+.top-text {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.bottom-text {
+  padding: 100rem 0;
+}
+
+.author {
+  color: #706d6d;
+  padding-top: 3rem;
+  text-align: center;
+  margin-right: 18rem;
+  font: 300 2.3rem "Karla";
+}
+
+.info {
+  color: #bdbdbd;
+  letter-spacing: 0.2rem;
+  font: 300 1.9rem "Karla";
+  position: absolute;
+  top: 22rem;
+  z-index: 100;
+}
+
+::selection {
+  color: #0c0b0b;
+  background-color: #fab9fa;
+}
+
+@media screen and (max-width: 1100px) {
+  .author {
+    text-align: end;
+    margin-right: 29rem;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  html {
+    font-size: 8px;
+  }
+  .author {
+    margin-right: 28rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .author {
+    margin-right: 7rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 5.8px;
+  }
+
+  body {
+    padding: 2rem;
+  }
+}
