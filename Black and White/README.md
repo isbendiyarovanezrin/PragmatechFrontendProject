@@ -1,1 +1,3 @@
-!["Black and White" project](https://i.postimg.cc/kgnK1Ct1/bnw.gif)
+### _Screenshot_
+
+!["Black and White" project screenshot](https://i.postimg.cc/PrWvGqGb/bnw.png)
