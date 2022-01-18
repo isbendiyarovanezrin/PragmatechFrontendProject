@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  background: url(../img/bg.jfif) #5301a0;
+  background-blend-mode: color-burn;
+  animation: bg-color 1.7s linear infinite;
+}
+
+@keyframes bg-color {
+  0%,
+  100% {
+    background-color: #ac0696;
+  }
+
+  50% {
+    background-color: #b950e2;
+  }
+}
+
+img,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  object-fit: cover;
+}
+
+.overlay {
+  top: 0;
+  z-index: 100;
+  mix-blend-mode: soft-light;
+  position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+  .mobile__img {
+    object-position: center left;
+  }
+}
