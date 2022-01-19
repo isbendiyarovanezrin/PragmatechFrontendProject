@@ -1,0 +1,142 @@
+:root {
+  --primary-clr: #753;
+  --secondary-clr: #ff7e15;
+  --tertiary-clr: #dca;
+  --border-radius: 50% 20% / 10% 40%;
+  --font-family: "Mochiy Pop P One", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: linear-gradient(
+      45deg,
+      var(--tertiary-clr) 12%,
+      transparent 0,
+      transparent 88%,
+      var(--tertiary-clr) 0
+    ),
+    linear-gradient(
+      135deg,
+      transparent 37%,
+      var(--secondary-clr) 0,
+      var(--secondary-clr) 63%,
+      transparent 0
+    ),
+    linear-gradient(
+        45deg,
+        transparent 37%,
+        var(--tertiary-clr) 0,
+        var(--tertiary-clr) 63%,
+        transparent 0
+      )
+      var(--primary-clr);
+  background-size: 2.5rem 2.5rem;
+  overflow: hidden;
+  padding: 2rem;
+  font: 1.5rem var(--font-family);
+  color: var(--primary-clr);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  margin: 3.5rem 0;
+  padding: 5rem 7rem;
+  text-align: center;
+  border: 1rem solid var(--primary-clr);
+  border-radius: var(--border-radius);
+  background-color: var(--tertiary-clr);
+}
+
+.title h2 {
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin: 3.5rem 0;
+  padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-clr);
+  border: 1rem solid var(--primary-clr);
+  border-radius: var(--border-radius);
+}
+
+#text {
+  margin: 2.1rem 0;
+}
+
+#type {
+  color: var(--secondary-clr);
+}
+
+#btn {
+  margin: 2.1rem 0;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  color: var(--primary-clr);
+  background-color: var(--secondary-clr);
+  border: 0.2rem solid var(--primary-clr);
+  font: 1.5rem var(--font-family);
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn:hover {
+  color: var(--secondary-clr);
+  background-color: var(--primary-clr);
+  border: 0.2rem solid var(--secondary-clr);
+}
+
+#btn:active {
+  transform: scale(0.97);
+}
+
+::selection {
+  color: var(--secondary-clr);
+  background-color: var(--primary-clr);
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 5px;
+  }
+
+  .title h2 {
+    font-size: 2.1rem;
+  }
+}
