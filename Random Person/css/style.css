@@ -1,0 +1,72 @@
+:root {
+  --font-family: "Karla", sans-serif;
+  --white-color: #fff;
+  --green-color: #255705;
+  --lightgreen-color: #85c990;
+  --bg-color: #c9a185;
+  --hover-color: #a6a04c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none !important;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background: url(../img/aurora.jfif) center/cover no-repeat var(--bg-color);
+  background-blend-mode: multiply;
+}
+
+.card-img-top {
+  height: 20rem !important;
+  object-fit: cover;
+  user-select: none;
+  filter: hue-rotate(-30deg) sepia(70%) contrast(130%) saturate(300%)
+    hue-rotate(30deg);
+}
+
+.btn-success {
+  background-color: var(--green-color) !important;
+  border-color: var(--green-color) !important;
+}
+
+.btn-success:hover {
+  background-color: var(--hover-color) !important;
+  color: var(--green-color);
+}
+
+.btn-success:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 0.3rem var(--green-color) !important;
+}
+
+i,
+span {
+  color: var(--green-color);
+}
+
+.card-footer {
+  background-color: transparent;
+}
+
+::selection {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
