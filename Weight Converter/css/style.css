@@ -1,0 +1,42 @@
+body {
+  padding: 2rem;
+  overflow: hidden;
+  background: linear-gradient(#fff 50%, #ffffff00 0) 0 0,
+    radial-gradient(circle closest-side, #fff 53%, #ffffff00 0) 0 0,
+    radial-gradient(circle closest-side, #fff 50%, #ffffff00 0) 3rem 0 #44bba7;
+  background-size: 6rem 7rem;
+  background-repeat: repeat-x;
+  font: 500 1.1rem Karla, sans-serif !important;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+input {
+  width: 15rem !important;
+  text-indent: 0.3rem;
+}
+
+label {
+  margin-right: 10.8rem !important;
+}
+
+label[for="inputKilograms"] {
+  margin-right: 9.4rem !important;
+}
+
+label[for="inputGrams"] {
+  margin-right: 11.2rem !important;
+}
+
+::selection {
+  color: #fff;
+  background-color: #44bba7;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+}
