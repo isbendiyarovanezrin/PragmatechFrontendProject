@@ -30,7 +30,7 @@ const Game = () => {
     }
 
     if (squares.includes(null) === false) {
-      return "Bərabərə qalındı!";
+      return "Bərabərə!";
     }
 
     return null;
