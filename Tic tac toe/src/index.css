@@ -29,6 +29,10 @@ body {
   color: #2696aa;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .reset-btn {
   color: #2696aa;
   user-select: none;
@@ -40,7 +44,6 @@ body {
   font: 2.1rem "Architects Daughter", cursive;
   border: 0.1rem solid #48bed3a9;
   border-radius: 0.2rem;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .reset-btn:active {
@@ -55,7 +58,7 @@ body {
 .board {
   margin-bottom: 5rem;
   display: grid;
-  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
 }
 
 .square {
@@ -70,15 +73,17 @@ body {
   border-right: 0.3rem solid #48bed3;
 }
 
-.square:nth-child(7),
-.square:nth-child(8),
-.square:nth-child(9) {
+.square:nth-child(13),
+.square:nth-child(14),
+.square:nth-child(15),
+.square:nth-child(16) {
   border-bottom: none;
 }
 
-.square:nth-child(3),
-.square:nth-child(6),
-.square:nth-child(9) {
+.square:nth-child(4),
+.square:nth-child(8),
+.square:nth-child(12),
+.square:nth-child(16) {
   border-right: none;
 }
 
