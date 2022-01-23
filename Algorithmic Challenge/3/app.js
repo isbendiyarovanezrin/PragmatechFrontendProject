@@ -3,12 +3,10 @@
 const num = 7112131610101019; // 6 qaytarmalıdır
 
 function count_lone(n) {
-  const arr = [];
-  arr.push(String(n)); // [ '7112131610101019' ]
-  const newArr = arr[0].split(""); // [ '7', '1' ... '1', '9' ]
+  const arr = String(n).split(""); // [ '7', '1' ... '1', '9' ]
   let count = 0;
-  for (let i = 0; i < newArr.length; i++) {
-    if (newArr[i] == 1 && newArr[i - 1] != 1 && newArr[i + 1] != 1) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == 1 && arr[i - 1] != 1 && arr[i + 1] != 1) {
       count++;
     }
   }
