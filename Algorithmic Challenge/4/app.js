@@ -1,4 +1,4 @@
-// 1-dən verilmiş ədədə qədər bütün ədədlərin vurulması
+// 1-dən verilmiş ədədə qədər (özü də daxildir) bütün ədədlərin vurulması
 
 const number = 5;
 
