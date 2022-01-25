@@ -1,0 +1,53 @@
+:root {
+  --primary-clr: #a52a2a;
+  --shadow-clr: #00000073;
+  --font-family: Karla;
+}
+
+body {
+  background-color: var(--primary-clr);
+  color: var(--primary-clr);
+  font-family: var(--font-family);
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.card {
+  padding: 1rem;
+}
+
+button {
+  box-shadow: inset 0 0 0.5rem var(--shadow-clr);
+  border: none !important;
+}
+
+button:focus {
+  box-shadow: none !important;
+}
+
+button:active {
+  transform: scale(0.97);
+  box-shadow: inset 0 0 0.4rem var(--shadow-clr);
+}
+
+#input {
+  outline-color: var(--primary-clr);
+  border-color: var(--primary-clr);
+  border-style: solid;
+  color: var(--primary-clr);
+  border-radius: 0.2rem;
+  text-indent: 0.2rem;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--primary-clr);
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+}
