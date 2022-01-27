@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: url(img/sheep.png) hsl(182, 25%, 50%);
+  background: url(../img/sheep.png) #609d9f;
   background-blend-mode: soft-light;
   overflow: hidden;
   font-family: cursive;
@@ -22,7 +22,7 @@ body {
   text-align: center;
   width: 45rem;
   height: 19rem;
-  background-color: hsl(182, 25%, 50%);
+  background-color: #609d9f;
   border: 10px solid transparent;
   border-image: repeating-linear-gradient(40deg, #609d9f, #609d9f, #9cb6a7 28px)
     22;
@@ -31,26 +31,26 @@ body {
 h3 {
   font-size: 3rem;
   padding: 3rem;
-  color: hsl(0deg 0% 0% / 76%);
+  color: #000000c2;
 }
 
 .pagination a {
   font-size: 2rem;
   padding: 1rem;
   text-decoration: none;
-  color: hsla(0, 0%, 0%, 0.911);
-  border: 1px solid hsl(0, 0%, 87%);
+  color: #000000e8;
+  border: 1px solid #dedede;
   transition: background-color 0.2s;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: hsl(0, 0%, 87%);
+  background-color: #dedede;
 }
 
 .pagination a.active {
-  background-color: rgb(46 99 102);
-  color: hsl(0, 0%, 96%);
-  border: 1px solid rgb(46 99 102);
+  background-color: #2e6366;
+  color: #f5f5f5;
+  border: 1px solid #2e6366;
 }
 
 /* media queries */
