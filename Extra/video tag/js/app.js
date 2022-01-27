@@ -1,4 +1,6 @@
-let myVideo = document.getElementById("video");
+"use strict";
+
+const myVideo = document.getElementById("video");
 
 function playPause() {
   if (myVideo.paused) myVideo.play();
@@ -22,8 +24,9 @@ function makeSmall() {
 
 // Change background color
 function turnOn() {
-  document.body.style.backgroundColor = "rgb(0 0 0 / 68%)";
+  document.body.style.backgroundColor = "#000000ad";
 }
+
 function turnOff() {
   document.body.style.backgroundColor = "#ffc10766";
 }

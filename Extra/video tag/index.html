@@ -29,33 +29,10 @@
     ></script>
 
     <!-- Style -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Main content -->
     <div class="container">
-      <div
-        class="
-          overflow-hidden
-          position-absolute
-          top-50
-          start-50
-          translate-middle
-        "
-      >
-        <video
-          id="video"
-          width="550px"
-          preload="auto"
-          poster="img/rain.jpg"
-          controls
-          loop
-        >
-          <source src="video/rain.mp4" type="video/mp4" />
-          <source src="video/rain.ogg" type="video/ogg" />
-          Your browser does not support HTML video.
-        </video>
-      </div>
       <div class="position-absolute top-0 start-50 translate-middle-x mt-4">
         <button type="button" class="btn btn-warning" onclick="playPause()">
           Play/Pause
@@ -98,6 +75,23 @@
           <i class="far fa-lightbulb"></i>
         </button>
       </div>
+
+      <div
+        class="overflow-hidden position-absolute top-50 start-50 translate-middle"
+      >
+        <video
+          id="video"
+          width="550px"
+          preload="auto"
+          poster="img/rain.jpg"
+          controls
+          loop
+        >
+          <source src="video/rain.mp4" type="video/mp4" />
+          Your browser does not support HTML video.
+        </video>
+      </div>
+
       <p class="position-absolute bottom-0 start-50 translate-middle-x">
         Video by
         <a
@@ -107,6 +101,7 @@
         </a>
       </p>
     </div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -118,7 +113,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <!-- JavaScript -->
-    <script src="app.js"></script>
+
+    <!-- Script JavaScript -->
+    <script src="js/app.js"></script>
   </body>
 </html>
