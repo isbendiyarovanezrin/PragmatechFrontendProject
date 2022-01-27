@@ -1,12 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .border-one {
   width: 10rem;
   height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 4rem;
   border: 10px solid transparent;
-  border-image: url(img/pattern.png) 30% round;
+  border-image: url(../img/pattern.png) 30% round;
   font: 1.2rem "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -16,10 +23,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 4rem;
   border-radius: 30px;
   border: 30px solid transparent;
-  border-image: url(img/brain.svg) 25% round;
+  border-image: url(../img/brain.svg) 25% round;
   font-family: 1.2rem "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
 }
@@ -30,6 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 4rem;
   border-radius: 30px;
   border: 30px solid transparent;
