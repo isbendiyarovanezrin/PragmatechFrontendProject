@@ -1,0 +1,19 @@
+.item {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.item1 {
+  color: #663399;
+  text-decoration-color: #2e8a56;
+}
+
+.item2 {
+  color: #f0599fea;
+  text-decoration-color: #008080b9;
+}
+
+.item3 {
+  color: #ff6347;
+  text-decoration-color: #162cf3a1;
+}
