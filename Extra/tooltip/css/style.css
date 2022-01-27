@@ -13,7 +13,7 @@ html {
 
 body {
   overflow: hidden;
-  background: url(img/sheep.png) repeat rgba(5, 83, 29, 0.753);
+  background: url(../img/sheep.png) repeat #05531dc0;
   background-blend-mode: soft-light;
 }
 
