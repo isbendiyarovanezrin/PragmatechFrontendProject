@@ -1,13 +1,13 @@
 /* Image modal */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
   background-color: #afa62685;
-  color: whitesmoke;
+  color: #f5f5f5;
 }
 
 html {

@@ -1,3 +1,5 @@
+"use strict"
+
 let img = document.getElementById("myImg");
 let modal = document.getElementById("myModal");
 let modalImg = document.getElementById("modalImg");
