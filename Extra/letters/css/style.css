@@ -1,6 +1,7 @@
-/* letters */
-html {
-  font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,12 +14,12 @@ body {
   background: linear-gradient(#3fa655, #ebf8e1, #d4f63c);
 }
 
-h1 {
+.title {
+  text-transform: uppercase;
   position: absolute;
-  top: 4rem;
+  top: 6rem;
   font: 4rem "Sofia", sans-serif;
   text-shadow: 2px 2px 3px #c9c7c7;
-  user-select: none;
 }
 
 .triangle {
@@ -27,8 +28,8 @@ h1 {
   height: 0px;
   width: 0px;
   border: 80px solid transparent;
-  border-top-color: rgb(35, 153, 60);
-  background-color: rgb(16, 146, 12);
+  border-top-color: #23993c;
+  background-color: #10920c;
 }
 
 .triangle::after,
@@ -39,17 +40,17 @@ h1 {
   border-radius: inherit;
   border: 90px solid transparent;
   position: absolute;
-  border-top-color: rgb(35, 153, 60);
+  border-top-color: #23993c;
 }
 
 .triangle::after {
-  background-color: rgb(100, 146, 19);
+  background-color: #649213;
   top: -0.9rem;
   left: 2.1rem;
 }
 
 .triangle::before {
-  background-color: rgb(59, 102, 30);
+  background-color: #3b661e;
   right: -1.1rem;
   top: 0.9rem;
   z-index: 1;
@@ -57,7 +58,7 @@ h1 {
 
 .round {
   border-radius: 50%;
-  background-color: rgb(6 44 6 / 87%);
+  background-color: #062c06de;
   width: 0.6rem;
   height: 0.6rem;
   z-index: 10;
@@ -81,7 +82,13 @@ h1 {
   right: 4.5rem;
   top: 6.7rem;
 }
+
 .round:after {
   left: 7.8rem;
   top: 4.9rem;
+}
+
+::selection {
+  color: #ebf8e1;
+  background-color: #23993c;
 }
