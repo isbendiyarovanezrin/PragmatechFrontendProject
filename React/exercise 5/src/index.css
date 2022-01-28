@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-shadow: none !important;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #000;
+  background-color: #fbff00;
+}
+
+body {
+  padding: 1rem !important;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 13px;
+  }
+}
