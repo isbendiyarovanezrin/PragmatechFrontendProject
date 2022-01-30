@@ -1,7 +1,7 @@
 body {
   overflow: hidden;
   font-size: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .container {
@@ -17,7 +17,7 @@ p {
   user-select: none;
   letter-spacing: 0.1px;
   font: 100 3.37em consolas;
-  text-shadow: 1px 1px 1px lightgrey;
+  text-shadow: 1px 1px 1px #d3d3d3;
   animation: rotateText 4s linear infinite;
 }
 
