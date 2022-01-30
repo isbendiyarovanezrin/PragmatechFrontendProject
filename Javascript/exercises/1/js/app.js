@@ -7,7 +7,7 @@ const num4 = prompt("Dördüncü ədədi daxil edin");
 
 // Birinci yol
 const largest = Math.max(num1, num2, num3, num4);
-document.write(largest);
+document.write(`Ədədlərin ən böyüyü: ${largest}`);
 
 // İkinci yol
 // if (num1 > num2 && num1 > num3 && num1 > num4) {
