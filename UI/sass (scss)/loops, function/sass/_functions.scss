@@ -1,4 +1,3 @@
-/* function */
 @function Process($size) {
   @return #{$size * 5}px;
 }

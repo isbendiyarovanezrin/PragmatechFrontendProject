@@ -1,4 +1,3 @@
-/* Image modal */
 * {
   margin: 0;
   padding: 0;
@@ -61,6 +60,7 @@ h3 {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
