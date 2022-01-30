@@ -14,8 +14,8 @@ body {
   font-family: cursive;
   min-width: 280px;
   background-blend-mode: darken;
-  background: linear-gradient(90deg, rgba(50, 85, 127, 0.5) 50%, transparent 0),
-    linear-gradient(rgba(50, 85, 127, 0.5) 50%, transparent 0) #42beda;
+  background: linear-gradient(90deg, #32557f80 50%, transparent 0),
+    linear-gradient(#32557f80 50%, transparent 0) #42beda;
   animation: move 4s linear infinite;
 }
 
@@ -69,14 +69,14 @@ li:hover,
 }
 
 .navbar {
-  background-color: rgba(127, 255, 212);
+  background-color: #7fffd4;
   box-shadow: 1px 1px 1px #5abf9d;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(127, 255, 212);
+  background-color: #7fffd4;
   margin-top: 2rem;
   margin-left: -1.9rem;
 }

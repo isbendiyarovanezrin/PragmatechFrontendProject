@@ -17,11 +17,11 @@ body {
 
 .paper {
   mix-blend-mode: difference;
-  background: center / cover no-repeat url(img/paper.jpg);
+  background: center / cover no-repeat url(../img/paper.jpg);
 }
 
 .img {
-  background: center / cover no-repeat url(img/men.jpg);
+  background: center / cover no-repeat url(../img/men.jpg);
   animation: filter 2s linear infinite;
 }
 
