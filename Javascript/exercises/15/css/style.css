@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: rgba(137, 43, 226, 0.158);
+}
+
 .box {
   width: 200px;
   height: 200px;
@@ -12,7 +24,8 @@
   text-align: center;
 }
 
-#create {
+#create-btn {
+  cursor: pointer;
   width: 100px;
   height: 35px;
   font-size: 1rem;
@@ -21,7 +34,11 @@
   background-color: rgba(60, 12, 156, 0.233);
 }
 
-#create:hover {
-  box-shadow: 1px 1px 4px lightgray;
+#create-btn:hover {
+  box-shadow: 1px 1px 4px rgb(211, 211, 211);
   background-color: rgba(60, 12, 156, 0.438);
+}
+
+#create-btn:active {
+  transform: scale(0.99);
 }
