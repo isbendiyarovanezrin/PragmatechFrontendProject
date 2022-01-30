@@ -177,6 +177,11 @@ img {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media screen and (max-width: 1185px) {

@@ -85,6 +85,8 @@ img {
   color: $white-clr;
   font-size: $font-size-sm;
   font-weight: $font-weight-bold;
+  cursor: pointer;
+  user-select: none;
 }
 
 // media queries
