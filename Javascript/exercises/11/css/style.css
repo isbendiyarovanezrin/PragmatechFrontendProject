@@ -1,13 +1,20 @@
 :root {
   --white: #fff;
   --black: #000;
-  --bg-clr: #66339911;
+  --bg-img: linear-gradient(
+    90deg,
+    #eeaecac2 0%,
+    #927fe8a1 0%,
+    #9285e8b4 42%,
+    #9396e8af 60%,
+    #94bce9b4 100%
+  );
   --primary-clr: #663399;
   --box-shadow: 0 0 0 0.2rem #873a845b;
 }
 
 body {
-  background-color: var(--bg-clr);
+  background-image: var(--bg-img);
 }
 
 .btn {
@@ -60,10 +67,6 @@ input:focus {
 }
 
 ::placeholder {
-  color: var(--primary-clr);
-}
-
-:-ms-input-placeholder {
   color: var(--primary-clr);
 }
 
