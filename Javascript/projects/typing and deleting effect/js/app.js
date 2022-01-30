@@ -1,8 +1,8 @@
 "use strict";
 
 const word = ["Nəzrin"];
-let i = 0;
-let timer;
+let i = 0,
+  timer;
 
 function typingEffect() {
   let letter = word[i].split("");
@@ -13,7 +13,7 @@ function typingEffect() {
       deletingEffect();
       return false;
     }
-    timer = setTimeout(loopTyping, 400);
+    timer = setTimeout(loopTyping, 260);
   }
   loopTyping();
 }
@@ -29,7 +29,7 @@ function deletingEffect() {
       typingEffect();
       return false;
     }
-    timer = setTimeout(loopDeleting, 250);
+    timer = setTimeout(loopDeleting, 155);
   }
   loopDeleting();
 }
