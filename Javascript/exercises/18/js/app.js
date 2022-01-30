@@ -1,4 +1,3 @@
-// practice
 function filter(func, arr) {
   const list = [];
   for (element of arr) {
@@ -23,5 +22,5 @@ function addCSS(selector, properties) {
 
 addCSS(".text", {
   font: "400 2rem Arial",
-  color: "purple",
+  color: "#800080",
 });
