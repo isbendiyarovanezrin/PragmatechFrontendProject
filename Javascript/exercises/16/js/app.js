@@ -1,12 +1,12 @@
 // oninput Event
 function myFunction() {
-  let text = document.getElementById("text").value;
+  const text = document.getElementById("text").value;
   document.getElementById("sametext").innerHTML = `Yazıldı: ${text}`;
 }
 
 // onblur Event
 function uppercase() {
-  let surname = document.getElementById("surname");
+  const surname = document.getElementById("surname");
   surname.value = surname.value.toUpperCase();
 }
 
@@ -27,7 +27,7 @@ function selectText() {
 
 // onchange Event
 function textChange() {
-  let text = document.getElementById("mySelect").value;
+  const text = document.getElementById("mySelect").value;
   document.getElementById("demo").innerHTML = `Bunu seçdin: ${text}`;
 }
 
