@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: #372be228;
+}
+
 .box {
   width: 150px;
   height: 150px;
@@ -13,7 +25,6 @@
 
 #create-btn {
   cursor: pointer;
-  user-select: none;
   width: 90px;
   height: 30px;
   font-size: 1rem;
@@ -24,4 +35,8 @@
 
 #create-btn:hover {
   box-shadow: 1px 1px 1px #808080;
+}
+
+#create-btn:active {
+  transform: scale(0.98);
 }
