@@ -1,18 +1,18 @@
 // random rəqəm yaratmaq
-let tag = document.getElementById("tag");
+const tag = document.getElementById("tag");
 
 tag.innerHTML = randomNumber(200);
 
 function randomNumber(n) {
-  let _random = Math.floor(Math.random() * n);
+  const _random = Math.floor(Math.random() * n);
   return _random;
 }
 
-let message = document.getElementById("message");
+const message = document.getElementById("message");
 
 message.innerHTML = RandomNumber(300);
 
 function RandomNumber(num) {
-  let Random = Math.round(Math.random() * num);
+  const Random = Math.round(Math.random() * num);
   return Random;
 }
