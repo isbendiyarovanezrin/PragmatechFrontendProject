@@ -6,7 +6,7 @@ const num3 = Number(prompt("Üçüncü ədədi daxil edin"));
 const num4 = Number(prompt("Dördüncü ədədi daxil edin"));
 
 if (num1 == num2 && num1 == num3 && num1 == num4) {
-  alert("Kvadratın sahəsi: " + Math.pow(num1, 2)); // kvadratın sahəsi: S= a*a
+  alert(`Kvadratın sahəsi: ${Math.pow(num1, 2)}`); // kvadratın sahəsi: S= a*a
 } else {
-  alert(num1 + num2 + num3 + num4);
+  alert(`Ədədlərin cəmi: ${num1 + num2 + num3 + num4}`);
 }
