@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-color: hsla(187, 76%, 53%, 0.158);
+}
+
+span {
+  font-weight: 300;
+}

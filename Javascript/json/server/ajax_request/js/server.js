@@ -5,5 +5,5 @@ xmlRequest.onload = function () {
     "demo"
   ).innerHTML = `<span>Name:</span> ${obj.name}<br><span>Age:</span> ${obj.age}`;
 };
-xmlRequest.open("GET", "server.json");
+xmlRequest.open("GET", "data/server.json");
 xmlRequest.send();
