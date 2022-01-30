@@ -1,0 +1,77 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --bg-clr: #66339911;
+  --primary-clr: #663399;
+  --box-shadow: 0 0 0 0.2rem #873a845b;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+
+.btn {
+  color: var(--primary-clr);
+  border-width: 0.12rem;
+  transition: all 0.3s ease;
+  margin-top: -0.23rem;
+}
+
+.btn:focus {
+  box-shadow: none;
+  color: var(--primary-clr);
+}
+
+.btn:hover {
+  background-color: var(--primary-clr);
+  color: var(--black);
+  border-color: transparent;
+}
+
+.btn-dark:active {
+  box-shadow: var(--box-shadow);
+  transform: scale(0.98);
+}
+
+#result {
+  width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+select {
+  border-width: 0.16rem;
+  border-color: var(--primary-clr);
+  color: var(--primary-clr);
+  height: 2.8rem;
+  cursor: pointer;
+}
+
+input {
+  caret-color: var(--primary-clr);
+  border-color: var(--primary-clr);
+  border-style: solid;
+  text-indent: 0.13rem;
+}
+
+select:focus,
+input:focus {
+  outline: 0.1rem solid var(--primary-clr);
+}
+
+::placeholder {
+  color: var(--primary-clr);
+}
+
+:-ms-input-placeholder {
+  color: var(--primary-clr);
+}
+
+::-ms-input-placeholder {
+  color: var(--primary-clr);
+}
+
+::selection {
+  background-color: var(--primary-clr);
+  color: var(--white);
+}
