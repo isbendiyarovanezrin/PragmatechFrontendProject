@@ -10,7 +10,7 @@ body {
   justify-content: center;
   overflow: hidden;
   font-size: 10px;
-  background-color: hsl(203, 100%, 6%);
+  background-color: #00131f;
 }
 
 .name {
@@ -20,13 +20,12 @@ body {
   background: url(../img/tree.jpeg) 10% 64% repeat;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: hsla(187, 36%, 14%, 0.231);
-  filter: contrast(110%) brightness(110%)
-    drop-shadow(1px 1px 1px hsla(0, 0%, 50%, 0.788));
+  -webkit-text-fill-color: #172e313b;
+  filter: contrast(110%) brightness(110%) drop-shadow(1px 1px 1px #808080c9);
 }
 
 .name::selection {
-  background-color: hsl(203deg 60% 34% / 16%);
+  background-color: #23638b29;
 }
 
 @media screen and (max-width: 900px) {
