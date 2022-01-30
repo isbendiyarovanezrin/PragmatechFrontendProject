@@ -1,7 +1,7 @@
 "use strict";
 
 let i = 0;
-let text = "Mən əla yazılıram!";
+const text = "Mən əla yazılıram!";
 
 function typingEffect() {
   if (i < text.length) {

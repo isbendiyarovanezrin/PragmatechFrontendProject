@@ -30,11 +30,17 @@ button {
   height: 3rem;
   margin: 2rem;
   user-select: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
   border: 0.1rem solid #000;
 }
 
 button:hover {
   background-color: #ccc;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 ::selection {
