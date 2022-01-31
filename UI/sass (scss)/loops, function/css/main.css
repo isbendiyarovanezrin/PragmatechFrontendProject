@@ -62,7 +62,6 @@ video {
   font: inherit;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 footer,
@@ -87,7 +86,6 @@ table {
   border-spacing: 0;
 }
 
-/* function */
 .fontSize-5 {
   font-size: 5px;
 }
@@ -124,7 +122,7 @@ p {
   color: #ec0a0a;
   padding: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: 1px 1px 1px lightgray;
+  text-shadow: 1px 1px 1px #d3d3d3;
 }
 
 /* each */
