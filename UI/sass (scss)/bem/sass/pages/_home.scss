@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   overflow-x: none;
   font-family: $font-family;
@@ -9,8 +5,4 @@ body {
 
 .container {
   margin: $size-0 auto;
-}
-
-img {
-  user-select: none;
 }

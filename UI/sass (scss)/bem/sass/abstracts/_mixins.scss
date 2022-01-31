@@ -1,4 +1,3 @@
-// mixins
 @mixin transition($property, $duration, $timing-function) {
   transition-property: $property;
   transition-duration: $duration;
