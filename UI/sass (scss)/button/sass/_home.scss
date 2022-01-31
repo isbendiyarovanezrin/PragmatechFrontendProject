@@ -1,3 +1,7 @@
+html {
+  font-size: 10px;
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -6,5 +10,5 @@
 }
 
 .red {
-  background-color: hsla(7, 100%, 50%, 0.877);
+  background-color: $red;
 }
