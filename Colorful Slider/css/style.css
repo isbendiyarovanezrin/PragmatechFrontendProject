@@ -1,3 +1,9 @@
+:root {
+  --indigo: #5301a0;
+  --barney-purple: #ac0696;
+  --tyrian-purple: #b950e2;
+}
+
 *,
 *::after,
 *::before {
@@ -18,7 +24,7 @@ html {
 
 body {
   overflow: hidden;
-  background: url(../img/bg.jfif) #5301a0;
+  background: url(../img/bg.jfif) var(--indigo);
   background-blend-mode: color-burn;
   animation: bg-color 1.7s linear infinite;
 }
@@ -26,11 +32,11 @@ body {
 @keyframes bg-color {
   0%,
   100% {
-    background-color: #ac0696;
+    background-color: var(--barney-purple);
   }
 
   50% {
-    background-color: #b950e2;
+    background-color: var(--tyrian-purple);
   }
 }
 
