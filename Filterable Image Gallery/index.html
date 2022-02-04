@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Filterable Image Gallery</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>⚫</text></svg>"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Filterable Image Gallery</h1>
+      <ul class="filter-menu">
+        <li data-menu="all" class="menu-item active">All</li>
+        <li data-menu="male" class="menu-item">Male</li>
+        <li data-menu="female" class="menu-item">Female</li>
+        <li data-menu="kid" class="menu-item">Kid</li>
+      </ul>
+      <ul class="filter-item">
+        <li data-item="male" class="item">
+          <img src="img/boy-1.jfif" alt="boy" class="item-img" />
+        </li>
+        <li data-item="male" class="item">
+          <img src="img/boy-2.jfif" alt="boy" class="item-img" />
+        </li>
+        <li data-item="male" class="item">
+          <img src="img/boy-3.jfif" alt="boy" class="item-img" />
+        </li>
+        <li data-item="male" class="item">
+          <img src="img/boy-4.jfif" alt="boy" class="item-img" />
+        </li>
+        <li data-item="female" class="item">
+          <img src="img/girl-1.jfif" alt="girl" class="item-img" />
+        </li>
+        <li data-item="female" class="item">
+          <img src="img/girl-2.jfif" alt="girl" class="item-img" />
+        </li>
+        <li data-item="female" class="item">
+          <img src="img/girl-3.jfif" alt="girl" class="item-img" />
+        </li>
+        <li data-item="female" class="item">
+          <img src="img/girl-4.jfif" alt="girl" class="item-img" />
+        </li>
+        <li data-item="kid" class="item">
+          <img src="img/kid-1.jfif" alt="kid" class="item-img" />
+        </li>
+        <li data-item="kid" class="item">
+          <img src="img/kid-2.jfif" alt="kid" class="item-img" />
+        </li>
+        <li data-item="kid" class="item">
+          <img src="img/kid-3.jfif" alt="kid" class="item-img" />
+        </li>
+        <li data-item="kid" class="item">
+          <img src="img/kid-4.jfif" alt="kid" class="item-img" />
+        </li>
+      </ul>
+    </div>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
