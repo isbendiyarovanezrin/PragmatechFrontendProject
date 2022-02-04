@@ -1,12 +1,29 @@
+:root {
+  --font-family: Karla, sans-serif;
+  --white: #ffffff;
+  --transparent-white: #ffffff00;
+  --verdigris: #44bba7;
+}
+
 body {
   padding: 2rem;
   overflow: hidden;
-  background: linear-gradient(#fff 50%, #ffffff00 0) 0 0,
-    radial-gradient(circle closest-side, #fff 53%, #ffffff00 0) 0 0,
-    radial-gradient(circle closest-side, #fff 50%, #ffffff00 0) 3rem 0 #44bba7;
+  background: linear-gradient(var(--white) 50%, var(--transparent-white) 0) 0 0,
+    radial-gradient(
+        circle closest-side,
+        var(--white) 53%,
+        var(--transparent-white) 0
+      )
+      0 0,
+    radial-gradient(
+        circle closest-side,
+        var(--white) 50%,
+        var(--transparent-white) 0
+      )
+      3rem 0 var(--verdigris);
   background-size: 6rem 7rem;
   background-repeat: repeat-x;
-  font: 500 1.1rem Karla, sans-serif !important;
+  font: 500 1.1rem var(--font-family) !important;
 }
 
 .container {
@@ -31,8 +48,8 @@ label[for="inputGrams"] {
 }
 
 ::selection {
-  color: #fff;
-  background-color: #44bba7;
+  color: var(--white);
+  background-color: var(--verdigris);
 }
 
 @media screen and (max-width: 700px) {
