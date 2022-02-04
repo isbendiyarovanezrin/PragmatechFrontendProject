@@ -1,3 +1,13 @@
+:root {
+  --primary-font-family: "Karla";
+  --secondary-font-family: monospace;
+  --bg-clr: #f6e6f6;
+  --smokey-grey: #706d6d;
+  --cotton-seed: #bdbdbd;
+  --blossom-pink: #fab9fa;
+  --night: #0c0b0b;
+}
+
 *,
 *::after,
 *::before {
@@ -13,10 +23,10 @@ html {
 }
 
 body {
-  font: 2.6rem monospace;
+  font: 2.6rem var(--secondary-font-family);
   padding: 2rem 2rem 2rem 4rem;
   overflow-x: hidden;
-  background-color: #f6e6f6;
+  background-color: var(--bg-clr);
 }
 
 .top-text {
@@ -31,25 +41,25 @@ body {
 }
 
 .author {
-  color: #706d6d;
+  color: var(--smokey-grey);
   padding-top: 3rem;
   text-align: center;
   margin-right: 18rem;
-  font: 300 2.3rem "Karla";
+  font: 300 2.3rem var(--primary-font-family);
 }
 
 .info {
-  color: #bdbdbd;
+  color: var(--cotton-seed);
   letter-spacing: 0.2rem;
-  font: 300 1.9rem "Karla";
+  font: 300 1.9rem var(--primary-font-family);
   position: absolute;
   top: 22rem;
   z-index: 100;
 }
 
 ::selection {
-  color: #0c0b0b;
-  background-color: #fab9fa;
+  color: var(--night);
+  background-color: var(--blossom-pink);
 }
 
 @media screen and (max-width: 1100px) {
