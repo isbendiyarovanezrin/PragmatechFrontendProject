@@ -34,7 +34,11 @@ function generateText(e) {
 
   p.innerHTML = String(text.slice(0, input.value)).replace(/[,]/g, "<br><br>");
 
-  if (input.value > 10 || input.value <= 1) {
+  if ((input.value > 10 || input.value <= 1) && input.value != "") {
     p.textContent = text[Math.floor(Math.random() * text.length)];
+  }
+
+  if (input.value == "") {
+    alert("You have to write something.");
   }
 }

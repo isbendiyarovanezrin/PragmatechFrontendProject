@@ -71,6 +71,10 @@ article {
   width: 70%;
 }
 
+#text {
+  color: #000000d7;
+}
+
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
