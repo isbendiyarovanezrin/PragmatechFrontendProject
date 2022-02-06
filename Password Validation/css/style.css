@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url(../img/bg.jpg) hsl(0, 0%, 100%);
+  background-blend-mode: multiply;
+  font: 1.7rem Karla, sans-serif;
+}
+
+.container {
+  padding: 3rem;
+  border-radius: 2rem;
+  background-color: hsla(186, 82%, 49%, 0.941);
+  box-shadow: inset 0 0 2rem hsla(0, 0%, 0%, 0.664);
+}
+
+input:not(input[type="checkbox"]) {
+  font-size: 1.7rem;
+  margin: 0.3rem 0;
+  width: 20rem;
+  user-select: none;
+  text-indent: 0.3rem;
+  padding: 0.6rem;
+  border-radius: 2rem;
+  transition: all 0.7s ease;
+  caret-color: hsla(201, 100%, 17%, 0.671);
+  outline: 0.11rem solid hsla(201, 100%, 17%, 0.671);
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input:not(input[type="checkbox"]):focus {
+  width: 25rem;
+  transition: all 0.7s ease;
+  outline-color: hsl(201, 100%, 17%) !important;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.589);
+}
+
+button {
+  font-size: 1.7rem;
+  padding: 0.9rem 3rem;
+  border-radius: 2rem;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 2rem hsla(0, 0%, 0%, 0.664);
+  border: 0.1rem solid hsla(201, 100%, 17%, 0.671);
+  background-color: hsl(184deg 86% 52%);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:hover {
+  background-color: hsl(184, 69%, 50%);
+}
+
+#warning-list {
+  visibility: hidden;
+}
+
+.valid:before {
+  content: "✓";
+  color: hsl(201, 100%, 17%);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.invalid:before {
+  content: "✗";
+  color: hsl(0, 89%, 42%);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+::selection {
+  color: hsl(208, 100%, 97%);
+  background-color: hsl(182, 25%, 50%);
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 4.2px;
+  }
+}

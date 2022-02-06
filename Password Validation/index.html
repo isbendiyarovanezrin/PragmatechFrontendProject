@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Password Validation</title>
+
+    <!-- required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🔑</text></svg>"
+    />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <label for="username">Username: </label>
+        <br />
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          spellcheck="false"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <br />
+
+        <label for="password">Password: </label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          spellcheck="false"
+          placeholder="password"
+          pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}"
+        />
+        <br />
+        <br />
+
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Show password</label>
+        <br />
+        <br />
+
+        <button type="submit">Submit</button>
+        <br />
+        <br />
+      </form>
+
+      <ul id="warning-list">
+        <li class="invalid" id="lowercase">
+          The password must contain at least 1 lowercase alphabetical character
+        </li>
+        <li class="invalid" id="uppercase">
+          The password must contain at least 1 uppercase alphabetical character
+        </li>
+        <li class="invalid" id="length">
+          The password must be 8 characters or longer
+        </li>
+        <li class="invalid" id="number">
+          The password must contain at least 1 numeric character
+        </li>
+      </ul>
+    </div>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
