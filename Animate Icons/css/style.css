@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  padding: 3rem;
+  background-color: #000;
+}
+
+#icon {
+  user-select: none;
+  font-size: 4rem;
+  color: #ffc83d;
+  border-radius: 50%;
+  border: 0.2rem solid #000;
+}
