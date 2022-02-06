@@ -13,10 +13,21 @@ body {
   background-color: #000;
 }
 
-#icon {
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.fa {
+  padding: 0 2rem;
   user-select: none;
   font-size: 4rem;
   color: #ffc83d;
   border-radius: 50%;
-  border: 0.2rem solid #000;
+}
+
+#icon-4 {
+  width: 7rem;
 }
