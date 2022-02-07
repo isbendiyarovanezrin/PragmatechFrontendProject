@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  overflow: hidden;
+  color: rgb(250, 221, 174);
+  font-family: "Short Stack", "Nokora", sans-serif;
+  background: center / cover no-repeat url(../img/bg.jfif)
+    rgba(141, 25, 25, 0.938);
+  background-blend-mode: multiply;
+  filter: contrast(110%) saturate(200%);
+  animation: text-color 3s ease infinite;
+}
+
+@keyframes text-color {
+  0%,
+  100% {
+    color: rgb(250, 221, 174);
+  }
+
+  50% {
+    color: rgb(241, 184, 150);
+  }
+}
+
+.title {
+  font-size: 8rem;
+  margin-bottom: 4rem;
+}
+
+.remaining-time {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.time {
+  margin: 0 2rem;
+  font-size: 3rem;
+}
+
+.time > p:first-child {
+  font-size: 8rem;
+}
+
+::selection {
+  color: rgb(105, 27, 9);
+  background-color: rgb(240, 222, 195);
+}
+
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 2.9px;
+  }
+}
