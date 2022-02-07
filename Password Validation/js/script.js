@@ -1,3 +1,5 @@
+"use strict";
+
 const form = document.getElementById("form");
 const list = document.getElementById("warning-list");
 const passwordInput = document.getElementById("password");
