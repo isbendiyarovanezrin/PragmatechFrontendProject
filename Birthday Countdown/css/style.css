@@ -1,3 +1,12 @@
+:root {
+  --cherrywood: rgb(105, 27, 9);
+  --old-brick: rgba(141, 25, 25, 0.938);
+  --peach-yellow: rgb(250, 221, 174);
+  --pale-salmon: rgb(241, 184, 150);
+  --almond: rgb(240, 222, 195);
+  --font-family: "Short Stack", "Nokora", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +26,9 @@ body {
   min-height: 100vh;
   padding: 2rem;
   overflow: hidden;
-  color: rgb(250, 221, 174);
-  font-family: "Short Stack", "Nokora", sans-serif;
-  background: center / cover no-repeat url(../img/bg.jfif)
-    rgba(141, 25, 25, 0.938);
+  color: var(--peach-yellow);
+  font-family: var(--font-family);
+  background: center / cover no-repeat url(../img/bg.jfif) var(--old-brick);
   background-blend-mode: multiply;
   filter: contrast(110%) saturate(200%);
   animation: text-color 3s ease infinite;
@@ -29,11 +37,11 @@ body {
 @keyframes text-color {
   0%,
   100% {
-    color: rgb(250, 221, 174);
+    color: var(--peach-yellow);
   }
 
   50% {
-    color: rgb(241, 184, 150);
+    color: var(--pale-salmon);
   }
 }
 
@@ -58,8 +66,8 @@ body {
 }
 
 ::selection {
-  color: rgb(105, 27, 9);
-  background-color: rgb(240, 222, 195);
+  color: var(--cherrywood);
+  background-color: var(--almond);
 }
 
 @media screen and (max-width: 1100px) {
