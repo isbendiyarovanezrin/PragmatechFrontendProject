@@ -1,3 +1,8 @@
+:root {
+  --black: #000000;
+  --icon-clr: #ffc83d;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,7 +15,7 @@ html {
 body {
   overflow: hidden;
   padding: 3rem;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .container {
@@ -24,7 +29,7 @@ body {
   padding: 0 2rem;
   user-select: none;
   font-size: 4rem;
-  color: #ffc83d;
+  color: var(--icon-clr);
   border-radius: 50%;
 }
 
