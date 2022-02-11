@@ -1,0 +1,63 @@
+:root {
+  --font-family: "Amatic SC", cursive;
+  --white: #ffffff;
+  --bg-clr: #f5d6f0;
+  --text-clr: #886ce4;
+  --text-shadow: #8000808f;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  font-size: 2rem;
+  background-color: var(--bg-clr);
+}
+
+h1 {
+  font: 600 7rem var(--font-family);
+  color: var(--text-clr);
+  text-shadow: 1rem -0.4rem 1rem var(--text-shadow);
+  letter-spacing: 0.5rem;
+  word-spacing: 0.1rem;
+}
+
+::selection {
+  color: var(--white);
+  background-color: var(--text-clr);
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  html {
+    font-size: 4.8px;
+  }
+}
