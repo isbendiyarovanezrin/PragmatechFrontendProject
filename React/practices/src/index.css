@@ -7,13 +7,13 @@
 }
 
 body {
-  color: #fff;
+  color: #ffffff;
   background-color: #282c34;
   overflow-x: hidden;
 }
 
 ::selection {
-  color: #fff;
+  color: #ffffff;
   background-color: #007bff;
 }
 
@@ -21,11 +21,24 @@ body {
   background-color: #1f499e !important;
 }
 
-.btn {
-  border: none !important;
+.btn:focus {
+  box-shadow: none !important;
 }
 
-input,
-button {
+.btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 0 0.6rem #282c34b4 !important;
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0.6rem #8a96afb7 !important;
+}
+
+.btn {
+  border: none !important;
+  user-select: none;
+}
+
+input {
   user-select: none;
 }
