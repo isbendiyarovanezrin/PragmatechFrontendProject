@@ -34,6 +34,7 @@ body {
   height: 10rem;
   margin: 1rem;
   padding: 0.5rem;
+  cursor: grab;
   user-select: none;
   display: flex;
   align-items: center;
@@ -59,7 +60,9 @@ kbd {
   color: #010f01;
 }
 
-.playing {
+.playing,
+.key:active {
+  cursor: grabbing;
   transform: scale(0.9);
   border: 0.1rem solid #25242379;
   background-image: radial-gradient(ellipse at top, #4efc09, transparent),
