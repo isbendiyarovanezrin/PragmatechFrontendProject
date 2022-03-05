@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font: 5.5vw sans-serif;
+  background-color: black;
+}
+
+.end {
+  color: white;
+}
+
+::selection {
+  color: black;
+  background-color: white;
+}
