@@ -528,6 +528,12 @@ _Nümunə:_
   document.write(factorial(num)); // 720
   ```
 
+  _Daha çox nümunə:_
+
+  - [Factorial](https://gist.github.com/isbendiyarovanezrin/9cd1ab28b215d2a832aecca7e9a9d74f)
+  - [Fibonacci numbers](https://gist.github.com/isbendiyarovanezrin/198df3c1623a0536322a248de4af93f1)
+  - [Sum of Numbers](https://gist.github.com/isbendiyarovanezrin/1315ea6bd7bbcee6310ed01d7d9e5456)
+
 - #### Divide and Conquer Algorithm
 
   "Divide and Conquer Algorithm" növündə əsas ideya problemləri, məsələləri iki və ya daha çox oxşar, lakin daha sadə alt problemlərə bölmək, onları növbə ilə həll etmək və verilmiş məsələni həll etmək üçün onların hamısının həllərini (bütün alt problemlərin) birləşdirməkdən ibarətdir. Yəni 3 hissədən ibarətdir: bölmə, idarəetmə və birləşdirmə. Çətin problemlərin həlli üçün optimal bir variantdır.
