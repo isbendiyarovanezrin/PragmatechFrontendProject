@@ -346,7 +346,7 @@ _Nümunə:_
 
 ![cite teqi](https://user-images.githubusercontent.com/86655646/138767408-f9dfb5e2-4bdf-4eb8-af7c-3e28fcab1e00.png)
 
-<br>
+#### ⬆ [Yuxarıya qayıt](https://github.com/isbendiyarovanezrin/PragmatechFrontendProject/blob/master/Research.md#heavy_check_mark-sual-1)
 
 ## :heavy_check_mark: Sual 11
 
