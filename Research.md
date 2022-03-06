@@ -538,6 +538,12 @@ _Nümunə:_
 
   [<img width="50%" src="https://user-images.githubusercontent.com/86655646/150655523-143c1080-e953-481d-beaf-01dfc55a95be.png">](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)
 
+  _Daha çox nümunə:_
+
+  - [Binary Search Algorithm](https://gist.github.com/isbendiyarovanezrin/1e3b16045ea1e960888f694b2fe055e7)
+  - [Fibonacci Numbers](https://gist.github.com/isbendiyarovanezrin/fe165710a708414ec9579c0459adbf62)
+  - [Calculate pow(x, n)](https://gist.github.com/isbendiyarovanezrin/616fe82e6540dd4e3a57586cb5577631)
+
 - #### Dynamic Programming Algorithms
 
   Alqoritmin bu növü "memoization technique" olaraq da bilinir, çünki burada ideya əvvəllər hesablanmış bir problemin nəticəsini təkrar-təkrar hesablamamaq üçün saxlamaqdan ibarətdir. Dynamic Programming'də problemi daha kiçik alt problemlərə bölüb nəticəni gələcəkdə istifadə üçün saxlamaq lazımdır. Buna misal olaraq faktorialın hesablanmasını göstərə bilərik. Məsələn, alqoritm 20 faktorialı hesabladı və biz bu zaman 5 faktorialın neçə olduğunu, 9 faktorialın neçə olduğunu və s. bilmiş oluruq. Bunları saxlasaq biz yenidən 30 faktorialı hesablamaq istəyəndə 0-dan başlamırıq, 20 faktoriala qədər olan hissəni saxladığımız üçün çox rahat tapırıq və sonrası üçün çalışırıq.
