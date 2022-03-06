@@ -499,3 +499,54 @@ _Nümunə:_
 ![fieldset və legend teqləri](https://user-images.githubusercontent.com/86655646/139834818-4f0bd20b-7b6a-47c3-81dd-769f4a8de175.png)
 
 #### ⬆ [Yuxarıya qayıt](https://github.com/isbendiyarovanezrin/PragmatechFrontendProject/blob/master/Research.md#heavy_check_mark-sual-1)
+
+## :heavy_check_mark: Sual 21
+
+#### Alqoritmin hansı növləri var? Nümunələr ilə izah et.
+
+- #### Brute Force Algorithm
+
+  "Brute Force Algorithm" alqoritmin ən sadə və ən əsas növlərindən biridir. "Brute Force Algorithm" növü qarşımıza bir problem çıxanda bu problemin həlli üçün ilk ağlımıza gələn yol, yanaşmadır. Misal olaraq telefonumuzun şifrəsi yadımızdan çıxıb, amma şifrənin 4 rəqəmli olduğunu bilirik. Bu halda çoxumuzun ilk sınayacağı rəqəm cütlüyü "1234" olacaq və belə-belə tapana kimi davam edəcək. Tapmaq üçün hər yolu sınaqdan keçirəcək. Beləliklə, biz bu kilidi aça bilmək üçün "Brute Force Algorithm" növündən istifadə etmiş oluruq. Bu növ biraz bahalıdır. Məsələn, bir massivdə 1-dən 8-ə qədər rəqəmlər var və biz bu massivdə 4 rəqəmini tapmaq istəyirik. Alqoritm ən başdan tək-tək rəqəmləri yoxlayaraq 4 rəqəmini rahatlıqla tapacaq, amma 10000 instaqram istifadəçisi arasından bir adı tapmaq lazım olanda gərək bütün adları bir-bir axtarsın. Ona görə də bu yol çətindir və vaxt itkisinə səbəb olur və s.
+
+- #### Recursive Algorithm
+
+  Bu tip alqoritmlər rekursiyaya (proqramın özü-özünü çağıra bilməsi) əsaslanır. Burada problemlər alt problemlərə (daha kiçik problemlərə) bölünür və o şəkildə həll olunur. Yəni problem bölünə bildiyi, parçalana bildiyi qədər bölünür və bu problem həll olunana qədər davam edir. Bu şəkildə bir çox problemi daha rahat həll etmək olar.
+
+  _Nümunə:_
+
+  ```js
+  // faktorialın hesablanması
+  // 1-dən müəyyən bir natural ədədə qədər olan ədədlərin hasilinə o ədədin faktorialı deyilir
+
+  const num = 6;
+
+  function factorial(n) {
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+  }
+
+  document.write(factorial(num)); // 720
+  ```
+
+- #### Divide and Conquer Algorithm
+
+  "Divide and Conquer Algorithm" növündə əsas ideya problemləri, məsələləri iki və ya daha çox oxşar, lakin daha sadə alt problemlərə bölmək, onları növbə ilə həll etmək və verilmiş məsələni həll etmək üçün onların hamısının həllərini (bütün alt problemlərin) birləşdirməkdən ibarətdir. Yəni 3 hissədən ibarətdir: bölmə, idarəetmə və birləşdirmə. Çətin problemlərin həlli üçün optimal bir variantdır.
+
+  _Nümunə:_
+
+  Siyahını (38, 27, 43, 3, 9, 82, 10) artan ardıcıllıqla çeşidləmək üçün "Divide and Conquer" yanaşması.
+
+  [<img width="50%" src="https://user-images.githubusercontent.com/86655646/150655523-143c1080-e953-481d-beaf-01dfc55a95be.png">](https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm)
+
+- #### Dynamic Programming Algorithms
+
+  Alqoritmin bu növü "memoization technique" olaraq da bilinir, çünki burada ideya əvvəllər hesablanmış bir problemin nəticəsini təkrar-təkrar hesablamamaq üçün saxlamaqdan ibarətdir. Dynamic Programming'də problemi daha kiçik alt problemlərə bölüb nəticəni gələcəkdə istifadə üçün saxlamaq lazımdır. Buna misal olaraq faktorialın hesablanmasını göstərə bilərik. Məsələn, alqoritm 20 faktorialı hesabladı və biz bu zaman 5 faktorialın neçə olduğunu, 9 faktorialın neçə olduğunu və s. bilmiş oluruq. Bunları saxlasaq biz yenidən 30 faktorialı hesablamaq istəyəndə 0-dan başlamırıq, 20 faktoriala qədər olan hissəni saxladığımız üçün çox rahat tapırıq və sonrası üçün çalışırıq.
+
+  > Those who cannot remember the past are condemned to repeat it. -Dynamic Programming
+
+- #### Greedy Algorithm
+
+  Bu alqoritmin məqsədi özünə ən doğru gələn variantı seçməkdir. Əvvəllər qəbul edilmiş seçimləri nəzərə almır. Bunu bir misal üstündə daha yaxşı izah etmək olar. Məsələn, bir balonumuz var və bu balon 150 litr süt tutur. Hər biri ayrı balonda olan 100 litr, 80 litr, 40 litr, 30 litr, 20 litr süt aldıq. Balonumuzu bunlarla doldurmalı olsaq alqoritm ilk olaraq 100 litrlik sütə doğru gedəcək, çünki ona ən doğru seçim bu kimi gələcək. Adından da bəlli olduğu kimi acgözdür və hansı ən çoxdursa ona tərəf gedir. Daha sonra 40 litri alır (etdiyi seçimlər nəticəsində balonun 10 litri boş qalacaq). Bu ən doğru seçim idi? Təbii ki, yox. Bu alqoritm növü hər zaman ən doğru seçimi etmir. Ona görə də istifadə edərkən diqqətli olmaq lazımdır. Bu misalda ən doğru seçim "80 litr + 40 litr + 30 litr" idi.
+
+- #### Backtracking Algorithm
+  Bu alqoritm növünün ən aşkar özəlliyi bir problem həll edərkən bütün ehtimalları sınayır. Alqoritm bütün ehtimalları sınayır və ən uyğununu seçir. Buna misal gətirəcək olsam, məsələn, bir qutumuz var və bir çox əşyamız var. Qutuya qoya bildiyimiz qədər əşya qoymağa çalışmalıyıq, amma sadəcə 2 ayı kuklası, 3 dovşan kuklası və 1 oyuncaq maşın sığışır. Alqoritm bütün əşyaları qutuya qoyub yoxlayacaq və sonda ən yaxşı yolu tapacaq. Yəni qutuya sığışan əşyaları digərlərinin arasından seçib qutuya qoyacaq.
