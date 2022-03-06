@@ -508,6 +508,12 @@ _Nümunə:_
 
   "Brute Force Algorithm" alqoritmin ən sadə və ən əsas növlərindən biridir. "Brute Force Algorithm" növü qarşımıza bir problem çıxanda bu problemin həlli üçün ilk ağlımıza gələn yol, yanaşmadır. Misal olaraq telefonumuzun şifrəsi yadımızdan çıxıb, amma şifrənin 4 rəqəmli olduğunu bilirik. Bu halda çoxumuzun ilk sınayacağı rəqəm cütlüyü "1234" olacaq və belə-belə tapana kimi davam edəcək. Tapmaq üçün hər yolu sınaqdan keçirəcək. Beləliklə, biz bu kilidi aça bilmək üçün "Brute Force Algorithm" növündən istifadə etmiş oluruq. Bu növ biraz bahalıdır. Məsələn, bir massivdə 1-dən 8-ə qədər rəqəmlər var və biz bu massivdə 4 rəqəmini tapmaq istəyirik. Alqoritm ən başdan tək-tək rəqəmləri yoxlayaraq 4 rəqəmini rahatlıqla tapacaq, amma 10000 instaqram istifadəçisi arasından bir adı tapmaq lazım olanda gərək bütün adları bir-bir axtarsın. Ona görə də bu yol çətindir və vaxt itkisinə səbəb olur və s.
 
+  _Nümunə:_
+
+  - [Bubble Sort](https://gist.github.com/isbendiyarovanezrin/21f3cc61caf91fee7a4b4edb9b53a8e2)
+  - [Linear Search](https://gist.github.com/isbendiyarovanezrin/9f01181a7dddc297867814c14b2f85ab)
+  - [Global Linear Search](https://gist.github.com/isbendiyarovanezrin/eaba99e0ca4bbcca627b99e6e4d25564)
+
 - #### Recursive Algorithm
 
   Bu tip alqoritmlər rekursiyaya (proqramın özü-özünü çağıra bilməsi) əsaslanır. Burada problemlər alt problemlərə (daha kiçik problemlərə) bölünür və o şəkildə həll olunur. Yəni problem bölünə bildiyi, parçalana bildiyi qədər bölünür və bu problem həll olunana qədər davam edir. Bu şəkildə bir çox problemi daha rahat həll etmək olar.
