@@ -1,0 +1,120 @@
+:root {
+  --font-family: "Roboto", serif;
+  --primary-clr: #956d7d;
+  --secondary-clr: #e7e7e7;
+  --bg-clr: #c2c8cd;
+  --pink-clr: #ddabab;
+  --black-clr: #000000bc;
+  --whitesmoke-clr: #f7f1f1;
+  --palevioletred-clr: #d87093;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  background-color: var(--bg-clr) !important;
+  overflow-x: hidden;
+}
+
+* {
+  outline: none !important;
+}
+
+p {
+  margin: auto;
+  color: var(--black-clr) !important;
+  font-size: 11px !important;
+}
+
+h6 {
+  font-size: 12px !important;
+  margin-bottom: 2px !important;
+}
+
+a {
+  font-size: 15px !important;
+  text-decoration: none;
+  color: var(--black-clr);
+}
+
+a:hover {
+  color: var(--pink-clr) !important;
+}
+
+.col {
+  padding: 0 7px;
+}
+
+.main-content {
+  width: 97.6vw !important;
+  margin: 0 auto !important;
+}
+
+.card {
+  border: none !important;
+  background-color: var(--whitesmoke-clr);
+}
+
+.card-title {
+  margin-bottom: 0.2rem !important;
+}
+
+.navbar {
+  background-color: var(--primary-clr) !important;
+  border: none !important;
+  margin-bottom: 0px !important;
+}
+
+.navbar-brand {
+  color: #c2c8cd !important;
+}
+
+.navbar- .navbar-toggler:active,
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+  background-color: var(--secondary-clr) !important;
+}
+
+.btn-search:hover {
+  background-color: var(--secondary-clr) !important;
+}
+
+.form-control {
+  border: 1px solid var(--primary-clr) !important;
+  box-shadow: none !important;
+}
+
+.footer {
+  background-color: var(--primary-clr);
+  padding: 2px;
+}
+
+p.copyright {
+  margin: 13px auto !important;
+  font-weight: 460;
+  font-size: 1rem !important;
+  color: var(--black-clr) !important;
+}
+
+img:hover {
+  opacity: 0.75;
+}
+
+::selection {
+  background-color: var(--palevioletred-clr);
+  color: var(--whitesmoke-clr);
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1130px) {
+  .d-flex {
+    display: none !important;
+  }
+}
