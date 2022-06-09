@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #95cee034;
+  padding: 1rem 2rem;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #0a5753;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: 1px 1px #b0c4de;
+}
+
+.container {
+  margin: 10px 0;
+}
+
+.row {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  color: #10dbdb99;
+  border-left: 1px solid #068596;
+  border-right: 1px solid #068596;
+}
+
+.item {
+  width: 150px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1px solid #068596;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #2ae0e028;
+}
+
+.item:hover {
+  background-color: #307f9ec7;
+}
+
+.item1:hover {
+  background-color: #3cb371;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-items {
+  background-color: #1f688a;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #87cefa;
+  color: #1f688a;
+  margin: 5px 0 5px 5px;
+  font: bold 40px cursive;
+  text-shadow: 1px 1px #dcf8f8;
+}
+
+.flex-c,
+.flex-c {
+  margin-right: 5px;
+}
+
+.main {
+  margin: 10px 0;
+  padding: 8px;
+  color: #008b8b;
+  border: 2px solid #1d396df8;
+  background-color: #4681834d;
+}
+
+.head {
+  margin: 10px 0;
+  color: #0a5753;
+}
+
+#single {
+  background-color: #5f9ea0;
+  width: 255px;
+  height: 230px;
+  border: 1px solid #3838c2;
+  overflow-y: scroll;
+  color: #291fb6;
+  padding: 8px;
+}
+
+footer {
+  color: #1e90ff;
+  font-weight: bold;
+  text-align: end;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::selection {
+  color: white;
+  background-color: #0a7f83;
+}
