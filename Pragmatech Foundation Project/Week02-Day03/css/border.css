@@ -1,0 +1,73 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.right-triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 200px solid #2ecc71;
+  border-right: 200px solid transparent;
+}
+
+.flag {
+  height: 50px;
+  width: 200px;
+  background-color: #ff0000;
+  border-top: 50px solid #0000ff;
+  border-bottom: 50px solid #008000;
+  margin-top: 30px;
+  box-shadow: 0 0 2px #8c8c85d8;
+}
+
+.stick {
+  height: 110px;
+  width: 7px;
+  background-color: #2b1a1ae0;
+  margin-top: -1px;
+}
+
+.moon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 16px 16px 0 0 #d7ef33;
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border-bottom: 140px solid #69266b;
+  border-right: 140px solid transparent;
+  transform: rotate(136deg);
+  margin-top: 88px;
+  margin-left: 30px;
+}
+
+.egg {
+  width: 125px;
+  height: 179px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  margin-left: 19px;
+  background-color: #ffa631;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: #eeceee28;
+  box-shadow: inset 0 0 5px #80808048;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background-color: #8b09ac;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8b09acdc;
+}

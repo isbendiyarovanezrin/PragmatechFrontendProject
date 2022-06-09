@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(to bottom, #ffffff80 0%, #00000080 100%),
+    radial-gradient(at 50% 0%, #ffffff1a 0%, #00000080 50%) #dcd9d4;
+  background-blend-mode: soft-light, screen;
+  overflow: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+.navbar-light {
+  background-color: #e3f2fd;
+  border: 1px solid #e0ffff47;
+}
+
+.d-block {
+  height: 500px !important;
+  object-fit: contain;
+}
+
+.form-control {
+  border: 1px solid #198754 !important;
+  box-shadow: none !important;
+  font-family: monospace;
+  user-select: none;
+}
+
+.btn-search {
+  font-family: monospace !important;
+}
+
+.btn-search:active {
+  transform: scale(0.98);
+}
+
+.btn-outline-success:focus,
+.btn:focus {
+  box-shadow: 2px 2px 5px #d3d3d3 !important;
+}
+
+.form-control:focus,
+.form-control:active,
+.form-control:hover {
+  background-color: #42b17d67;
+}
+
+.page-title,
+.footer {
+  color: #198754 !important;
+  font: 500 1.4rem monospace;
+}
+
+.footer {
+  background-color: #e3f2fd;
+  padding: 3px;
+  margin: 2px;
+  font-size: 1.3rem;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important;
+  border-radius: 9px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 4rem;
+  height: 5rem;
+}
+
+::selection {
+  background-color: #198754;
+  color: #e3f2fd;
+}

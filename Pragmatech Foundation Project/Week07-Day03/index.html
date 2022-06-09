@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap practice</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Dropdowns -->
+    <div class="btn-group mx-5">
+      <button
+        type="button"
+        class="btn btn-warning dropdown-toggle m-2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Adlar
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Qız</a></li>
+        <li><a class="dropdown-item" href="#">Oğlan</a></li>
+        <li><a class="dropdown-item" href="#">Xarici adlar</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Bütün adlar</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group mx-5">
+      <button
+        type="button"
+        class="btn btn-info dropdown-toggle m-2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Xəbərlər
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Ölüm xəbərləri</a></li>
+        <li><a class="dropdown-item" href="#">Təhsil xəbərləri</a></li>
+        <li><a class="dropdown-item" href="#">Lazımsız xəbərlər</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Bütün xəbərlər</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group mx-5">
+      <button
+        type="button"
+        class="btn btn-success dropdown-toggle m-2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Yaş
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">20-dən aşağı</a></li>
+        <li><a class="dropdown-item" href="#">20-dən 60-a qədər</a></li>
+        <li><a class="dropdown-item" href="#">60-dan yuxarı</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Hər yaş üçün</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group mx-5">
+      <button
+        type="button"
+        class="btn btn-danger dropdown-toggle m-2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Gül
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Qızılgül</a></li>
+        <li><a class="dropdown-item" href="#">Yasəmən</a></li>
+        <li><a class="dropdown-item" href="#">Lalə</a></li>
+        <li><hr class="dropdown-divider" /></li>
+        <li><a class="dropdown-item" href="#">Bütün güllər</a></li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Accordion -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed mt-2 bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Xəbər #1
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Tramp Əfqanıstandan təxliyə uçuşlarında terrorçuların ola biləcəyini
+            bildirib.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            Xəbər #2
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            ABŞ və onun müttəfiqləri Əfqanıstandan daha 11 min nəfəri təxliyə
+            ediblər.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed bg-light mb-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Xəbər #3
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Pentaqon: ABŞ hərbi qüvvələrinin avqustun 31-dək Əfqanıstandan
+            çıxarılmasına dair planda dəyişiklik yoxdur.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div class="card-group">
+      <div class="card">
+        <img src="img/mountain.jpg" class="card-img-top" alt="nature" />
+        <div class="card-body">
+          <h5 class="card-title">Çin: buzlu dağların mənzərəsi</h5>
+          <p class="card-text">
+            Huanqşan rayonu UNESCO-nun Dünya İrsi siyahısına daxil olunmuş
+            obyektlərdəndir. Bölgə Çinin populyar məkanlarından biri sayılır.
+            Qış mövsümündə Huanqşan parkında buz bağlamış qayaların şahidi olmaq
+            olar.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">3 dəqiqə əvvəl əlavə olundu</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card mx-1">
+        <img src="img/snow.jpg" class="card-img-top" alt="nature" />
+        <div class="card-body">
+          <h5 class="card-title">Qış nağılı</h5>
+          <p class="card-text">
+            Yay aylarında parkın dağ cığırlarında turist əlindən ayaq basmağa
+            yer olmur. Lakin qışın oğlan çağında, havanın temperaturu sıfırdan
+            aşağı düşəndə burada tamaşaçı nəzərinə açılan gözəlliyi yayda
+            haqlamaq mümkünsüzdür.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">22 dəqiqə əvvəl əlavə olundu</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/nature.jpg" class="card-img-top" alt="nature" />
+        <div class="card-body">
+          <h5 class="card-title">Buludlara dirənmiş dağ zirvələri</h5>
+          <p class="card-text">
+            Çinin şərqində, Anhoy vilayətində yerləşən Huanqşan Milli parkı
+            qranit qayaları və dağ zirvələrilə məhşurdur. Bəzi zirvələrin
+            hündürlüyü 1000 metrdən də artıqdır, həmin zirvələrin başını
+            aşağıdan üzən buludlar alır.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">7 dəqiqə əvvəl əlavə olundu</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <!-- Collapse -->
+    <p>
+      <a
+        class="btn bg-warning m-2"
+        data-bs-toggle="collapse"
+        href="#multiCollapseExample1"
+        role="button"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample1"
+        >Birinci xəbər</a
+      >
+      <button
+        class="btn bg-warning m-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#multiCollapseExample2"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample2"
+      >
+        İkinci xəbər
+      </button>
+      <button
+        class="btn bg-warning m-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target=".multi-collapse"
+        aria-expanded="false"
+        aria-controls="multiCollapseExample1 multiCollapseExample2"
+      >
+        Bütün xəbərlər
+      </button>
+    </p>
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+          <div class="card card-body mb-2">
+            Yay aylarında parkın dağ cığırlarında turist əlindən ayaq basmağa
+            yer olmur.
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body mb-2">
+              Çinin şərqində, Anhoy vilayətində yerləşən Huanqşan Milli parkı
+              qranit qayaları və dağ zirvələrilə məşhurdur.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Form -->
+    <form class="row g-3 mx-2 bg-light">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" />
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Şifrə</label>
+        <input type="password" class="form-control" id="inputPassword4" />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Ünvan</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress"
+          placeholder="Bakı şəh., Mirzəbala Məmmədzadə küç. 8A."
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Ünvan 2</label>
+        <input
+          type="text"
+          class="form-control"
+          id="inputAddress2"
+          placeholder="Mənzil, studio və s."
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Şəhər</label>
+        <input type="text" class="form-control" id="inputCity" />
+      </div>
+      <div class="col-md-4">
+        <label for="inputCountry" class="form-label">Ölkə</label>
+        <select id="inputCountry" class="form-select">
+          <option selected>Seç...</option>
+          <option>Azərbaycan</option>
+          <option>Türkiyə</option>
+          <option>ABŞ</option>
+          <option>Rusiya</option>
+          <option>Başqa</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip" />
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <label class="form-check-label" for="gridCheck"> Yoxla </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-warning">Daxil ol</button>
+      </div>
+    </form>
+    <br />
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
