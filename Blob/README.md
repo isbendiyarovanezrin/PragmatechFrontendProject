@@ -10,4 +10,6 @@
 
 ![blob 2](https://i.postimg.cc/j2pYKngv/blob2.gif)
 
+###### Tutorial: https://youtu.be/F30J_KaHAgU
+
 </div>
