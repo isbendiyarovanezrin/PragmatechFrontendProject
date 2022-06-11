@@ -1,9 +1,7 @@
 <div align="center">
 
-### Factorial Calculator n!
+![Factorial calculator](https://i.postimg.cc/RhsHJYLT/fc.gif)
 
-#### Preview
-
-![Factorial Calculator](https://i.postimg.cc/RhsHJYLT/fc.gif)
+I was inspired by [**this**](https://www.calculatorsoup.com/calculators/discretemathematics/factorials.php) site.
 
 </div>
